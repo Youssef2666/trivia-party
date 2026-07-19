@@ -251,6 +251,22 @@
     reaction: function () {
       tone({ freq: 500 + Math.random() * 500, slideTo: 900 + Math.random() * 500, type: 'sine', dur: 0.08, vol: 0.06 });
     },
+    pause: function () {
+      // soft two-step down — the room takes a breath
+      tone({ freq: 660, type: 'triangle', dur: 0.12, vol: 0.12 });
+      tone({ freq: 440, type: 'triangle', dur: 0.22, vol: 0.12, delay: 0.11 });
+    },
+    resume: function () {
+      // mirror of pause — back in the game
+      tone({ freq: 440, type: 'triangle', dur: 0.1, vol: 0.12 });
+      tone({ freq: 660, type: 'triangle', dur: 0.16, vol: 0.13, delay: 0.09 });
+      noise({ dur: 0.18, vol: 0.04, filterFreq: 1200, filterSlideTo: 3200, delay: 0.08 });
+    },
+    extend: function () {
+      // rising "bonus time" chime
+      tone({ freq: 740, slideTo: 1180, type: 'sine', dur: 0.16, vol: 0.12 });
+      tone({ freq: 1480, type: 'sine', dur: 0.12, vol: 0.07, delay: 0.14 });
+    },
     rocket: function () {
       // launch whoosh → impact thud
       noise({ dur: 0.35, vol: 0.12, filterFreq: 700, filterSlideTo: 3800 });

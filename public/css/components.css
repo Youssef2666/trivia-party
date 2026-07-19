@@ -2281,3 +2281,190 @@
   border-color: var(--color-error);
   color: var(--color-error);
 }
+
+/* ══════════════════════════════════════════════════════════════════
+   Live host controls (pause / +10s / skip / swap) — question screen
+   ══════════════════════════════════════════════════════════════════ */
+.host-controls {
+  display: flex;
+  gap: var(--space-2);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-3);
+}
+
+.host-ctrl {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 13px;
+  border-radius: var(--radius-full);
+  background: var(--glass-bg);
+  border: var(--glass-border);
+  backdrop-filter: var(--glass-blur);
+  color: var(--text-secondary);
+  font-family: var(--font-primary);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  cursor: pointer;
+  transition:
+    transform var(--transition-fast),
+    color var(--transition-base),
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.host-ctrl .t-icon { width: 15px; height: 15px; }
+
+.host-ctrl:hover {
+  color: var(--text-primary);
+  border-color: var(--border-glass-hover);
+  transform: translateY(-1px);
+}
+
+.host-ctrl:active { transform: scale(0.95); }
+
+.host-ctrl.active {
+  color: var(--accent-primary-strong);
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 14px var(--accent-primary-glow);
+}
+
+/* ── Pause overlay — the whole arena holds its breath ────────────── */
+.pause-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-overlay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(8, 6, 18, 0.78);
+  backdrop-filter: blur(7px);
+  animation: fadeIn 250ms ease;
+  padding: var(--space-5);
+}
+
+.pause-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  text-align: center;
+}
+
+.pause-ring {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-primary-strong);
+  background: var(--accent-primary-soft);
+  border: 2px solid var(--accent-primary);
+  box-shadow:
+    0 0 34px var(--accent-primary-glow),
+    inset 0 0 22px var(--accent-primary-glow);
+  animation: pause-breathe 2.2s ease-in-out infinite;
+}
+
+.pause-ring .t-icon { width: 34px; height: 34px; }
+
+.pause-title {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-black);
+}
+
+.pause-hint {
+  color: var(--text-secondary);
+  font-size: var(--fs-sm);
+}
+
+.pause-remaining {
+  margin-top: var(--space-2);
+  padding: 5px 16px;
+  border-radius: var(--radius-full);
+  background: var(--glass-bg-strong);
+  border: var(--glass-border-strong);
+  font-weight: var(--fw-black);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── "+10s" pops off the timer ring ──────────────────────────────── */
+.extend-float {
+  position: absolute;
+  top: -6px;
+  inset-inline-start: 50%;
+  transform: translateX(-50%);
+  color: var(--color-success);
+  font-weight: var(--fw-black);
+  font-size: var(--fs-lg);
+  text-shadow: 0 0 18px var(--color-success-glow);
+  pointer-events: none;
+  white-space: nowrap;
+  animation: extend-float 1.3s ease-out forwards;
+  z-index: 3;
+}
+
+/* ── Locked-answer stamp (unmistakable commit feedback) ──────────── */
+.lock-stamp {
+  position: absolute;
+  inset-block-start: calc(50% - 13px);
+  inset-inline-end: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 26px;
+  padding: 0 10px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.24);
+  color: #fff;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-black);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  animation: lock-stamp-in 420ms var(--ease-spring) backwards;
+  pointer-events: none;
+}
+
+.lock-stamp .t-icon { width: 13px; height: 13px; }
+
+.buzzer-btn .lock-stamp { inset-block-start: 10px; }
+
+.guess-panel .btn.locked {
+  background: var(--color-success);
+  box-shadow: var(--shadow-glow-success);
+}
+
+/* Waiting strip flips to "locked" mode once you've committed */
+.waiting-indicator.locked { color: var(--color-success); }
+
+.waiting-indicator .wait-count {
+  font-weight: var(--fw-black);
+  font-variant-numeric: tabular-nums;
+  padding: 1px 10px;
+  border-radius: var(--radius-full);
+  background: var(--glass-bg-strong);
+  border: var(--glass-border);
+}
+
+/* ── Timer heartbeat (class re-fired from JS on each tick) ───────── */
+.timer-number.beat {
+  animation: number-beat 420ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ── Physics confetti canvas ─────────────────────────────────────── */
+.confetti-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: var(--z-confetti);
+}
+
+/* Selected answers pop with spring weight (option + buzzer variants) */
+.option-btn.selected,
+.buzzer-btn.selected {
+  animation: option-lock-pop 380ms var(--ease-spring);
+}

@@ -48,11 +48,24 @@
     "of": "of",
     "answered": "answered",
     "time_up": "Time's up!",
+    "locked": "Locked ✓",
+    "locked_waiting": "Answer locked — waiting for the others…",
     "waiting_others": "Waiting for other players...",
     "golden_round": "Golden question! Double points, no penalty",
     "bell_round": "Bell round! Fastest correct answer takes it all",
     "tiebreaker_round": "Decider round! Fastest correct answer wins the crown",
     "spectator": "You're spectating the decider — cheer them on!"
+  },
+  "host": {
+    "pause": "Pause",
+    "resume": "Resume",
+    "extend": "+10s",
+    "skip": "Skip",
+    "replace": "Swap question",
+    "paused_title": "Game paused",
+    "paused_hint": "The host paused the timer — hang tight!",
+    "extended_toast": "+10 seconds!",
+    "replaced_toast": "The host swapped the question!"
   },
   "reveal": {
     "correct": "Correct!",
@@ -172,7 +185,8 @@
     "item_already_used": "You already used a weapon this question",
     "item_depleted": "You don't have that weapon",
     "invalid_target": "Invalid target",
-    "chaser_required": "Pick a Chaser first (tap a player)"
+    "chaser_required": "Pick a Chaser first (tap a player)",
+    "no_replacement_available": "No spare questions left to swap in"
   },
   "powerups": {
     "title": "Power-ups",

@@ -189,6 +189,18 @@
   z-index: 2;
 }
 
+/* Step-walk: JS advances --p one cell at a time; each hop is a short
+   spring so pawns WALK the board instead of teleport-gliding it */
+.ch-runner.stepping {
+  transition: top var(--hop-ms, 420ms) cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition-delay: 0ms;
+}
+
+/* Settle squash on the final landing */
+.ch-runner.landed .ch-runner-inner {
+  animation: ch-land 460ms var(--ease-spring);
+}
+
 .ch-runner-inner {
   position: relative;
   display: flex;

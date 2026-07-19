@@ -88,6 +88,8 @@
           changeText = window.TriviaUtils.formatPoints(entry.lastPointsEarned) + ' ▼';
         }
 
+        var prevScore = Math.max(0, entry.score - (entry.lastPointsEarned || 0));
+
         html += '<div class="leaderboard-row' + rankClass + (isMe ? ' current-player' : '') +
           (entry.isEliminated ? ' eliminated' : '') + '" ' +
           'data-player-id="' + entry.playerId + '" ' +
@@ -102,7 +104,7 @@
               ? '<span class="elim-badge"><i data-lucide="skull"></i>' + t('survival.rank').replace('{n}', entry.eliminatedRank) + '</span>'
               : (entry.streak >= 3 ? '<span class="streak-chip"><i data-lucide="flame"></i>' + entry.streak + '</span>' : '')) +
           '</div>' +
-          '<span class="player-score">' + entry.score + '</span>' +
+          '<span class="player-score" data-count-from="' + prevScore + '" data-count-to="' + entry.score + '">' + entry.score + '</span>' +
           '<span class="points-change ' + changeClass + '">' + changeText + '</span>' +
         '</div>';
       }
@@ -222,11 +224,12 @@
       var html = '<div class="gp-hud animate-fade-in delay-200">';
       for (var i = 0; i < leaderboard.length; i++) {
         var e = leaderboard[i];
+        var chipPrev = Math.max(0, e.score - (e.lastPointsEarned || 0));
         html += '<span class="gp-hud-chip' + (e.isFinished ? ' finished' : '') + (e.playerId === myId ? ' me' : '') + '">' +
           '<span class="gp-hud-rank">' + (e.isFinished && e.finishRank ? e.finishRank : (i + 1)) + '</span>' +
           window.TriviaUtils.generateAvatarHTML(e.avatar, 'avatar-sm') +
           '<span>' + window.TriviaUtils.escapeHtml(e.nickname) + '</span>' +
-          '<b>' + e.score + '</b>' +
+          '<b data-count-from="' + chipPrev + '" data-count-to="' + e.score + '">' + e.score + '</b>' +
           (e.isFinished ? ' 🏁' : '') +
         '</span>';
       }
@@ -340,7 +343,11 @@
       return html;
     },
 
-    /** Wall and runners glide to their new steps; quake if the wall moved. */
+    /**
+     * Runners WALK their gained cells one hop at a time (settle bounce on
+     * landing) instead of gliding the whole distance; the mist wall keeps
+     * its slow continuous rise. Quake if the wall moved.
+     */
     _animateChase: function (data) {
       var self = this;
       var chase = data.chase;
@@ -351,11 +358,18 @@
       requestAnimationFrame(function () {
         requestAnimationFrame(function () {
           document.querySelectorAll('.ch-runner').forEach(function (r) {
-            var p = parseFloat(r.getAttribute('data-progress')) || 0;
+            var toP = parseFloat(r.getAttribute('data-progress')) || 0;
+            var fromP = parseFloat(r.style.getPropertyValue('--p')) || 0;
             var id = r.getAttribute('data-player-id');
-            newState.positions[id] = p;
+            newState.positions[id] = toP;
             newState.caught[id] = r.classList.contains('caught') || r.classList.contains('caught-now');
-            r.style.setProperty('--p', p);
+
+            var moved = Math.round(Math.abs(toP - fromP) * steps);
+            if (moved >= 1 && !window.TriviaMotion.reduced()) {
+              self._walkRunner(r, fromP, toP, moved);
+            } else {
+              r.style.setProperty('--p', toP);
+            }
           });
           var wall = document.getElementById('chWall');
           if (wall) {
@@ -373,6 +387,30 @@
       });
 
       if (!this.prevChase) this.prevChase = newState;
+    },
+
+    /** Hop a pawn cell-by-cell, then squash-settle on the last landing. */
+    _walkRunner: function (el, fromP, toP, stepCount) {
+      var hops = Math.max(1, stepCount);
+      var hopDur = hops > 1 ? 400 : 460;
+      el.classList.add('stepping');
+      el.style.setProperty('--hop-ms', hopDur + 'ms');
+
+      var i = 0;
+      var next = function () {
+        i++;
+        el.style.setProperty('--p', fromP + (toP - fromP) * (i / hops));
+        if (i < hops) {
+          setTimeout(next, hopDur + 60);
+        } else {
+          setTimeout(function () {
+            el.classList.remove('stepping');
+            el.classList.add('landed');
+            setTimeout(function () { el.classList.remove('landed'); }, 500);
+          }, hopDur);
+        }
+      };
+      next();
     },
 
     init: function (data) {
@@ -403,6 +441,16 @@
         });
       }, 200);
 
+      // Scores roll from their pre-question value to the new total
+      document.querySelectorAll('#leaderboardScreen [data-count-to]').forEach(function (el) {
+        var from = parseInt(el.getAttribute('data-count-from'), 10) || 0;
+        var to = parseInt(el.getAttribute('data-count-to'), 10) || 0;
+        if (from !== to) {
+          el.textContent = String(from);
+          window.TriviaMotion.countUp(el, from, to, { duration: 900 });
+        }
+      });
+
       var nextBtn = document.getElementById('nextQuestionBtn');
       if (nextBtn) {
         nextBtn.addEventListener('click', function () {
@@ -423,8 +471,15 @@
         requestAnimationFrame(function () {
           document.querySelectorAll('.gp-car').forEach(function (car) {
             var p = parseFloat(car.getAttribute('data-progress')) || 0;
+            var fromP = parseFloat(car.style.getPropertyValue('--p')) || 0;
             newProgress[car.getAttribute('data-player-id')] = p;
             car.style.setProperty('--p', p);
+
+            // While gliding: exhaust speed-lines + nose-down pitch ("driving")
+            if (Math.abs(p - fromP) > 0.004 && !window.TriviaMotion.reduced()) {
+              car.classList.add('moving');
+              setTimeout(function () { car.classList.remove('moving'); }, 1450);
+            }
 
             if (car.classList.contains('will-boost')) {
               car.classList.add('boost');

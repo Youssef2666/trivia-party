@@ -189,6 +189,32 @@ io.on('connection', (socket) => {
     }
   });
 
+  // ── Live host controls (during an active question) ────────
+  socket.on('host_pause', () => {
+    const room = gameManager.getRoom(socket.triviaRoomCode);
+    if (room) room.pauseQuestion(socket.triviaPlayerId);
+  });
+
+  socket.on('host_resume', () => {
+    const room = gameManager.getRoom(socket.triviaRoomCode);
+    if (room) room.resumeQuestion(socket.triviaPlayerId);
+  });
+
+  socket.on('host_extend', () => {
+    const room = gameManager.getRoom(socket.triviaRoomCode);
+    if (room) room.extendQuestion(socket.triviaPlayerId);
+  });
+
+  socket.on('host_skip', () => {
+    const room = gameManager.getRoom(socket.triviaRoomCode);
+    if (room) room.skipQuestion(socket.triviaPlayerId);
+  });
+
+  socket.on('host_replace', () => {
+    const room = gameManager.getRoom(socket.triviaRoomCode);
+    if (room) room.replaceQuestion(socket.triviaPlayerId);
+  });
+
   // ── Rematch ───────────────────────────────────────────────
   socket.on('rematch', () => {
     const room = gameManager.getRoom(socket.triviaRoomCode);

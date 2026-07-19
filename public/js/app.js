@@ -107,11 +107,11 @@
         screen.init(data || {});
       }
 
-      // Background music per screen
+      // Background music per screen (a paused question stays silent)
       if (name === 'home' || name === 'lobby') {
         window.TriviaSound.music('lobby');
       } else if (name === 'question') {
-        window.TriviaSound.music('question');
+        window.TriviaSound.music(data && data.paused ? null : 'question');
       } else {
         window.TriviaSound.music(null);
       }
@@ -473,6 +473,11 @@
       sock.on('host_transferred', function (data) {
         if (data.newHostId === self.gameState.playerId) {
           self.gameState.isHost = true;
+          // Mid-question promotion: re-render so the live control bar
+          // appears (pause state survives via currentQuestionData).
+          if (self.currentScreen === 'question' && self.gameState.currentQuestionData) {
+            self.showScreen('question', self.gameState.currentQuestionData);
+          }
         }
       });
 

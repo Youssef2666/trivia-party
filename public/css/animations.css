@@ -131,6 +131,13 @@
   100% { transform: scale(1); }
 }
 
+/* Springy commit-pop when an answer locks in */
+@keyframes option-lock-pop {
+  0% { transform: scale(0.97); }
+  55% { transform: scale(1.06); }
+  100% { transform: scale(1.02); }
+}
+
 @keyframes banner-in {
   0% { opacity: 0; transform: translateY(-14px) scale(0.8); }
   100% { opacity: 1; transform: translateY(0) scale(1); }
@@ -162,6 +169,44 @@
   100% { opacity: 0; transform: translateY(-72vh) scale(0.9) rotate(10deg); }
 }
 
+/* ── Live host controls + lock feedback ──────────────────────────── */
+@keyframes pause-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
+
+@keyframes extend-float {
+  0% { opacity: 0; transform: translateX(-50%) translateY(6px) scale(0.7); }
+  25% { opacity: 1; transform: translateX(-50%) translateY(-10px) scale(1.12); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(-34px) scale(1); }
+}
+
+@keyframes lock-stamp-in {
+  0% { opacity: 0; transform: scale(1.9) rotate(-10deg); }
+  60% { opacity: 1; transform: scale(0.94) rotate(2deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+/* Timer heartbeat — one punch per tick, fired from JS on the tick frame */
+@keyframes number-beat {
+  0% { transform: translate(-50%, -50%) scale(1); }
+  35% { transform: translate(-50%, -50%) scale(1.22); }
+  100% { transform: translate(-50%, -50%) scale(1); }
+}
+
+/* Chase pawn landing squash */
+@keyframes ch-land {
+  0% { transform: translateY(-7px) scaleY(1.05); }
+  55% { transform: translateY(1px) scaleY(0.92) scaleX(1.06); }
+  100% { transform: translateY(0) scaleY(1) scaleX(1); }
+}
+
+/* Race car pitch while driving */
+@keyframes gp-pitch {
+  from { transform: scaleY(1) translateY(0); }
+  to { transform: scaleY(0.97) translateY(1.5px); }
+}
+
 /* ── Utility classes ─────────────────────────────────────────────── */
 .animate-fade-in { animation: fadeIn 500ms ease backwards; }
 .animate-slide-up { animation: slideInUp 500ms ease backwards; }
@@ -174,6 +219,47 @@
 .delay-300 { animation-delay: 300ms; }
 .delay-400 { animation-delay: 400ms; }
 .delay-500 { animation-delay: 500ms; }
+
+/* ── FPS-adaptive quality (set on <html> by motion.js) ────────────
+   Shed decoration before it sheds frames: ambient sweeps, sparkles
+   and blurs go first; gameplay motion (cars, pawns, reveals) stays. */
+html[data-quality="medium"] .gp-flash,
+html[data-quality="medium"] .gp-track::after,
+html[data-quality="medium"] .ch-search,
+html[data-quality="medium"] .aurora::before,
+html[data-quality="medium"] .aurora::after,
+html[data-quality="medium"] .aurora .aurora-extra {
+  animation: none !important;
+}
+
+html[data-quality="low"] .gp-track::after,
+html[data-quality="low"] .gp-sep,
+html[data-quality="low"] .gp-flash,
+html[data-quality="low"] .gp-rail,
+html[data-quality="low"] .gp-car-inner,
+html[data-quality="low"] .gp-driver,
+html[data-quality="low"] .gp-finish-sign,
+html[data-quality="low"] .gp-crown,
+html[data-quality="low"] .gp-car .car-tail,
+html[data-quality="low"] .gp-car .car-tailglow,
+html[data-quality="low"] .gp-car .car-underglow,
+html[data-quality="low"] .ch-search,
+html[data-quality="low"] .ch-wall::before,
+html[data-quality="low"] .ch-runner-inner,
+html[data-quality="low"] .ch-chaser-inner,
+html[data-quality="low"] .ch-gate-beam,
+html[data-quality="low"] .ch-gate-sign,
+html[data-quality="low"] .ch-safe-row .avatar,
+html[data-quality="low"] .aurora::before,
+html[data-quality="low"] .aurora::after,
+html[data-quality="low"] .aurora .aurora-extra {
+  animation: none !important;
+}
+
+html[data-quality="low"] .gp-haze,
+html[data-quality="low"] .ch-wall::before {
+  filter: none;
+}
 
 /* ── Reduced motion: calm everything down ────────────────────────── */
 @media (prefers-reduced-motion: reduce) {

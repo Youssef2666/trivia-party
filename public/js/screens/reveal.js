@@ -361,12 +361,15 @@
         }
       }
 
-      // ── Sounds + haptics ──
+      // ── Sounds + haptics (confetti pops on the same beat) ──
       window.TriviaSound.play('reveal');
       if (myResult) {
         if (isGuess) {
           setTimeout(function () {
             window.TriviaSound.play(myResult.guessRank === 1 ? 'correct' : 'swoosh');
+            if (myResult.guessRank === 1) {
+              window.TriviaConfetti.burst(0.5, 0.3, { count: 30 });
+            }
           }, 250);
         } else if (myResult.chosenOption === -1) {
           setTimeout(function () { window.TriviaSound.play('timeout'); }, 250);
@@ -374,6 +377,9 @@
           setTimeout(function () {
             window.TriviaSound.play('correct');
             if (myResult.streak >= 3) window.TriviaSound.play('streak');
+            window.TriviaConfetti.burst(0.5, 0.28, {
+              count: myResult.streak >= 3 ? 46 : 30
+            });
           }, 250);
           window.TriviaUtils.vibrate(35);
         } else {
@@ -398,6 +404,7 @@
         setTimeout(function () {
           window.TriviaSound.play('finish');
           window.TriviaApp.showFinishOverlay(finishedNow, t);
+          window.TriviaConfetti.burst(0.5, 0.35, { count: 60, speed: 760 });
         }, 900);
       }
 

@@ -14,6 +14,10 @@
     timerSync: null,
     lastTickSecond: null,
     isSpectator: false,
+    isPausedLocal: false,
+    pausedRemainingMs: 0,
+    freezeOffsetMs: 0,
+    timerBase: null,
 
     render: function (data) {
       var t = window.TriviaI18n.t.bind(window.TriviaI18n);
@@ -119,12 +123,33 @@
         }
       }
 
+      // ── Live host control bar (pause / +10s / skip / swap) ──
+      var hostBarHtml = '';
+      if (gs.isHost) {
+        hostBarHtml = '<div class="host-controls animate-fade-in delay-200" id="hostControls">' +
+          '<button type="button" class="host-ctrl" id="hostPauseBtn">' +
+            '<i data-lucide="pause"></i><span id="hostPauseLabel">' + t('host.pause') + '</span>' +
+          '</button>' +
+          '<button type="button" class="host-ctrl" id="hostExtendBtn">' +
+            '<i data-lucide="timer"></i><span>' + t('host.extend') + '</span>' +
+          '</button>' +
+          '<button type="button" class="host-ctrl" id="hostSkipBtn">' +
+            '<i data-lucide="skip-forward"></i><span>' + t('host.skip') + '</span>' +
+          '</button>' +
+          (special !== 'tiebreaker'
+            ? '<button type="button" class="host-ctrl" id="hostReplaceBtn">' +
+                '<i data-lucide="refresh-cw"></i><span>' + t('host.replace') + '</span>' +
+              '</button>'
+            : '') +
+        '</div>';
+      }
+
       var html = '<div class="screen' + (special === 'golden' ? ' theme-golden' : '') + (isStage ? ' screen-wide' : '') + '" id="questionScreen">' +
         '<div class="progress-bar mb-4">' +
           '<div class="progress-bar-fill" style="width:' + progress + '%;"></div>' +
         '</div>' +
 
-        bannerHtml + raceLine +
+        hostBarHtml + bannerHtml + raceLine +
 
         // Top bar
         '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--space-4);gap:var(--space-2);flex-wrap:wrap;">' +
@@ -232,6 +257,7 @@
         '</div>' +
         '<div class="waiting-indicator" id="waitingIndicator" style="display:none;">' +
           '<span>' + t('game.waiting_others') + '</span>' +
+          '<span class="wait-count" id="waitCount"></span>' +
           '<div class="waiting-dots"><span></span><span></span><span></span></div>' +
         '</div>';
       }
@@ -256,12 +282,16 @@
       var t = window.TriviaI18n.t.bind(window.TriviaI18n);
       this.hasAnswered = false;
       this.lastTickSecond = null;
+      this.isPausedLocal = false;
+      this.pausedRemainingMs = 0;
+      this.freezeOffsetMs = 0;
       var powerupUsedThisRound = false;
       var itemUsedThisRound = false;
       var isGuess = data.type === 'guess';
       var gs = window.TriviaApp.gameState;
       var isStage = Boolean(gs.settings && gs.settings.displayMode && gs.isHost);
 
+      this.timerBase = { serverTimestamp: data.serverTimestamp, durationMs: data.durationMs };
       this.timerSync = window.TriviaUtils.createTimerSync(data.serverTimestamp, data.durationMs);
 
       // Entry sounds + announcer (skip when rejoining mid-question)
@@ -278,23 +308,30 @@
 
       this._startTimer(data.durationMs);
 
+      // Rejoined (or re-rendered) into a paused question — freeze at once
+      if (data.paused) {
+        this._applyPause(data.pausedRemainingMs || 0, true);
+      }
+
       // ── Answer handlers ──
       if (!this.isSpectator && !isStage) {
         if (isGuess) {
           var input = document.getElementById('guessInput');
           var submit = document.getElementById('guessSubmit');
           var sendGuess = function () {
-            if (self.hasAnswered) return;
+            if (self.hasAnswered || self.isPausedLocal) return;
             var v = parseFloat((input.value || '').replace(/[^\d.-]/g, ''));
             if (!isFinite(v)) return;
             self.hasAnswered = true;
             window.TriviaSound.play('select');
-            window.TriviaUtils.vibrate(18);
+            window.TriviaUtils.vibrate([16, 40, 24]);
             input.disabled = true;
             submit.disabled = true;
+            submit.classList.add('locked');
+            submit.innerHTML = '<i data-lucide="check"></i> ' + t('game.locked');
+            if (window.lucide) lucide.createIcons();
             self._disableAllPowerups();
-            var waiting = document.getElementById('waitingIndicator');
-            if (waiting) waiting.style.display = '';
+            self._showLockedWaiting(t);
             window.TriviaSocket.emit('submit_answer', { guess: v });
           };
           if (input) {
@@ -375,13 +412,195 @@
             }
           });
         } else if (res.type === 'freeze') {
-          self.timerSync = window.TriviaUtils.createTimerSync(data.serverTimestamp + 5000, data.durationMs);
+          // Display-only bonus; survives resume/extend rebuilds via timerBase
+          self.freezeOffsetMs = 5000;
+          self.timerSync = window.TriviaUtils.createTimerSync(
+            self.timerBase.serverTimestamp + self.freezeOffsetMs,
+            self.timerBase.durationMs
+          );
         }
+      });
+
+      // ── Live host controls: button wiring ──
+      if (gs.isHost) {
+        var bindHost = function (id, fn) {
+          var b = document.getElementById(id);
+          if (b) {
+            b.addEventListener('click', function () {
+              window.TriviaSound.play('tap');
+              fn();
+            });
+          }
+        };
+        bindHost('hostPauseBtn', function () {
+          window.TriviaSocket.emit(self.isPausedLocal ? 'host_resume' : 'host_pause');
+        });
+        bindHost('hostExtendBtn', function () { window.TriviaSocket.emit('host_extend'); });
+        bindHost('hostSkipBtn', function () { window.TriviaSocket.emit('host_skip'); });
+        bindHost('hostReplaceBtn', function () { window.TriviaSocket.emit('host_replace'); });
+      }
+
+      // ── Live control events (every device reacts) ──
+      window.TriviaSocket.on('question_paused', function (res) {
+        self._applyPause((res && res.remainingMs) || 0, false);
+      });
+      window.TriviaSocket.on('question_resumed', function (res) {
+        self._applyResume(res.serverTimestamp, res.durationMs);
+      });
+      window.TriviaSocket.on('timer_adjusted', function (res) {
+        self._applyExtend(res.serverTimestamp, res.durationMs);
+      });
+      window.TriviaSocket.on('question_replaced', function () {
+        window.TriviaSound.play('swoosh');
+        window.TriviaApp.showToast(t('host.replaced_toast'), 'info');
       });
 
       window.TriviaApp.bindReactionBar();
 
       if (window.lucide) lucide.createIcons();
+    },
+
+    /** Waiting strip flips to "answer locked" mode once you've committed. */
+    _showLockedWaiting: function (t) {
+      var waiting = document.getElementById('waitingIndicator');
+      if (!waiting) return;
+      waiting.style.display = '';
+      waiting.classList.add('locked');
+      var label = waiting.querySelector('span');
+      if (label) label.textContent = t('game.locked_waiting');
+    },
+
+    // ──────────────────────────────────────────────────────────
+    //  Live host controls — client side effects
+    // ──────────────────────────────────────────────────────────
+
+    /** Freeze the screen: stop the clock, overlay the arena, flip the button. */
+    _applyPause: function (remainingMs, instant) {
+      var t = window.TriviaI18n.t.bind(window.TriviaI18n);
+      this.isPausedLocal = true;
+      this.pausedRemainingMs = remainingMs;
+
+      // Persist onto the cached question payload so a host-transfer
+      // re-render (or language switch) rebuilds into the same state.
+      var qd = window.TriviaApp.gameState.currentQuestionData;
+      if (qd) { qd.paused = true; qd.pausedRemainingMs = remainingMs; }
+
+      if (this.timerRAF) {
+        cancelAnimationFrame(this.timerRAF);
+        this.timerRAF = null;
+      }
+      this._renderTimerFrame(remainingMs);
+
+      var vignette = document.getElementById('dangerVignette');
+      if (vignette) vignette.classList.remove('on');
+      var containerEl = document.getElementById('timerContainer');
+      if (containerEl) containerEl.classList.remove('danger-pulse');
+
+      var remainingText = window.TriviaUtils.formatTime(remainingMs) + ' ' + t('common.seconds');
+      var existing = document.getElementById('pauseOverlay');
+      if (existing) {
+        var rem = document.getElementById('pauseRemaining');
+        if (rem) rem.textContent = remainingText;
+      } else {
+        var screen = document.getElementById('questionScreen');
+        if (screen) {
+          var ov = document.createElement('div');
+          ov.className = 'pause-overlay';
+          ov.id = 'pauseOverlay';
+          ov.innerHTML =
+            '<div class="pause-card">' +
+              '<span class="pause-ring"><i data-lucide="pause"></i></span>' +
+              '<p class="pause-title">' + t('host.paused_title') + '</p>' +
+              '<p class="pause-hint">' + t('host.paused_hint') + '</p>' +
+              '<span class="pause-remaining" id="pauseRemaining">' + remainingText + '</span>' +
+            '</div>';
+          screen.appendChild(ov);
+          if (!instant) window.TriviaSound.play('pause');
+          if (window.lucide) lucide.createIcons();
+        }
+      }
+
+      window.TriviaSound.music(null);
+      this._setPauseButton(true, t);
+    },
+
+    _applyResume: function (serverTimestamp, durationMs) {
+      var t = window.TriviaI18n.t.bind(window.TriviaI18n);
+      this.isPausedLocal = false;
+      this.pausedRemainingMs = 0;
+
+      var qd = window.TriviaApp.gameState.currentQuestionData;
+      if (qd) {
+        qd.paused = false;
+        qd.pausedRemainingMs = 0;
+        qd.serverTimestamp = serverTimestamp;
+        qd.durationMs = durationMs;
+      }
+
+      this.timerBase = { serverTimestamp: serverTimestamp, durationMs: durationMs };
+      this.timerSync = window.TriviaUtils.createTimerSync(serverTimestamp + this.freezeOffsetMs, durationMs);
+
+      var ov = document.getElementById('pauseOverlay');
+      if (ov && ov.parentNode) ov.parentNode.removeChild(ov);
+
+      window.TriviaSound.play('resume');
+      window.TriviaSound.music('question');
+      this._setPauseButton(false, t);
+
+      if (this.timerRAF) cancelAnimationFrame(this.timerRAF);
+      this._startTimer(durationMs);
+    },
+
+    _applyExtend: function (serverTimestamp, durationMs) {
+      var t = window.TriviaI18n.t.bind(window.TriviaI18n);
+      this.timerBase = { serverTimestamp: serverTimestamp, durationMs: durationMs };
+      this.timerSync = window.TriviaUtils.createTimerSync(serverTimestamp + this.freezeOffsetMs, durationMs);
+
+      var qd = window.TriviaApp.gameState.currentQuestionData;
+      if (qd) {
+        qd.serverTimestamp = serverTimestamp;
+        qd.durationMs = durationMs;
+      }
+
+      window.TriviaSound.play('extend');
+
+      // "+10s" pops off the timer ring
+      var container = document.getElementById('timerContainer');
+      if (container && !window.TriviaMotion.reduced()) {
+        var float = document.createElement('span');
+        float.className = 'extend-float';
+        float.textContent = t('host.extended_toast');
+        container.appendChild(float);
+        setTimeout(function () {
+          if (float.parentNode) float.parentNode.removeChild(float);
+        }, 1400);
+      }
+    },
+
+    _setPauseButton: function (paused, t) {
+      var label = document.getElementById('hostPauseLabel');
+      var btn = document.getElementById('hostPauseBtn');
+      if (label) label.textContent = paused ? t('host.resume') : t('host.pause');
+      if (btn) {
+        btn.classList.toggle('active', paused);
+        var icon = btn.querySelector('svg');
+        if (icon) {
+          icon.outerHTML = '<i data-lucide="' + (paused ? 'play' : 'pause') + '"></i>';
+          if (window.lucide) lucide.createIcons();
+        }
+      }
+    },
+
+    /** Paint one static timer frame (used while frozen). */
+    _renderTimerFrame: function (remainingMs) {
+      var circumference = 2 * Math.PI * 40;
+      var progressEl = document.getElementById('timerProgress');
+      var numberEl = document.getElementById('timerNumber');
+      var duration = this.timerBase ? this.timerBase.durationMs
+        : (this.timerSync ? this.timerSync.getDuration() : 20000);
+      var progress = 1 - Math.max(0, Math.min(1, remainingMs / duration));
+      if (progressEl) progressEl.setAttribute('stroke-dashoffset', circumference * progress);
+      if (numberEl) numberEl.textContent = Math.ceil(remainingMs / 1000);
     },
 
     _startTimer: function (durationMs) {
@@ -393,7 +612,7 @@
       var vignette = document.getElementById('dangerVignette');
 
       function tick() {
-        if (!self.timerSync) return;
+        if (!self.timerSync || self.isPausedLocal) return;
 
         var remaining = self.timerSync.getRemaining();
         var progress = self.timerSync.getProgress();
@@ -410,9 +629,17 @@
         if (vignette) vignette.classList.toggle('on', inDanger);
 
         var second = Math.ceil(remaining / 1000);
-        if (inDanger && second !== self.lastTickSecond && !self.hasAnswered) {
+        if (second !== self.lastTickSecond) {
           self.lastTickSecond = second;
-          window.TriviaSound.play('lastSeconds');
+          if (inDanger) {
+            // Heartbeat: sound and scale-punch land on the same frame
+            if (!self.hasAnswered) window.TriviaSound.play('lastSeconds');
+            if (numberEl && !window.TriviaMotion.reduced()) {
+              numberEl.classList.remove('beat');
+              void numberEl.offsetWidth; // restart the one-shot animation
+              numberEl.classList.add('beat');
+            }
+          }
         }
 
         if (numberEl) numberEl.textContent = second;
@@ -428,22 +655,29 @@
     },
 
     _onOptionClick: function (index) {
-      if (this.hasAnswered || this.isSpectator) return;
+      if (this.hasAnswered || this.isSpectator || this.isPausedLocal) return;
       this.hasAnswered = true;
 
+      var t = window.TriviaI18n.t.bind(window.TriviaI18n);
       window.TriviaSound.play('select');
-      window.TriviaUtils.vibrate(18);
+      window.TriviaUtils.vibrate([16, 40, 24]);
 
       this._disableAllPowerups();
 
       document.querySelectorAll('#optionsGrid [data-index]').forEach(function (btn) {
         var btnIndex = parseInt(btn.getAttribute('data-index'), 10);
-        if (btnIndex === index) btn.classList.add('selected');
+        if (btnIndex === index) {
+          btn.classList.add('selected', 'locked');
+          var stamp = document.createElement('span');
+          stamp.className = 'lock-stamp';
+          stamp.innerHTML = '<i data-lucide="check"></i>' + t('game.locked');
+          btn.appendChild(stamp);
+        }
         btn.classList.add('disabled');
       });
+      if (window.lucide) lucide.createIcons();
 
-      var waiting = document.getElementById('waitingIndicator');
-      if (waiting) waiting.style.display = '';
+      this._showLockedWaiting(t);
 
       window.TriviaSocket.emit('submit_answer', { optionIndex: index });
     },
@@ -521,10 +755,17 @@
       if (countEl) countEl.style.visibility = 'visible';
       if (numEl) numEl.textContent = answered;
       if (totalEl) totalEl.textContent = total;
+
+      var wc = document.getElementById('waitCount');
+      if (wc) wc.textContent = answered + '/' + total;
     },
 
     destroy: function () {
       window.TriviaSocket.off('powerup_result');
+      window.TriviaSocket.off('question_paused');
+      window.TriviaSocket.off('question_resumed');
+      window.TriviaSocket.off('timer_adjusted');
+      window.TriviaSocket.off('question_replaced');
       window.TriviaSound.stopSpeaking();
       if (this.timerRAF) {
         cancelAnimationFrame(this.timerRAF);
@@ -535,9 +776,13 @@
       var modal = document.getElementById('targetModal');
       if (modal && modal.parentNode) modal.parentNode.removeChild(modal);
       this.timerSync = null;
+      this.timerBase = null;
       this.hasAnswered = false;
       this.isSpectator = false;
       this.lastTickSecond = null;
+      this.isPausedLocal = false;
+      this.pausedRemainingMs = 0;
+      this.freezeOffsetMs = 0;
     }
   };
 })();

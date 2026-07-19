@@ -61,6 +61,11 @@ class GameRoom {
     this.leaderboardTimer = null;
     this.startingTimer = null;
 
+    // ── Live host controls (pause / +10s / skip / replace) ─────
+    this.questionDurationMs = this.settings.timerDuration; // effective duration incl. extensions
+    this.isPaused = false;
+    this.pausedRemainingMs = 0;
+
     // ── Special rounds (تحدي الثلاثين-inspired) ────────────────
     this.bellIndex = -1;             // index of the bell round question (-1 = none)
     this.currentSpecial = null;      // null | 'golden' | 'bell' | 'tiebreaker'
@@ -570,6 +575,9 @@ class GameRoom {
     this.currentPowerups = new Map();
     this.currentItems = new Map();
     this.questionStartTime = Date.now();
+    this.questionDurationMs = this.settings.timerDuration;
+    this.isPaused = false;
+    this.pausedRemainingMs = 0;
     this.state = 'QUESTION_ACTIVE';
 
     // Broadcast question (WITHOUT the correct answer!)
@@ -583,7 +591,7 @@ class GameRoom {
       options: shuffledOptions,
       unit: this.currentQuestion.unit,
       serverTimestamp: this.questionStartTime,
-      durationMs: this.settings.timerDuration,
+      durationMs: this.questionDurationMs,
       special: this.currentSpecial,
       eligibleIds: this.tiebreaker ? this.tiebreaker.eligibleIds : null,
       mode: this.settings.gameMode,
@@ -593,7 +601,7 @@ class GameRoom {
     // Start server-side timer
     this.questionTimer = setTimeout(() => {
       this.endQuestion();
-    }, this.settings.timerDuration);
+    }, this.questionDurationMs);
 
     this.lastActivity = Date.now();
   }
@@ -609,8 +617,8 @@ class GameRoom {
   }
 
   submitAnswer(playerId, answer) {
-    // Validate state
-    if (this.state !== 'QUESTION_ACTIVE') return;
+    // Validate state (a paused question accepts nothing)
+    if (this.state !== 'QUESTION_ACTIVE' || this.isPaused) return;
 
     const player = this.players.get(playerId);
     if (!player || !this._isActiveContestant(player)) return;
@@ -667,6 +675,8 @@ class GameRoom {
   }
 
   checkAllAnswered() {
+    if (this.isPaused) return; // resume re-checks — never end a frozen question
+
     const eligible = this._getAnswerEligiblePlayers();
     const allAnswered = eligible.length > 0 && eligible.every(p => this.currentAnswers.has(p.id));
 
@@ -678,7 +688,7 @@ class GameRoom {
   }
 
   usePowerup(playerId, type, targetId, socket) {
-    if (this.state !== 'QUESTION_ACTIVE') return;
+    if (this.state !== 'QUESTION_ACTIVE' || this.isPaused) return;
 
     // No power-ups in the decider duel — pure skill
     if (this.tiebreaker) return;
@@ -770,7 +780,7 @@ class GameRoom {
   // ──────────────────────────────────────────────────────────────
 
   useItem(playerId, type, targetId, socket) {
-    if (this.state !== 'QUESTION_ACTIVE') return;
+    if (this.state !== 'QUESTION_ACTIVE' || this.isPaused) return;
     if (this.tiebreaker) return;
 
     const player = this.players.get(playerId);
@@ -922,7 +932,7 @@ class GameRoom {
     clearTimeout(this.questionTimer);
     this.state = 'REVEAL';
 
-    const totalTime = this.settings.timerDuration;
+    const totalTime = this.questionDurationMs;
     const chaser = this.players.get(this.chaserId) || null;
     const homeStep = this.chaseHomeStep;
     const playerResults = [];
@@ -1047,7 +1057,7 @@ class GameRoom {
     this.state = 'REVEAL';
 
     const answer = this.currentQuestion.answerValue;
-    const totalTime = this.settings.timerDuration;
+    const totalTime = this.questionDurationMs;
 
     const entries = [];
     for (const [pid, a] of this.currentAnswers) {
@@ -1180,7 +1190,7 @@ class GameRoom {
     clearTimeout(this.questionTimer);
     this.state = 'REVEAL';
 
-    const totalTime = this.settings.timerDuration;
+    const totalTime = this.questionDurationMs;
     const difficulty = this.questions[this.currentQuestionIndex].difficulty;
 
     // Sort correct answers by time (fastest first) for ranking
@@ -1583,6 +1593,157 @@ class GameRoom {
   }
 
   // ──────────────────────────────────────────────────────────────
+  //  Live host controls — pause / resume / +10s / skip / replace
+  //  All of them are host-only and only touch a running question.
+  // ──────────────────────────────────────────────────────────────
+
+  _canHostControl(requesterId) {
+    return requesterId === this.hostId && this.state === 'QUESTION_ACTIVE';
+  }
+
+  pauseQuestion(requesterId) {
+    if (!this._canHostControl(requesterId) || this.isPaused) return;
+
+    clearTimeout(this.questionTimer);
+    this.isPaused = true;
+    this.pausedRemainingMs = Math.max(0,
+      (this.questionStartTime + this.questionDurationMs) - Date.now());
+
+    this.io.to(this.code).emit('question_paused', {
+      remainingMs: this.pausedRemainingMs,
+    });
+    this.lastActivity = Date.now();
+  }
+
+  resumeQuestion(requesterId) {
+    if (!this._canHostControl(requesterId) || !this.isPaused) return;
+
+    // Shift the reference clock so paused time counts against nobody:
+    // scoring reads (timestamp − questionStartTime), so the start time and
+    // every already-recorded answer move forward by the pause length.
+    const newStart = Date.now() - (this.questionDurationMs - this.pausedRemainingMs);
+    const shift = newStart - this.questionStartTime;
+    this.questionStartTime = newStart;
+    for (const a of this.currentAnswers.values()) a.timestamp += shift;
+
+    this.isPaused = false;
+    const remaining = Math.max(250, this.pausedRemainingMs);
+    this.pausedRemainingMs = 0;
+    this.questionTimer = setTimeout(() => {
+      this.endQuestion();
+    }, remaining);
+
+    this.io.to(this.code).emit('question_resumed', {
+      serverTimestamp: this.questionStartTime,
+      durationMs: this.questionDurationMs,
+    });
+
+    // Everyone may have answered while the room sat frozen (disconnects)
+    this.checkAllAnswered();
+    this.lastActivity = Date.now();
+  }
+
+  extendQuestion(requesterId) {
+    if (!this._canHostControl(requesterId)) return;
+    if (this.questionDurationMs - this.settings.timerDuration >= 60000) return; // sanity cap
+
+    this.questionDurationMs += 10000;
+
+    if (this.isPaused) {
+      this.pausedRemainingMs += 10000;
+      this.io.to(this.code).emit('question_paused', {
+        remainingMs: this.pausedRemainingMs,
+      });
+    } else {
+      clearTimeout(this.questionTimer);
+      const remaining = Math.max(250,
+        (this.questionStartTime + this.questionDurationMs) - Date.now());
+      this.questionTimer = setTimeout(() => {
+        this.endQuestion();
+      }, remaining);
+
+      this.io.to(this.code).emit('timer_adjusted', {
+        serverTimestamp: this.questionStartTime,
+        durationMs: this.questionDurationMs,
+        addedMs: 10000,
+      });
+    }
+    this.lastActivity = Date.now();
+  }
+
+  skipQuestion(requesterId) {
+    if (!this._canHostControl(requesterId)) return;
+
+    clearTimeout(this.questionTimer);
+    if (this.isPaused) {
+      this.isPaused = false;
+      this.pausedRemainingMs = 0;
+    }
+    this.endQuestion();
+    this.lastActivity = Date.now();
+  }
+
+  /** Swap the running question for a fresh one; refunds burned power-ups. */
+  replaceQuestion(requesterId) {
+    if (!this._canHostControl(requesterId)) return;
+    if (this.tiebreaker) return; // the duel draws its own questions
+
+    const current = this.questions[this.currentQuestionIndex];
+    const isGuess = current.type === 'guess';
+
+    // Fresh unused question of the same kind, preferring the same difficulty
+    const used = new Set([...this.questions, ...this._usedTiebreakerQs]);
+    let pool = allQuestions.filter(q => !used.has(q) &&
+      (isGuess
+        ? q.type === 'guess'
+        : q.type !== 'guess' && this.settings.categories.includes(q.category)));
+    const sameDiff = pool.filter(q => q.difficulty === current.difficulty);
+    if (sameDiff.length > 0) pool = sameDiff;
+
+    if (pool.length === 0) {
+      const hostSocket = this.findSocket(requesterId);
+      if (hostSocket) hostSocket.emit('error', { message: 'no_replacement_available' });
+      return;
+    }
+
+    // Refund anything burned on the discarded question
+    for (const [pid, pu] of this.currentPowerups) {
+      const p = this.players.get(pid);
+      if (!p) continue;
+      p.powerups[pu.type] = 1;
+      p.powerupsUsedCount = Math.max(0, p.powerupsUsedCount - 1);
+      this.io.to(this.code).emit('player_updated', { player: p.toPublic() });
+    }
+    for (const [pid, it] of this.currentItems) {
+      const p = this.players.get(pid);
+      if (!p) continue;
+      if (it.type === 'sprint') {
+        p.sprintUsed = false;
+      } else if (p.items[it.type] !== undefined) {
+        p.items[it.type] += 1;
+        if (it.type === 'shield') p.shielded = false;
+      }
+      this.io.to(this.code).emit('player_updated', { player: p.toPublic() });
+    }
+
+    const q = pool[Math.floor(Math.random() * pool.length)];
+    this.questions[this.currentQuestionIndex] = q;
+
+    clearTimeout(this.questionTimer);
+    this.isPaused = false;
+    this.pausedRemainingMs = 0;
+
+    this.io.to(this.code).emit('question_replaced', {
+      questionIndex: this.currentQuestionIndex,
+    });
+    this._launchQuestion(q, {
+      special: this.currentSpecial,
+      questionIndex: this.currentQuestionIndex,
+      totalQuestions: this.questions.length,
+    });
+  }
+
+  // ──────────────────────────────────────────────────────────────
   //  Game end
   // ──────────────────────────────────────────────────────────────
 
@@ -1763,7 +1924,7 @@ class GameRoom {
         pointsEarned: 0,
         newScore: p.score,
         streak: p.streak,
-        answerTimeMs: ans ? ans.timestamp - this.questionStartTime : this.settings.timerDuration,
+        answerTimeMs: ans ? ans.timestamp - this.questionStartTime : this.questionDurationMs,
         powerupUsed: null,
       });
     }
@@ -2022,6 +2183,8 @@ class GameRoom {
     this.homeCount = 0;
     this.caughtCount = 0;
     this.chaserWon = false;
+    this.isPaused = false;
+    this.pausedRemainingMs = 0;
 
     // Reset all player scores
     for (const player of this.players.values()) {
@@ -2068,7 +2231,9 @@ class GameRoom {
         options: this.currentQuestion.options,
         unit: this.currentQuestion.unit,
         serverTimestamp: this.questionStartTime,
-        durationMs: this.settings.timerDuration,
+        durationMs: this.questionDurationMs,
+        paused: this.isPaused,
+        pausedRemainingMs: this.pausedRemainingMs,
         answeredCount: this.currentAnswers.size,
         special: this.currentSpecial,
         eligibleIds: this.tiebreaker ? this.tiebreaker.eligibleIds : null,

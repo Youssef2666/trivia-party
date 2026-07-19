@@ -221,11 +221,25 @@
       window.TriviaSound.play('drumroll');
       setTimeout(function () {
         window.TriviaSound.play('fanfare');
-        var container = document.getElementById('confettiContainer');
-        if (container) {
-          window.TriviaUtils.createConfetti(container);
+        // Physics confetti shower, landing on the fanfare downbeat
+        if (window.TriviaConfetti) {
+          window.TriviaConfetti.celebrate();
+        } else {
+          var container = document.getElementById('confettiContainer');
+          if (container) window.TriviaUtils.createConfetti(container);
         }
       }, 1100);
+
+      // Podium scores count up while the drumroll builds
+      var podiumScores = document.querySelectorAll('.podium-score');
+      podiumScores.forEach(function (el, i) {
+        var target = parseInt(el.textContent, 10);
+        if (!isFinite(target) || target <= 0) return;
+        el.textContent = '0';
+        setTimeout(function () {
+          window.TriviaMotion.countUp(el, 0, target, { duration: 1000 });
+        }, 250 + i * 150);
+      });
 
       var rematchBtn = document.getElementById('rematchBtn');
       if (rematchBtn) {

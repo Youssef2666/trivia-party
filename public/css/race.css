@@ -311,6 +311,20 @@
   filter: drop-shadow(0 8px 9px rgba(0, 0, 0, 0.5));
 }
 
+/* Ground contact shadow — anchors the car to the tarmac */
+.gp-car-inner::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 82%;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.55) 0%, transparent 70%);
+  z-index: -2;
+}
+
 @keyframes gp-sway {
   0%, 100% { transform: translateX(0) rotate(0deg); }
   30% { transform: translateX(-2px) rotate(-0.8deg); }
@@ -338,6 +352,18 @@
 /* Hidden effect layers */
 .gp-car .car-flames,
 .gp-car .car-speedlines { opacity: 0; transition: opacity 160ms ease; }
+
+/* Driving state (while gliding to a new position): exhaust speed-lines
+   stream + a subtle nose-down pitch, so the glide reads as acceleration */
+.gp-car.moving .car-speedlines {
+  opacity: 1;
+  animation: gp-lines 240ms linear infinite;
+}
+
+.gp-car.moving .t-car {
+  animation: gp-pitch 700ms ease-in-out 2 alternate;
+  transform-origin: 50% 100%;
+}
 
 /* Boost: flames + speed lines + lunge */
 .gp-car.boost .car-flames { opacity: 1; animation: gp-flicker 110ms ease-in-out infinite alternate; }
