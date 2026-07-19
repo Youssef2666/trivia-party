@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1">
+  <title>تريفيا بارتي | Trivia Party</title>
+  <meta name="description" content="لعبة تريفيا جماعية مباشرة - تحدى أصدقاءك في أسئلة سريعة!">
+  <meta name="theme-color" content="#0d0b1a">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+
+  <!-- CSS (fully self-hosted — works offline on LAN) -->
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/race.css">
+  <link rel="stylesheet" href="/css/chase.css">
+  <link rel="stylesheet" href="/css/themes.css">
+  <link rel="stylesheet" href="/css/animations.css">
+</head>
+<body>
+  <!-- Animated aurora stage -->
+  <div class="aurora" aria-hidden="true">
+    <div class="aurora-extra"></div>
+    <div class="aurora-dots"></div>
+  </div>
+
+  <!-- Floating controls: language + sound -->
+  <div class="top-controls">
+    <button class="chip-btn" id="soundToggle" aria-label="Sound settings">
+      <i data-lucide="volume-2"></i>
+    </button>
+    <button class="chip-btn" id="langToggle">
+      <span id="langLabel">EN</span>
+    </button>
+  </div>
+
+  <!-- Exit party (visible only while in a room) -->
+  <div class="top-controls-start">
+    <button class="chip-btn leave-chip" id="leavePartyBtn" style="display:none;" aria-label="Leave party">
+      <i data-lucide="log-out"></i>
+    </button>
+  </div>
+
+  <!-- Connection Status -->
+  <div id="connectionBar" class="connection-bar" style="display:none;"></div>
+
+  <!-- Toast Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- Last-seconds red vignette -->
+  <div id="dangerVignette" class="danger-vignette" aria-hidden="true"></div>
+
+  <!-- Floating emoji reactions -->
+  <div id="reactionLayer" class="reaction-layer" aria-hidden="true"></div>
+
+  <!-- Main App Container -->
+  <div id="app"></div>
+
+  <!-- Socket.io (served by server) -->
+  <script src="/socket.io/socket.io.js"></script>
+
+  <!-- App Scripts (order matters: icons/avatars/sound before screens) -->
+  <script src="/js/icons.js"></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/utils.js"></script>
+  <script src="/js/avatars.js"></script>
+  <script src="/js/sound.js"></script>
+  <script src="/js/socket.js"></script>
+  <script src="/js/screens/home.js"></script>
+  <script src="/js/screens/lobby.js"></script>
+  <script src="/js/screens/question.js"></script>
+  <script src="/js/screens/reveal.js"></script>
+  <script src="/js/screens/leaderboard.js"></script>
+  <script src="/js/screens/gameover.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

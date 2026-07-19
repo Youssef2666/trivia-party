@@ -1,0 +1,7064 @@
+[
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "كم لاعباً لكل فريق داخل الملعب في كرة القدم؟",
+   "en": "How many players per team are on the pitch in football?"
+  },
+  "options": [
+   {
+    "ar": "11",
+    "en": "11"
+   },
+   {
+    "ar": "10",
+    "en": "10"
+   },
+   {
+    "ar": "12",
+    "en": "12"
+   },
+   {
+    "ar": "9",
+    "en": "9"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من فاز بكأس العالم 2022؟",
+   "en": "Who won the 2022 FIFA World Cup?"
+  },
+  "options": [
+   {
+    "ar": "الأرجنتين",
+    "en": "Argentina"
+   },
+   {
+    "ar": "فرنسا",
+    "en": "France"
+   },
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "المغرب",
+    "en": "Morocco"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "في أي دولة يلعب نادي ريال مدريد؟",
+   "en": "In which country does Real Madrid play?"
+  },
+  "options": [
+   {
+    "ar": "إسبانيا",
+    "en": "Spain"
+   },
+   {
+    "ar": "إيطاليا",
+    "en": "Italy"
+   },
+   {
+    "ar": "إنجلترا",
+    "en": "England"
+   },
+   {
+    "ar": "البرتغال",
+    "en": "Portugal"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما جنسية ليونيل ميسي؟",
+   "en": "What is Lionel Messi's nationality?"
+  },
+  "options": [
+   {
+    "ar": "أرجنتيني",
+    "en": "Argentine"
+   },
+   {
+    "ar": "برازيلي",
+    "en": "Brazilian"
+   },
+   {
+    "ar": "إسباني",
+    "en": "Spanish"
+   },
+   {
+    "ar": "أوروغوياني",
+    "en": "Uruguayan"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما جنسية كريستيانو رونالدو؟",
+   "en": "What is Cristiano Ronaldo's nationality?"
+  },
+  "options": [
+   {
+    "ar": "برتغالي",
+    "en": "Portuguese"
+   },
+   {
+    "ar": "إسباني",
+    "en": "Spanish"
+   },
+   {
+    "ar": "برازيلي",
+    "en": "Brazilian"
+   },
+   {
+    "ar": "إيطالي",
+    "en": "Italian"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "كم دقيقة يستمر الوقت الأصلي لمباراة كرة القدم؟",
+   "en": "How many minutes is regulation time in a football match?"
+  },
+  "options": [
+   {
+    "ar": "90",
+    "en": "90"
+   },
+   {
+    "ar": "80",
+    "en": "80"
+   },
+   {
+    "ar": "100",
+    "en": "100"
+   },
+   {
+    "ar": "120",
+    "en": "120"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "كم مرة فازت البرازيل بكأس العالم؟",
+   "en": "How many World Cups has Brazil won?"
+  },
+  "options": [
+   {
+    "ar": "5",
+    "en": "5"
+   },
+   {
+    "ar": "4",
+    "en": "4"
+   },
+   {
+    "ar": "3",
+    "en": "3"
+   },
+   {
+    "ar": "6",
+    "en": "6"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما جنسية محمد صلاح؟",
+   "en": "What is Mohamed Salah's nationality?"
+  },
+  "options": [
+   {
+    "ar": "مصري",
+    "en": "Egyptian"
+   },
+   {
+    "ar": "مغربي",
+    "en": "Moroccan"
+   },
+   {
+    "ar": "جزائري",
+    "en": "Algerian"
+   },
+   {
+    "ar": "سعودي",
+    "en": "Saudi"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما لون البطاقة التي تعني طرد اللاعب؟",
+   "en": "Which card color means a player is sent off?"
+  },
+  "options": [
+   {
+    "ar": "الأحمر",
+    "en": "Red"
+   },
+   {
+    "ar": "الأصفر",
+    "en": "Yellow"
+   },
+   {
+    "ar": "الأخضر",
+    "en": "Green"
+   },
+   {
+    "ar": "الأزرق",
+    "en": "Blue"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "أي نادٍ يلعب على ملعب كامب نو؟",
+   "en": "Which club plays at Camp Nou?"
+  },
+  "options": [
+   {
+    "ar": "برشلونة",
+    "en": "Barcelona"
+   },
+   {
+    "ar": "ريال مدريد",
+    "en": "Real Madrid"
+   },
+   {
+    "ar": "أتلتيكو مدريد",
+    "en": "Atlético Madrid"
+   },
+   {
+    "ar": "إشبيلية",
+    "en": "Sevilla"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "أي منتخب يُلقب بالفراعنة؟",
+   "en": "Which national team is nicknamed The Pharaohs?"
+  },
+  "options": [
+   {
+    "ar": "مصر",
+    "en": "Egypt"
+   },
+   {
+    "ar": "تونس",
+    "en": "Tunisia"
+   },
+   {
+    "ar": "العراق",
+    "en": "Iraq"
+   },
+   {
+    "ar": "السودان",
+    "en": "Sudan"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما الرقم الذي يرتديه حارس المرمى تقليدياً؟",
+   "en": "Which number does the goalkeeper traditionally wear?"
+  },
+  "options": [
+   {
+    "ar": "1",
+    "en": "1"
+   },
+   {
+    "ar": "10",
+    "en": "10"
+   },
+   {
+    "ar": "7",
+    "en": "7"
+   },
+   {
+    "ar": "5",
+    "en": "5"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "كم لقباً حقق ريال مدريد في دوري أبطال أوروبا حتى 2024؟",
+   "en": "How many Champions League titles had Real Madrid won by 2024?"
+  },
+  "options": [
+   {
+    "ar": "15",
+    "en": "15"
+   },
+   {
+    "ar": "13",
+    "en": "13"
+   },
+   {
+    "ar": "12",
+    "en": "12"
+   },
+   {
+    "ar": "10",
+    "en": "10"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما أول دولة عربية استضافت كأس العالم؟",
+   "en": "What was the first Arab country to host the World Cup?"
+  },
+  "options": [
+   {
+    "ar": "قطر",
+    "en": "Qatar"
+   },
+   {
+    "ar": "السعودية",
+    "en": "Saudi Arabia"
+   },
+   {
+    "ar": "المغرب",
+    "en": "Morocco"
+   },
+   {
+    "ar": "الإمارات",
+    "en": "UAE"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من أول منتخب عربي وأفريقي يبلغ نصف نهائي كأس العالم؟",
+   "en": "Which was the first Arab and African team to reach a World Cup semi-final?"
+  },
+  "options": [
+   {
+    "ar": "المغرب",
+    "en": "Morocco"
+   },
+   {
+    "ar": "مصر",
+    "en": "Egypt"
+   },
+   {
+    "ar": "السنغال",
+    "en": "Senegal"
+   },
+   {
+    "ar": "الجزائر",
+    "en": "Algeria"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من كان هداف كأس العالم 2022؟",
+   "en": "Who was the top scorer of the 2022 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "كيليان مبابي",
+    "en": "Kylian Mbappé"
+   },
+   {
+    "ar": "ليونيل ميسي",
+    "en": "Lionel Messi"
+   },
+   {
+    "ar": "هاري كين",
+    "en": "Harry Kane"
+   },
+   {
+    "ar": "أوليفييه جيرو",
+    "en": "Olivier Giroud"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما النادي الأفريقي الأكثر تتويجاً بدوري أبطال أفريقيا؟",
+   "en": "Which African club has won the most CAF Champions League titles?"
+  },
+  "options": [
+   {
+    "ar": "الأهلي المصري",
+    "en": "Al Ahly of Egypt"
+   },
+   {
+    "ar": "الترجي التونسي",
+    "en": "Espérance of Tunisia"
+   },
+   {
+    "ar": "الرجاء المغربي",
+    "en": "Raja Casablanca"
+   },
+   {
+    "ar": "صن داونز",
+    "en": "Mamelodi Sundowns"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز ببطولة أفريقيا للاعبين المحليين (الشان) 2014؟",
+   "en": "Who won the 2014 African Nations Championship (CHAN)?"
+  },
+  "options": [
+   {
+    "ar": "ليبيا",
+    "en": "Libya"
+   },
+   {
+    "ar": "غانا",
+    "en": "Ghana"
+   },
+   {
+    "ar": "نيجيريا",
+    "en": "Nigeria"
+   },
+   {
+    "ar": "المغرب",
+    "en": "Morocco"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "كم مرة فاز بيليه بكأس العالم؟",
+   "en": "How many World Cups did Pelé win?"
+  },
+  "options": [
+   {
+    "ar": "3",
+    "en": "3"
+   },
+   {
+    "ar": "2",
+    "en": "2"
+   },
+   {
+    "ar": "4",
+    "en": "4"
+   },
+   {
+    "ar": "1",
+    "en": "1"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "في أي مونديال سجل مارادونا هدف يد الله الشهير؟",
+   "en": "In which World Cup did Maradona score the famous Hand of God goal?"
+  },
+  "options": [
+   {
+    "ar": "1986",
+    "en": "1986"
+   },
+   {
+    "ar": "1982",
+    "en": "1982"
+   },
+   {
+    "ar": "1990",
+    "en": "1990"
+   },
+   {
+    "ar": "1994",
+    "en": "1994"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ملعب أولد ترافورد هو معقل أي نادٍ؟",
+   "en": "Old Trafford is the home of which club?"
+  },
+  "options": [
+   {
+    "ar": "مانشستر يونايتد",
+    "en": "Manchester United"
+   },
+   {
+    "ar": "مانشستر سيتي",
+    "en": "Manchester City"
+   },
+   {
+    "ar": "ليفربول",
+    "en": "Liverpool"
+   },
+   {
+    "ar": "أرسنال",
+    "en": "Arsenal"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما النادي الآسيوي الأكثر تتويجاً بدوري أبطال آسيا؟",
+   "en": "Which Asian club has won the most AFC Champions League titles?"
+  },
+  "options": [
+   {
+    "ar": "الهلال السعودي",
+    "en": "Al Hilal of Saudi Arabia"
+   },
+   {
+    "ar": "النصر السعودي",
+    "en": "Al Nassr"
+   },
+   {
+    "ar": "أوراوا الياباني",
+    "en": "Urawa Red Diamonds"
+   },
+   {
+    "ar": "بوهانغ الكوري",
+    "en": "Pohang Steelers"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "بماذا يُلقب منتخب المغرب؟",
+   "en": "What is the nickname of Morocco's national team?"
+  },
+  "options": [
+   {
+    "ar": "أسود الأطلس",
+    "en": "Atlas Lions"
+   },
+   {
+    "ar": "نسور قرطاج",
+    "en": "Carthage Eagles"
+   },
+   {
+    "ar": "محاربو الصحراء",
+    "en": "Desert Warriors"
+   },
+   {
+    "ar": "أسود التيرانغا",
+    "en": "Lions of Teranga"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "بماذا يُلقب منتخب ليبيا؟",
+   "en": "What is the nickname of Libya's national team?"
+  },
+  "options": [
+   {
+    "ar": "فرسان المتوسط",
+    "en": "Mediterranean Knights"
+   },
+   {
+    "ar": "صقور الصحراء",
+    "en": "Desert Falcons"
+   },
+   {
+    "ar": "النجوم الخضر",
+    "en": "Green Stars"
+   },
+   {
+    "ar": "أبطال أفريقيا",
+    "en": "Champions of Africa"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "في نهائي مونديال 2006، من طُرد بعد ضربة رأس شهيرة؟",
+   "en": "Who was sent off for a famous headbutt in the 2006 World Cup final?"
+  },
+  "options": [
+   {
+    "ar": "زين الدين زيدان",
+    "en": "Zinedine Zidane"
+   },
+   {
+    "ar": "تييري هنري",
+    "en": "Thierry Henry"
+   },
+   {
+    "ar": "ماركو ماتيراتزي",
+    "en": "Marco Materazzi"
+   },
+   {
+    "ar": "فابيو كانافارو",
+    "en": "Fabio Cannavaro"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "بماذا يُلقب منتخب الجزائر؟",
+   "en": "What is the nickname of Algeria's national team?"
+  },
+  "options": [
+   {
+    "ar": "محاربو الصحراء",
+    "en": "Desert Warriors"
+   },
+   {
+    "ar": "أسود الأطلس",
+    "en": "Atlas Lions"
+   },
+   {
+    "ar": "الفراعنة",
+    "en": "The Pharaohs"
+   },
+   {
+    "ar": "نسور قرطاج",
+    "en": "Carthage Eagles"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "أين أقيمت أول بطولة لكأس العالم عام 1930؟",
+   "en": "Where was the first World Cup held in 1930?"
+  },
+  "options": [
+   {
+    "ar": "الأوروغواي",
+    "en": "Uruguay"
+   },
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "إيطاليا",
+    "en": "Italy"
+   },
+   {
+    "ar": "الأرجنتين",
+    "en": "Argentina"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "أي دولة استضافت كأس أمم أفريقيا 1982 ووصلت إلى النهائي؟",
+   "en": "Which country hosted the 1982 Africa Cup of Nations and reached the final?"
+  },
+  "options": [
+   {
+    "ar": "ليبيا",
+    "en": "Libya"
+   },
+   {
+    "ar": "الجزائر",
+    "en": "Algeria"
+   },
+   {
+    "ar": "مصر",
+    "en": "Egypt"
+   },
+   {
+    "ar": "نيجيريا",
+    "en": "Nigeria"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "من هو الهداف التاريخي لنهائيات كأس العالم؟",
+   "en": "Who is the all-time top scorer in World Cup finals?"
+  },
+  "options": [
+   {
+    "ar": "ميروسلاف كلوزه",
+    "en": "Miroslav Klose"
+   },
+   {
+    "ar": "رونالدو البرازيلي",
+    "en": "Ronaldo Nazário"
+   },
+   {
+    "ar": "جيرد مولر",
+    "en": "Gerd Müller"
+   },
+   {
+    "ar": "ليونيل ميسي",
+    "en": "Lionel Messi"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "من سجل أسرع هدف في تاريخ المونديال (10.8 ثانية)؟",
+   "en": "Who scored the fastest World Cup goal ever (10.8 seconds)?"
+  },
+  "options": [
+   {
+    "ar": "هاكان شوكور",
+    "en": "Hakan Şükür"
+   },
+   {
+    "ar": "كلينت ديمبسي",
+    "en": "Clint Dempsey"
+   },
+   {
+    "ar": "دافيد فيا",
+    "en": "David Villa"
+   },
+   {
+    "ar": "روبين",
+    "en": "Arjen Robben"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "من هو الهداف التاريخي للمباريات الدولية بين المنتخبات؟",
+   "en": "Who is the all-time top scorer in men's international football?"
+  },
+  "options": [
+   {
+    "ar": "كريستيانو رونالدو",
+    "en": "Cristiano Ronaldo"
+   },
+   {
+    "ar": "ليونيل ميسي",
+    "en": "Lionel Messi"
+   },
+   {
+    "ar": "علي دائي",
+    "en": "Ali Daei"
+   },
+   {
+    "ar": "بيليه",
+    "en": "Pelé"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "كم كرة ذهبية حصدها ميسي حتى نهاية 2023؟",
+   "en": "How many Ballon d'Or awards had Messi won by the end of 2023?"
+  },
+  "options": [
+   {
+    "ar": "8",
+    "en": "8"
+   },
+   {
+    "ar": "7",
+    "en": "7"
+   },
+   {
+    "ar": "6",
+    "en": "6"
+   },
+   {
+    "ar": "9",
+    "en": "9"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "من هو الهداف التاريخي للدوري الإنجليزي الممتاز؟",
+   "en": "Who is the Premier League's all-time top scorer?"
+  },
+  "options": [
+   {
+    "ar": "آلان شيرر",
+    "en": "Alan Shearer"
+   },
+   {
+    "ar": "واين روني",
+    "en": "Wayne Rooney"
+   },
+   {
+    "ar": "هاري كين",
+    "en": "Harry Kane"
+   },
+   {
+    "ar": "تييري هنري",
+    "en": "Thierry Henry"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "ما أول منتخب أفريقي يبلغ ربع نهائي كأس العالم (1990)؟",
+   "en": "Which was the first African team to reach a World Cup quarter-final (1990)?"
+  },
+  "options": [
+   {
+    "ar": "الكاميرون",
+    "en": "Cameroon"
+   },
+   {
+    "ar": "نيجيريا",
+    "en": "Nigeria"
+   },
+   {
+    "ar": "المغرب",
+    "en": "Morocco"
+   },
+   {
+    "ar": "السنغال",
+    "en": "Senegal"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "ما أول نسخة لكأس العالم تقام باستضافة مشتركة بين دولتين؟",
+   "en": "Which was the first World Cup co-hosted by two countries?"
+  },
+  "options": [
+   {
+    "ar": "2002 كوريا واليابان",
+    "en": "2002 Korea/Japan"
+   },
+   {
+    "ar": "1994 أمريكا",
+    "en": "1994 USA"
+   },
+   {
+    "ar": "2006 ألمانيا",
+    "en": "2006 Germany"
+   },
+   {
+    "ar": "1998 فرنسا",
+    "en": "1998 France"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "بماذا يُلقب منتخب تونس؟",
+   "en": "What is the nickname of Tunisia's national team?"
+  },
+  "options": [
+   {
+    "ar": "نسور قرطاج",
+    "en": "Carthage Eagles"
+   },
+   {
+    "ar": "أسود الأطلس",
+    "en": "Atlas Lions"
+   },
+   {
+    "ar": "محاربو الصحراء",
+    "en": "Desert Warriors"
+   },
+   {
+    "ar": "العنابي",
+    "en": "The Maroons"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "من فاز بكأس العالم 1930؟",
+   "en": "Who won the 1930 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "الأوروغواي",
+    "en": "Uruguay"
+   },
+   {
+    "ar": "الأرجنتين",
+    "en": "Argentina"
+   },
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "إيطاليا",
+    "en": "Italy"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "من فاز بكأس العالم 1934؟",
+   "en": "Who won the 1934 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "إيطاليا",
+    "en": "Italy"
+   },
+   {
+    "ar": "تشيكوسلوفاكيا",
+    "en": "Czechoslovakia"
+   },
+   {
+    "ar": "ألمانيا",
+    "en": "Germany"
+   },
+   {
+    "ar": "إسبانيا",
+    "en": "Spain"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "من فاز بكأس العالم 1950؟",
+   "en": "Who won the 1950 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "الأوروغواي",
+    "en": "Uruguay"
+   },
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "السويد",
+    "en": "Sweden"
+   },
+   {
+    "ar": "إسبانيا",
+    "en": "Spain"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "من فاز بكأس العالم 1954؟",
+   "en": "Who won the 1954 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "ألمانيا الغربية",
+    "en": "West Germany"
+   },
+   {
+    "ar": "المجر",
+    "en": "Hungary"
+   },
+   {
+    "ar": "النمسا",
+    "en": "Austria"
+   },
+   {
+    "ar": "الأوروغواي",
+    "en": "Uruguay"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بكأس العالم 1958؟",
+   "en": "Who won the 1958 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "السويد",
+    "en": "Sweden"
+   },
+   {
+    "ar": "فرنسا",
+    "en": "France"
+   },
+   {
+    "ar": "ألمانيا الغربية",
+    "en": "West Germany"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "من فاز بكأس العالم 1962؟",
+   "en": "Who won the 1962 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "تشيكوسلوفاكيا",
+    "en": "Czechoslovakia"
+   },
+   {
+    "ar": "تشيلي",
+    "en": "Chile"
+   },
+   {
+    "ar": "الأوروغواي",
+    "en": "Uruguay"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بكأس العالم 1966؟",
+   "en": "Who won the 1966 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "إنجلترا",
+    "en": "England"
+   },
+   {
+    "ar": "ألمانيا الغربية",
+    "en": "West Germany"
+   },
+   {
+    "ar": "البرتغال",
+    "en": "Portugal"
+   },
+   {
+    "ar": "الاتحاد السوفيتي",
+    "en": "Soviet Union"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بكأس العالم 1970؟",
+   "en": "Who won the 1970 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "إيطاليا",
+    "en": "Italy"
+   },
+   {
+    "ar": "ألمانيا الغربية",
+    "en": "West Germany"
+   },
+   {
+    "ar": "الأوروغواي",
+    "en": "Uruguay"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بكأس العالم 1974؟",
+   "en": "Who won the 1974 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "ألمانيا الغربية",
+    "en": "West Germany"
+   },
+   {
+    "ar": "هولندا",
+    "en": "Netherlands"
+   },
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "بولندا",
+    "en": "Poland"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بكأس العالم 1978؟",
+   "en": "Who won the 1978 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "الأرجنتين",
+    "en": "Argentina"
+   },
+   {
+    "ar": "هولندا",
+    "en": "Netherlands"
+   },
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "إيطاليا",
+    "en": "Italy"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بكأس العالم 1982؟",
+   "en": "Who won the 1982 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "إيطاليا",
+    "en": "Italy"
+   },
+   {
+    "ar": "ألمانيا الغربية",
+    "en": "West Germany"
+   },
+   {
+    "ar": "بولندا",
+    "en": "Poland"
+   },
+   {
+    "ar": "فرنسا",
+    "en": "France"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من فاز بكأس العالم 1986؟",
+   "en": "Who won the 1986 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "الأرجنتين",
+    "en": "Argentina"
+   },
+   {
+    "ar": "ألمانيا الغربية",
+    "en": "West Germany"
+   },
+   {
+    "ar": "فرنسا",
+    "en": "France"
+   },
+   {
+    "ar": "بلجيكا",
+    "en": "Belgium"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بكأس العالم 1990؟",
+   "en": "Who won the 1990 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "ألمانيا الغربية",
+    "en": "West Germany"
+   },
+   {
+    "ar": "الأرجنتين",
+    "en": "Argentina"
+   },
+   {
+    "ar": "إيطاليا",
+    "en": "Italy"
+   },
+   {
+    "ar": "إنجلترا",
+    "en": "England"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بكأس العالم 1994؟",
+   "en": "Who won the 1994 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "إيطاليا",
+    "en": "Italy"
+   },
+   {
+    "ar": "السويد",
+    "en": "Sweden"
+   },
+   {
+    "ar": "بلغاريا",
+    "en": "Bulgaria"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من فاز بكأس العالم 1998؟",
+   "en": "Who won the 1998 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "فرنسا",
+    "en": "France"
+   },
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "كرواتيا",
+    "en": "Croatia"
+   },
+   {
+    "ar": "هولندا",
+    "en": "Netherlands"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من فاز بكأس العالم 2002؟",
+   "en": "Who won the 2002 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "ألمانيا",
+    "en": "Germany"
+   },
+   {
+    "ar": "تركيا",
+    "en": "Turkey"
+   },
+   {
+    "ar": "كوريا الجنوبية",
+    "en": "South Korea"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من فاز بكأس العالم 2006؟",
+   "en": "Who won the 2006 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "إيطاليا",
+    "en": "Italy"
+   },
+   {
+    "ar": "فرنسا",
+    "en": "France"
+   },
+   {
+    "ar": "ألمانيا",
+    "en": "Germany"
+   },
+   {
+    "ar": "البرتغال",
+    "en": "Portugal"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من فاز بكأس العالم 2010؟",
+   "en": "Who won the 2010 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "إسبانيا",
+    "en": "Spain"
+   },
+   {
+    "ar": "هولندا",
+    "en": "Netherlands"
+   },
+   {
+    "ar": "ألمانيا",
+    "en": "Germany"
+   },
+   {
+    "ar": "الأوروغواي",
+    "en": "Uruguay"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من فاز بكأس العالم 2014؟",
+   "en": "Who won the 2014 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "ألمانيا",
+    "en": "Germany"
+   },
+   {
+    "ar": "الأرجنتين",
+    "en": "Argentina"
+   },
+   {
+    "ar": "هولندا",
+    "en": "Netherlands"
+   },
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من فاز بكأس العالم 2018؟",
+   "en": "Who won the 2018 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "فرنسا",
+    "en": "France"
+   },
+   {
+    "ar": "كرواتيا",
+    "en": "Croatia"
+   },
+   {
+    "ar": "بلجيكا",
+    "en": "Belgium"
+   },
+   {
+    "ar": "إنجلترا",
+    "en": "England"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "أي دولة استضافت كأس العالم 1950؟",
+   "en": "Which country hosted the 1950 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "الأوروغواي",
+    "en": "Uruguay"
+   },
+   {
+    "ar": "إيطاليا",
+    "en": "Italy"
+   },
+   {
+    "ar": "الأرجنتين",
+    "en": "Argentina"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "أي دولة استضافت كأس العالم 1966؟",
+   "en": "Which country hosted the 1966 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "إنجلترا",
+    "en": "England"
+   },
+   {
+    "ar": "فرنسا",
+    "en": "France"
+   },
+   {
+    "ar": "ألمانيا الغربية",
+    "en": "West Germany"
+   },
+   {
+    "ar": "إسبانيا",
+    "en": "Spain"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "أي دولة استضافت كأس العالم 1970؟",
+   "en": "Which country hosted the 1970 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "المكسيك",
+    "en": "Mexico"
+   },
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "الأرجنتين",
+    "en": "Argentina"
+   },
+   {
+    "ar": "تشيلي",
+    "en": "Chile"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "أي دولة استضافت كأس العالم 1990؟",
+   "en": "Which country hosted the 1990 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "إيطاليا",
+    "en": "Italy"
+   },
+   {
+    "ar": "إسبانيا",
+    "en": "Spain"
+   },
+   {
+    "ar": "فرنسا",
+    "en": "France"
+   },
+   {
+    "ar": "ألمانيا",
+    "en": "Germany"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "أي دولة استضافت كأس العالم 1994؟",
+   "en": "Which country hosted the 1994 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "الولايات المتحدة",
+    "en": "United States"
+   },
+   {
+    "ar": "المكسيك",
+    "en": "Mexico"
+   },
+   {
+    "ar": "كندا",
+    "en": "Canada"
+   },
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "أي دولة استضافت كأس العالم 1998؟",
+   "en": "Which country hosted the 1998 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "فرنسا",
+    "en": "France"
+   },
+   {
+    "ar": "إنجلترا",
+    "en": "England"
+   },
+   {
+    "ar": "ألمانيا",
+    "en": "Germany"
+   },
+   {
+    "ar": "إيطاليا",
+    "en": "Italy"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "أي دولة استضافت كأس العالم 2010؟",
+   "en": "Which country hosted the 2010 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "جنوب أفريقيا",
+    "en": "South Africa"
+   },
+   {
+    "ar": "المغرب",
+    "en": "Morocco"
+   },
+   {
+    "ar": "مصر",
+    "en": "Egypt"
+   },
+   {
+    "ar": "نيجيريا",
+    "en": "Nigeria"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "أي دولة استضافت كأس العالم 2014؟",
+   "en": "Which country hosted the 2014 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "الأرجنتين",
+    "en": "Argentina"
+   },
+   {
+    "ar": "المكسيك",
+    "en": "Mexico"
+   },
+   {
+    "ar": "تشيلي",
+    "en": "Chile"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "أي دولة استضافت كأس العالم 2018؟",
+   "en": "Which country hosted the 2018 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "روسيا",
+    "en": "Russia"
+   },
+   {
+    "ar": "قطر",
+    "en": "Qatar"
+   },
+   {
+    "ar": "ألمانيا",
+    "en": "Germany"
+   },
+   {
+    "ar": "إنجلترا",
+    "en": "England"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "أي دولة أفريقية كانت أول من استضاف كأس العالم (2010)؟",
+   "en": "Which African country was the first to host a World Cup (2010)?"
+  },
+  "options": [
+   {
+    "ar": "جنوب أفريقيا",
+    "en": "South Africa"
+   },
+   {
+    "ar": "المغرب",
+    "en": "Morocco"
+   },
+   {
+    "ar": "مصر",
+    "en": "Egypt"
+   },
+   {
+    "ar": "الكاميرون",
+    "en": "Cameroon"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "كم دولة تشارك في استضافة كأس العالم 2026؟",
+   "en": "How many countries co-host the 2026 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "3",
+    "en": "3"
+   },
+   {
+    "ar": "2",
+    "en": "2"
+   },
+   {
+    "ar": "1",
+    "en": "1"
+   },
+   {
+    "ar": "4",
+    "en": "4"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما الدول الثلاث المستضيفة لمونديال 2026؟",
+   "en": "Which three countries host the 2026 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "أمريكا وكندا والمكسيك",
+    "en": "USA, Canada & Mexico"
+   },
+   {
+    "ar": "إسبانيا والبرتغال والمغرب",
+    "en": "Spain, Portugal & Morocco"
+   },
+   {
+    "ar": "الأرجنتين والأوروغواي وتشيلي",
+    "en": "Argentina, Uruguay & Chile"
+   },
+   {
+    "ar": "اليابان وكوريا والصين",
+    "en": "Japan, Korea & China"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "أي دولة استضافت كأس العالم مرتين قبل غيرها (1970 و1986)؟",
+   "en": "Which country first hosted two World Cups (1970 & 1986)?"
+  },
+  "options": [
+   {
+    "ar": "المكسيك",
+    "en": "Mexico"
+   },
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "إيطاليا",
+    "en": "Italy"
+   },
+   {
+    "ar": "فرنسا",
+    "en": "France"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "من فاز بالكرة الذهبية عام 1995؟",
+   "en": "Who won the 1995 Ballon d'Or?"
+  },
+  "options": [
+   {
+    "ar": "جورج ويا",
+    "en": "George Weah"
+   },
+   {
+    "ar": "رونالدو",
+    "en": "Ronaldo"
+   },
+   {
+    "ar": "زيدان",
+    "en": "Zidane"
+   },
+   {
+    "ar": "باجيو",
+    "en": "Baggio"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بالكرة الذهبية عام 1997؟",
+   "en": "Who won the 1997 Ballon d'Or?"
+  },
+  "options": [
+   {
+    "ar": "رونالدو (البرازيلي)",
+    "en": "Ronaldo (Brazil)"
+   },
+   {
+    "ar": "زيدان",
+    "en": "Zidane"
+   },
+   {
+    "ar": "روبرتو كارلوس",
+    "en": "Roberto Carlos"
+   },
+   {
+    "ar": "شيرر",
+    "en": "Shearer"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بالكرة الذهبية عام 1998؟",
+   "en": "Who won the 1998 Ballon d'Or?"
+  },
+  "options": [
+   {
+    "ar": "زين الدين زيدان",
+    "en": "Zinedine Zidane"
+   },
+   {
+    "ar": "رونالدو",
+    "en": "Ronaldo"
+   },
+   {
+    "ar": "سوكر",
+    "en": "Šuker"
+   },
+   {
+    "ar": "بيكهام",
+    "en": "Beckham"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "من فاز بالكرة الذهبية عام 2000؟",
+   "en": "Who won the 2000 Ballon d'Or?"
+  },
+  "options": [
+   {
+    "ar": "لويس فيغو",
+    "en": "Luís Figo"
+   },
+   {
+    "ar": "زيدان",
+    "en": "Zidane"
+   },
+   {
+    "ar": "راؤول",
+    "en": "Raúl"
+   },
+   {
+    "ar": "ريفالدو",
+    "en": "Rivaldo"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بالكرة الذهبية عام 2002؟",
+   "en": "Who won the 2002 Ballon d'Or?"
+  },
+  "options": [
+   {
+    "ar": "رونالدو (البرازيلي)",
+    "en": "Ronaldo (Brazil)"
+   },
+   {
+    "ar": "زيدان",
+    "en": "Zidane"
+   },
+   {
+    "ar": "كان",
+    "en": "Kahn"
+   },
+   {
+    "ar": "روبرتو كارلوس",
+    "en": "Roberto Carlos"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بالكرة الذهبية عام 2005؟",
+   "en": "Who won the 2005 Ballon d'Or?"
+  },
+  "options": [
+   {
+    "ar": "رونالدينيو",
+    "en": "Ronaldinho"
+   },
+   {
+    "ar": "لامبارد",
+    "en": "Lampard"
+   },
+   {
+    "ar": "جيرارد",
+    "en": "Gerrard"
+   },
+   {
+    "ar": "إيتو",
+    "en": "Eto'o"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "من فاز بالكرة الذهبية عام 2006؟",
+   "en": "Who won the 2006 Ballon d'Or?"
+  },
+  "options": [
+   {
+    "ar": "فابيو كانافارو",
+    "en": "Fabio Cannavaro"
+   },
+   {
+    "ar": "زيدان",
+    "en": "Zidane"
+   },
+   {
+    "ar": "هنري",
+    "en": "Henry"
+   },
+   {
+    "ar": "بوفون",
+    "en": "Buffon"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بالكرة الذهبية عام 2007؟",
+   "en": "Who won the 2007 Ballon d'Or?"
+  },
+  "options": [
+   {
+    "ar": "كاكا",
+    "en": "Kaká"
+   },
+   {
+    "ar": "ميسي",
+    "en": "Messi"
+   },
+   {
+    "ar": "رونالدو",
+    "en": "C. Ronaldo"
+   },
+   {
+    "ar": "هنري",
+    "en": "Henry"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بالكرة الذهبية عام 2008؟",
+   "en": "Who won the 2008 Ballon d'Or?"
+  },
+  "options": [
+   {
+    "ar": "كريستيانو رونالدو",
+    "en": "Cristiano Ronaldo"
+   },
+   {
+    "ar": "ميسي",
+    "en": "Messi"
+   },
+   {
+    "ar": "توريس",
+    "en": "Torres"
+   },
+   {
+    "ar": "كاكا",
+    "en": "Kaká"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بالكرة الذهبية عام 2009؟",
+   "en": "Who won the 2009 Ballon d'Or?"
+  },
+  "options": [
+   {
+    "ar": "ليونيل ميسي",
+    "en": "Lionel Messi"
+   },
+   {
+    "ar": "رونالدو",
+    "en": "C. Ronaldo"
+   },
+   {
+    "ar": "تشافي",
+    "en": "Xavi"
+   },
+   {
+    "ar": "إنييستا",
+    "en": "Iniesta"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بالكرة الذهبية عام 2018؟",
+   "en": "Who won the 2018 Ballon d'Or?"
+  },
+  "options": [
+   {
+    "ar": "لوكا مودريتش",
+    "en": "Luka Modrić"
+   },
+   {
+    "ar": "رونالدو",
+    "en": "C. Ronaldo"
+   },
+   {
+    "ar": "ميسي",
+    "en": "Messi"
+   },
+   {
+    "ar": "غريزمان",
+    "en": "Griezmann"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بالكرة الذهبية عام 2021؟",
+   "en": "Who won the 2021 Ballon d'Or?"
+  },
+  "options": [
+   {
+    "ar": "ليونيل ميسي",
+    "en": "Lionel Messi"
+   },
+   {
+    "ar": "ليفاندوفسكي",
+    "en": "Lewandowski"
+   },
+   {
+    "ar": "جورجينيو",
+    "en": "Jorginho"
+   },
+   {
+    "ar": "بنزيما",
+    "en": "Benzema"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من فاز بالكرة الذهبية عام 2022؟",
+   "en": "Who won the 2022 Ballon d'Or?"
+  },
+  "options": [
+   {
+    "ar": "كريم بنزيما",
+    "en": "Karim Benzema"
+   },
+   {
+    "ar": "مانيه",
+    "en": "Mané"
+   },
+   {
+    "ar": "دي بروين",
+    "en": "De Bruyne"
+   },
+   {
+    "ar": "ميسي",
+    "en": "Messi"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بالكرة الذهبية عام 2024؟",
+   "en": "Who won the 2024 Ballon d'Or?"
+  },
+  "options": [
+   {
+    "ar": "رودري",
+    "en": "Rodri"
+   },
+   {
+    "ar": "فينيسيوس",
+    "en": "Vinícius"
+   },
+   {
+    "ar": "بيلينغهام",
+    "en": "Bellingham"
+   },
+   {
+    "ar": "مبابي",
+    "en": "Mbappé"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بالكرة الذهبية عام 2025؟",
+   "en": "Who won the 2025 Ballon d'Or?"
+  },
+  "options": [
+   {
+    "ar": "عثمان ديمبيلي",
+    "en": "Ousmane Dembélé"
+   },
+   {
+    "ar": "لامين يامال",
+    "en": "Lamine Yamal"
+   },
+   {
+    "ar": "محمد صلاح",
+    "en": "Mohamed Salah"
+   },
+   {
+    "ar": "رافينيا",
+    "en": "Raphinha"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من هو الأفريقي الوحيد الفائز بالكرة الذهبية؟",
+   "en": "Who is the only African to win the Ballon d'Or?"
+  },
+  "options": [
+   {
+    "ar": "جورج ويا",
+    "en": "George Weah"
+   },
+   {
+    "ar": "محمد صلاح",
+    "en": "Mohamed Salah"
+   },
+   {
+    "ar": "صامويل إيتو",
+    "en": "Samuel Eto'o"
+   },
+   {
+    "ar": "ديدييه دروغبا",
+    "en": "Didier Drogba"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "من هو الحارس الوحيد الفائز بالكرة الذهبية؟",
+   "en": "Who is the only goalkeeper to win the Ballon d'Or?"
+  },
+  "options": [
+   {
+    "ar": "ليف ياشين",
+    "en": "Lev Yashin"
+   },
+   {
+    "ar": "بوفون",
+    "en": "Buffon"
+   },
+   {
+    "ar": "كاسياس",
+    "en": "Casillas"
+   },
+   {
+    "ar": "نوير",
+    "en": "Neuer"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز ببطولة أمم أوروبا 2004؟",
+   "en": "Who won Euro 2004?"
+  },
+  "options": [
+   {
+    "ar": "اليونان",
+    "en": "Greece"
+   },
+   {
+    "ar": "البرتغال",
+    "en": "Portugal"
+   },
+   {
+    "ar": "فرنسا",
+    "en": "France"
+   },
+   {
+    "ar": "التشيك",
+    "en": "Czechia"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز ببطولة أمم أوروبا 2008؟",
+   "en": "Who won Euro 2008?"
+  },
+  "options": [
+   {
+    "ar": "إسبانيا",
+    "en": "Spain"
+   },
+   {
+    "ar": "ألمانيا",
+    "en": "Germany"
+   },
+   {
+    "ar": "روسيا",
+    "en": "Russia"
+   },
+   {
+    "ar": "إيطاليا",
+    "en": "Italy"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز ببطولة أمم أوروبا 2012؟",
+   "en": "Who won Euro 2012?"
+  },
+  "options": [
+   {
+    "ar": "إسبانيا",
+    "en": "Spain"
+   },
+   {
+    "ar": "إيطاليا",
+    "en": "Italy"
+   },
+   {
+    "ar": "ألمانيا",
+    "en": "Germany"
+   },
+   {
+    "ar": "البرتغال",
+    "en": "Portugal"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من فاز ببطولة أمم أوروبا 2016؟",
+   "en": "Who won Euro 2016?"
+  },
+  "options": [
+   {
+    "ar": "البرتغال",
+    "en": "Portugal"
+   },
+   {
+    "ar": "فرنسا",
+    "en": "France"
+   },
+   {
+    "ar": "ألمانيا",
+    "en": "Germany"
+   },
+   {
+    "ar": "ويلز",
+    "en": "Wales"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من فاز ببطولة أمم أوروبا 2020؟",
+   "en": "Who won Euro 2020?"
+  },
+  "options": [
+   {
+    "ar": "إيطاليا",
+    "en": "Italy"
+   },
+   {
+    "ar": "إنجلترا",
+    "en": "England"
+   },
+   {
+    "ar": "إسبانيا",
+    "en": "Spain"
+   },
+   {
+    "ar": "الدنمارك",
+    "en": "Denmark"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من فاز ببطولة أمم أوروبا 2024؟",
+   "en": "Who won Euro 2024?"
+  },
+  "options": [
+   {
+    "ar": "إسبانيا",
+    "en": "Spain"
+   },
+   {
+    "ar": "إنجلترا",
+    "en": "England"
+   },
+   {
+    "ar": "فرنسا",
+    "en": "France"
+   },
+   {
+    "ar": "هولندا",
+    "en": "Netherlands"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما المنتخب الأكثر تتويجاً بأمم أوروبا (4 ألقاب)؟",
+   "en": "Which team has the most Euro titles (4)?"
+  },
+  "options": [
+   {
+    "ar": "إسبانيا",
+    "en": "Spain"
+   },
+   {
+    "ar": "ألمانيا",
+    "en": "Germany"
+   },
+   {
+    "ar": "فرنسا",
+    "en": "France"
+   },
+   {
+    "ar": "إيطاليا",
+    "en": "Italy"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من فاز بكأس أمم أفريقيا 2019؟",
+   "en": "Who won AFCON 2019?"
+  },
+  "options": [
+   {
+    "ar": "الجزائر",
+    "en": "Algeria"
+   },
+   {
+    "ar": "السنغال",
+    "en": "Senegal"
+   },
+   {
+    "ar": "مصر",
+    "en": "Egypt"
+   },
+   {
+    "ar": "نيجيريا",
+    "en": "Nigeria"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من فاز بكأس أمم أفريقيا 2021؟",
+   "en": "Who won AFCON 2021?"
+  },
+  "options": [
+   {
+    "ar": "السنغال",
+    "en": "Senegal"
+   },
+   {
+    "ar": "مصر",
+    "en": "Egypt"
+   },
+   {
+    "ar": "الكاميرون",
+    "en": "Cameroon"
+   },
+   {
+    "ar": "المغرب",
+    "en": "Morocco"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بكأس أمم أفريقيا 2023؟",
+   "en": "Who won AFCON 2023?"
+  },
+  "options": [
+   {
+    "ar": "كوت ديفوار",
+    "en": "Ivory Coast"
+   },
+   {
+    "ar": "نيجيريا",
+    "en": "Nigeria"
+   },
+   {
+    "ar": "جنوب أفريقيا",
+    "en": "South Africa"
+   },
+   {
+    "ar": "الكونغو",
+    "en": "DR Congo"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بكأس أمم أفريقيا 2010؟",
+   "en": "Who won AFCON 2010?"
+  },
+  "options": [
+   {
+    "ar": "مصر",
+    "en": "Egypt"
+   },
+   {
+    "ar": "غانا",
+    "en": "Ghana"
+   },
+   {
+    "ar": "نيجيريا",
+    "en": "Nigeria"
+   },
+   {
+    "ar": "الجزائر",
+    "en": "Algeria"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بكأس أمم أفريقيا 2004؟",
+   "en": "Who won AFCON 2004?"
+  },
+  "options": [
+   {
+    "ar": "تونس",
+    "en": "Tunisia"
+   },
+   {
+    "ar": "المغرب",
+    "en": "Morocco"
+   },
+   {
+    "ar": "نيجيريا",
+    "en": "Nigeria"
+   },
+   {
+    "ar": "مالي",
+    "en": "Mali"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما المنتخب الأكثر تتويجاً بأمم أفريقيا (7 ألقاب)؟",
+   "en": "Which team has the most AFCON titles (7)?"
+  },
+  "options": [
+   {
+    "ar": "مصر",
+    "en": "Egypt"
+   },
+   {
+    "ar": "الكاميرون",
+    "en": "Cameroon"
+   },
+   {
+    "ar": "غانا",
+    "en": "Ghana"
+   },
+   {
+    "ar": "نيجيريا",
+    "en": "Nigeria"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "حقق منتخب مصر ثلاثية أمم أفريقيا التاريخية في أعوام؟",
+   "en": "Egypt's historic AFCON three-peat came in which years?"
+  },
+  "options": [
+   {
+    "ar": "2006 و2008 و2010",
+    "en": "2006, 2008 & 2010"
+   },
+   {
+    "ar": "1998 و2000 و2002",
+    "en": "1998, 2000 & 2002"
+   },
+   {
+    "ar": "2002 و2004 و2006",
+    "en": "2002, 2004 & 2006"
+   },
+   {
+    "ar": "2008 و2010 و2012",
+    "en": "2008, 2010 & 2012"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بكأس العرب 2021 في قطر؟",
+   "en": "Who won the 2021 FIFA Arab Cup in Qatar?"
+  },
+  "options": [
+   {
+    "ar": "الجزائر",
+    "en": "Algeria"
+   },
+   {
+    "ar": "تونس",
+    "en": "Tunisia"
+   },
+   {
+    "ar": "قطر",
+    "en": "Qatar"
+   },
+   {
+    "ar": "مصر",
+    "en": "Egypt"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بدوري أبطال أوروبا 2005؟",
+   "en": "Who won the 2005 Champions League?"
+  },
+  "options": [
+   {
+    "ar": "ليفربول",
+    "en": "Liverpool"
+   },
+   {
+    "ar": "ميلان",
+    "en": "AC Milan"
+   },
+   {
+    "ar": "يوفنتوس",
+    "en": "Juventus"
+   },
+   {
+    "ar": "تشيلسي",
+    "en": "Chelsea"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بدوري أبطال أوروبا 2006؟",
+   "en": "Who won the 2006 Champions League?"
+  },
+  "options": [
+   {
+    "ar": "برشلونة",
+    "en": "Barcelona"
+   },
+   {
+    "ar": "أرسنال",
+    "en": "Arsenal"
+   },
+   {
+    "ar": "ميلان",
+    "en": "AC Milan"
+   },
+   {
+    "ar": "فياريال",
+    "en": "Villarreal"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بدوري أبطال أوروبا 2008؟",
+   "en": "Who won the 2008 Champions League?"
+  },
+  "options": [
+   {
+    "ar": "مانشستر يونايتد",
+    "en": "Manchester United"
+   },
+   {
+    "ar": "تشيلسي",
+    "en": "Chelsea"
+   },
+   {
+    "ar": "برشلونة",
+    "en": "Barcelona"
+   },
+   {
+    "ar": "ليفربول",
+    "en": "Liverpool"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بدوري أبطال أوروبا 2012؟",
+   "en": "Who won the 2012 Champions League?"
+  },
+  "options": [
+   {
+    "ar": "تشيلسي",
+    "en": "Chelsea"
+   },
+   {
+    "ar": "بايرن ميونخ",
+    "en": "Bayern Munich"
+   },
+   {
+    "ar": "ريال مدريد",
+    "en": "Real Madrid"
+   },
+   {
+    "ar": "برشلونة",
+    "en": "Barcelona"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بدوري أبطال أوروبا 2013؟",
+   "en": "Who won the 2013 Champions League?"
+  },
+  "options": [
+   {
+    "ar": "بايرن ميونخ",
+    "en": "Bayern Munich"
+   },
+   {
+    "ar": "بوروسيا دورتموند",
+    "en": "Borussia Dortmund"
+   },
+   {
+    "ar": "ريال مدريد",
+    "en": "Real Madrid"
+   },
+   {
+    "ar": "برشلونة",
+    "en": "Barcelona"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من فاز بدوري أبطال أوروبا 2019؟",
+   "en": "Who won the 2019 Champions League?"
+  },
+  "options": [
+   {
+    "ar": "ليفربول",
+    "en": "Liverpool"
+   },
+   {
+    "ar": "توتنهام",
+    "en": "Tottenham"
+   },
+   {
+    "ar": "برشلونة",
+    "en": "Barcelona"
+   },
+   {
+    "ar": "أياكس",
+    "en": "Ajax"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من فاز بدوري أبطال أوروبا 2020؟",
+   "en": "Who won the 2020 Champions League?"
+  },
+  "options": [
+   {
+    "ar": "بايرن ميونخ",
+    "en": "Bayern Munich"
+   },
+   {
+    "ar": "باريس سان جيرمان",
+    "en": "PSG"
+   },
+   {
+    "ar": "ليون",
+    "en": "Lyon"
+   },
+   {
+    "ar": "لايبزيغ",
+    "en": "RB Leipzig"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من فاز بدوري أبطال أوروبا 2021؟",
+   "en": "Who won the 2021 Champions League?"
+  },
+  "options": [
+   {
+    "ar": "تشيلسي",
+    "en": "Chelsea"
+   },
+   {
+    "ar": "مانشستر سيتي",
+    "en": "Manchester City"
+   },
+   {
+    "ar": "ريال مدريد",
+    "en": "Real Madrid"
+   },
+   {
+    "ar": "باريس سان جيرمان",
+    "en": "PSG"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من فاز بدوري أبطال أوروبا 2023؟",
+   "en": "Who won the 2023 Champions League?"
+  },
+  "options": [
+   {
+    "ar": "مانشستر سيتي",
+    "en": "Manchester City"
+   },
+   {
+    "ar": "إنتر ميلان",
+    "en": "Inter Milan"
+   },
+   {
+    "ar": "ريال مدريد",
+    "en": "Real Madrid"
+   },
+   {
+    "ar": "ميلان",
+    "en": "AC Milan"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بدوري أبطال أوروبا 2025؟",
+   "en": "Who won the 2025 Champions League?"
+  },
+  "options": [
+   {
+    "ar": "باريس سان جيرمان",
+    "en": "Paris Saint-Germain"
+   },
+   {
+    "ar": "إنتر ميلان",
+    "en": "Inter Milan"
+   },
+   {
+    "ar": "ريال مدريد",
+    "en": "Real Madrid"
+   },
+   {
+    "ar": "أرسنال",
+    "en": "Arsenal"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من حقق ثلاثية دوري الأبطال متتالية كمدرب (2016-2018)؟",
+   "en": "Which coach won three straight Champions Leagues (2016–18)?"
+  },
+  "options": [
+   {
+    "ar": "زين الدين زيدان",
+    "en": "Zinedine Zidane"
+   },
+   {
+    "ar": "أنشيلوتي",
+    "en": "Ancelotti"
+   },
+   {
+    "ar": "غوارديولا",
+    "en": "Guardiola"
+   },
+   {
+    "ar": "كلوب",
+    "en": "Klopp"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من هو الهداف التاريخي لدوري أبطال أوروبا؟",
+   "en": "Who is the Champions League all-time top scorer?"
+  },
+  "options": [
+   {
+    "ar": "كريستيانو رونالدو",
+    "en": "Cristiano Ronaldo"
+   },
+   {
+    "ar": "ميسي",
+    "en": "Messi"
+   },
+   {
+    "ar": "ليفاندوفسكي",
+    "en": "Lewandowski"
+   },
+   {
+    "ar": "بنزيما",
+    "en": "Benzema"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "ما النادي الذي حقق أول خمس نسخ من كأس أوروبا؟",
+   "en": "Which club won the first five European Cups?"
+  },
+  "options": [
+   {
+    "ar": "ريال مدريد",
+    "en": "Real Madrid"
+   },
+   {
+    "ar": "بنفيكا",
+    "en": "Benfica"
+   },
+   {
+    "ar": "ميلان",
+    "en": "AC Milan"
+   },
+   {
+    "ar": "أياكس",
+    "en": "Ajax"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "المدرب الأكثر تتويجاً بدوري الأبطال (5 ألقاب)؟",
+   "en": "Which coach has the most Champions League titles (5)?"
+  },
+  "options": [
+   {
+    "ar": "كارلو أنشيلوتي",
+    "en": "Carlo Ancelotti"
+   },
+   {
+    "ar": "زيدان",
+    "en": "Zidane"
+   },
+   {
+    "ar": "غوارديولا",
+    "en": "Guardiola"
+   },
+   {
+    "ar": "فيرغسون",
+    "en": "Ferguson"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "في أي مدينة أقيم نهائي 2005 الشهير بريمونتادا ليفربول؟",
+   "en": "In which city was the famous 2005 final (Liverpool comeback)?"
+  },
+  "options": [
+   {
+    "ar": "إسطنبول",
+    "en": "Istanbul"
+   },
+   {
+    "ar": "أثينا",
+    "en": "Athens"
+   },
+   {
+    "ar": "روما",
+    "en": "Rome"
+   },
+   {
+    "ar": "موسكو",
+    "en": "Moscow"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما اسم ملعب نادي ريال مدريد؟",
+   "en": "What is Real Madrid's home stadium?"
+  },
+  "options": [
+   {
+    "ar": "سانتياغو برنابيو",
+    "en": "Santiago Bernabéu"
+   },
+   {
+    "ar": "كامب نو",
+    "en": "Camp Nou"
+   },
+   {
+    "ar": "واندا متروبوليتانو",
+    "en": "Metropolitano"
+   },
+   {
+    "ar": "ميستايا",
+    "en": "Mestalla"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما اسم ملعب نادي ليفربول؟",
+   "en": "What is Liverpool's home stadium?"
+  },
+  "options": [
+   {
+    "ar": "أنفيلد",
+    "en": "Anfield"
+   },
+   {
+    "ar": "أولد ترافورد",
+    "en": "Old Trafford"
+   },
+   {
+    "ar": "الاتحاد",
+    "en": "Etihad"
+   },
+   {
+    "ar": "غوديسون بارك",
+    "en": "Goodison Park"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما اسم ملعب نادي أرسنال؟",
+   "en": "What is Arsenal's home stadium?"
+  },
+  "options": [
+   {
+    "ar": "الإمارات",
+    "en": "Emirates Stadium"
+   },
+   {
+    "ar": "ستامفورد بريدج",
+    "en": "Stamford Bridge"
+   },
+   {
+    "ar": "وايت هارت لين",
+    "en": "White Hart Lane"
+   },
+   {
+    "ar": "أنفيلد",
+    "en": "Anfield"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما اسم ملعب نادي تشيلسي؟",
+   "en": "What is Chelsea's home stadium?"
+  },
+  "options": [
+   {
+    "ar": "ستامفورد بريدج",
+    "en": "Stamford Bridge"
+   },
+   {
+    "ar": "الإمارات",
+    "en": "Emirates"
+   },
+   {
+    "ar": "أنفيلد",
+    "en": "Anfield"
+   },
+   {
+    "ar": "كرافن كوتيدج",
+    "en": "Craven Cottage"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما اسم ملعب نادي بايرن ميونخ؟",
+   "en": "What is Bayern Munich's home stadium?"
+  },
+  "options": [
+   {
+    "ar": "أليانز أرينا",
+    "en": "Allianz Arena"
+   },
+   {
+    "ar": "سيغنال إيدونا بارك",
+    "en": "Signal Iduna Park"
+   },
+   {
+    "ar": "أولمبيا شتاديون",
+    "en": "Olympiastadion"
+   },
+   {
+    "ar": "فيلتينس أرينا",
+    "en": "Veltins-Arena"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما اسم ملعب نادي مانشستر سيتي؟",
+   "en": "What is Manchester City's home stadium?"
+  },
+  "options": [
+   {
+    "ar": "الاتحاد",
+    "en": "Etihad Stadium"
+   },
+   {
+    "ar": "أولد ترافورد",
+    "en": "Old Trafford"
+   },
+   {
+    "ar": "أنفيلد",
+    "en": "Anfield"
+   },
+   {
+    "ar": "سانت جيمس بارك",
+    "en": "St James' Park"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما اسم ملعب نادي باريس سان جيرمان؟",
+   "en": "What is PSG's home stadium?"
+  },
+  "options": [
+   {
+    "ar": "حديقة الأمراء",
+    "en": "Parc des Princes"
+   },
+   {
+    "ar": "ستاد دو فرانس",
+    "en": "Stade de France"
+   },
+   {
+    "ar": "فيلودروم",
+    "en": "Vélodrome"
+   },
+   {
+    "ar": "جيرلان",
+    "en": "Gerland"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "أي ناديين يتقاسمان ملعب سان سيرو؟",
+   "en": "Which two clubs share the San Siro?"
+  },
+  "options": [
+   {
+    "ar": "ميلان وإنتر",
+    "en": "AC Milan & Inter"
+   },
+   {
+    "ar": "يوفنتوس وتورينو",
+    "en": "Juventus & Torino"
+   },
+   {
+    "ar": "روما ولاتسيو",
+    "en": "Roma & Lazio"
+   },
+   {
+    "ar": "نابولي وساليرنيتانا",
+    "en": "Napoli & Salernitana"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "في أي مدينة يقع ملعب الماراكانا الشهير؟",
+   "en": "In which city is the famous Maracanã?"
+  },
+  "options": [
+   {
+    "ar": "ريو دي جانيرو",
+    "en": "Rio de Janeiro"
+   },
+   {
+    "ar": "ساو باولو",
+    "en": "São Paulo"
+   },
+   {
+    "ar": "بوينس آيرس",
+    "en": "Buenos Aires"
+   },
+   {
+    "ar": "برازيليا",
+    "en": "Brasília"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما الملعب الوطني لإنجلترا؟",
+   "en": "What is England's national stadium?"
+  },
+  "options": [
+   {
+    "ar": "ويمبلي",
+    "en": "Wembley"
+   },
+   {
+    "ar": "أولد ترافورد",
+    "en": "Old Trafford"
+   },
+   {
+    "ar": "توتنهام",
+    "en": "Tottenham Stadium"
+   },
+   {
+    "ar": "فيلا بارك",
+    "en": "Villa Park"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "بماذا يُلقب نادي ريال مدريد؟",
+   "en": "What is Real Madrid's nickname?"
+  },
+  "options": [
+   {
+    "ar": "الملكي / الميرينغي",
+    "en": "Los Merengues"
+   },
+   {
+    "ar": "البلوغرانا",
+    "en": "Blaugrana"
+   },
+   {
+    "ar": "الروخيبلانكوس",
+    "en": "Rojiblancos"
+   },
+   {
+    "ar": "الخفافيش",
+    "en": "Los Che"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "بماذا يُلقب نادي برشلونة؟",
+   "en": "What is Barcelona's nickname?"
+  },
+  "options": [
+   {
+    "ar": "البلوغرانا",
+    "en": "Blaugrana"
+   },
+   {
+    "ar": "الميرينغي",
+    "en": "Merengues"
+   },
+   {
+    "ar": "اليويو",
+    "en": "Yo-yos"
+   },
+   {
+    "ar": "الملكي",
+    "en": "The Royals"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "بماذا يُلقب نادي مانشستر يونايتد؟",
+   "en": "What is Manchester United's nickname?"
+  },
+  "options": [
+   {
+    "ar": "الشياطين الحمر",
+    "en": "Red Devils"
+   },
+   {
+    "ar": "السيتيزنس",
+    "en": "Citizens"
+   },
+   {
+    "ar": "الريدز",
+    "en": "The Reds"
+   },
+   {
+    "ar": "الغانرز",
+    "en": "Gunners"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "بماذا يُلقب نادي ليفربول؟",
+   "en": "What is Liverpool's nickname?"
+  },
+  "options": [
+   {
+    "ar": "الريدز",
+    "en": "The Reds"
+   },
+   {
+    "ar": "البلوز",
+    "en": "The Blues"
+   },
+   {
+    "ar": "التوفيز",
+    "en": "Toffees"
+   },
+   {
+    "ar": "الهامرز",
+    "en": "Hammers"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "بماذا يُلقب نادي تشيلسي؟",
+   "en": "What is Chelsea's nickname?"
+  },
+  "options": [
+   {
+    "ar": "البلوز",
+    "en": "The Blues"
+   },
+   {
+    "ar": "الغانرز",
+    "en": "Gunners"
+   },
+   {
+    "ar": "السبيرز",
+    "en": "Spurs"
+   },
+   {
+    "ar": "الريدز",
+    "en": "Reds"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "بماذا يُلقب نادي أرسنال؟",
+   "en": "What is Arsenal's nickname?"
+  },
+  "options": [
+   {
+    "ar": "الغانرز (المدفعجية)",
+    "en": "The Gunners"
+   },
+   {
+    "ar": "البلوز",
+    "en": "Blues"
+   },
+   {
+    "ar": "الماغبايز",
+    "en": "Magpies"
+   },
+   {
+    "ar": "الليلي وايتس",
+    "en": "Lilywhites"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "بماذا يُلقب نادي يوفنتوس؟",
+   "en": "What is Juventus's nickname?"
+  },
+  "options": [
+   {
+    "ar": "السيدة العجوز",
+    "en": "The Old Lady"
+   },
+   {
+    "ar": "الروسونيري",
+    "en": "Rossoneri"
+   },
+   {
+    "ar": "النيراتزوري",
+    "en": "Nerazzurri"
+   },
+   {
+    "ar": "الذئاب",
+    "en": "The Wolves"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "بماذا يُلقب نادي ميلان؟",
+   "en": "What is AC Milan's nickname?"
+  },
+  "options": [
+   {
+    "ar": "الروسونيري",
+    "en": "Rossoneri"
+   },
+   {
+    "ar": "النيراتزوري",
+    "en": "Nerazzurri"
+   },
+   {
+    "ar": "البيانكونيري",
+    "en": "Bianconeri"
+   },
+   {
+    "ar": "الفيولا",
+    "en": "Viola"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "بماذا يُلقب نادي إنتر ميلان؟",
+   "en": "What is Inter Milan's nickname?"
+  },
+  "options": [
+   {
+    "ar": "النيراتزوري",
+    "en": "Nerazzurri"
+   },
+   {
+    "ar": "الروسونيري",
+    "en": "Rossoneri"
+   },
+   {
+    "ar": "البيانكونيري",
+    "en": "Bianconeri"
+   },
+   {
+    "ar": "الجيالوروسي",
+    "en": "Giallorossi"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "بماذا يُلقب نادي بايرن ميونخ؟",
+   "en": "What is Bayern Munich's nickname?"
+  },
+  "options": [
+   {
+    "ar": "العملاق البافاري",
+    "en": "The Bavarians"
+   },
+   {
+    "ar": "أسود الملوك",
+    "en": "Royal Lions"
+   },
+   {
+    "ar": "الفريق الملكي",
+    "en": "The Royals"
+   },
+   {
+    "ar": "نسور ألمانيا",
+    "en": "German Eagles"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "بماذا يُلقب منتخب البرازيل؟",
+   "en": "What is Brazil's national-team nickname?"
+  },
+  "options": [
+   {
+    "ar": "السيليساو",
+    "en": "Seleção"
+   },
+   {
+    "ar": "التانغو",
+    "en": "La Albiceleste"
+   },
+   {
+    "ar": "الديوك",
+    "en": "Les Bleus"
+   },
+   {
+    "ar": "لا روخا",
+    "en": "La Roja"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "بماذا يُلقب منتخب الأرجنتين؟",
+   "en": "What is Argentina's national-team nickname?"
+  },
+  "options": [
+   {
+    "ar": "الألبيسيليستي (التانغو)",
+    "en": "La Albiceleste"
+   },
+   {
+    "ar": "السيليساو",
+    "en": "Seleção"
+   },
+   {
+    "ar": "لا روخا",
+    "en": "La Roja"
+   },
+   {
+    "ar": "الآتزوري",
+    "en": "Azzurri"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "بماذا يُلقب منتخب فرنسا؟",
+   "en": "What is France's national-team nickname?"
+  },
+  "options": [
+   {
+    "ar": "الديوك",
+    "en": "Les Bleus (Roosters)"
+   },
+   {
+    "ar": "المانشافت",
+    "en": "Die Mannschaft"
+   },
+   {
+    "ar": "الأسود الثلاثة",
+    "en": "Three Lions"
+   },
+   {
+    "ar": "الطواحين",
+    "en": "Oranje"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "بماذا يُلقب منتخب إيطاليا؟",
+   "en": "What is Italy's national-team nickname?"
+  },
+  "options": [
+   {
+    "ar": "الآتزوري",
+    "en": "Azzurri"
+   },
+   {
+    "ar": "لا روخا",
+    "en": "La Roja"
+   },
+   {
+    "ar": "السيليساو",
+    "en": "Seleção"
+   },
+   {
+    "ar": "الديوك",
+    "en": "Les Bleus"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "بماذا يُلقب منتخب ألمانيا؟",
+   "en": "What is Germany's national-team nickname?"
+  },
+  "options": [
+   {
+    "ar": "المانشافت",
+    "en": "Die Mannschaft"
+   },
+   {
+    "ar": "الآتزوري",
+    "en": "Azzurri"
+   },
+   {
+    "ar": "الديوك",
+    "en": "Les Bleus"
+   },
+   {
+    "ar": "الفايكنغ",
+    "en": "Vikings"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "بماذا يُلقب منتخب إنجلترا؟",
+   "en": "What is England's national-team nickname?"
+  },
+  "options": [
+   {
+    "ar": "الأسود الثلاثة",
+    "en": "Three Lions"
+   },
+   {
+    "ar": "الطواحين",
+    "en": "Oranje"
+   },
+   {
+    "ar": "المانشافت",
+    "en": "Die Mannschaft"
+   },
+   {
+    "ar": "التارتان",
+    "en": "Tartan Army"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "بماذا يُلقب منتخب هولندا؟",
+   "en": "What is Netherlands's national-team nickname?"
+  },
+  "options": [
+   {
+    "ar": "الطواحين البرتقالية",
+    "en": "Oranje"
+   },
+   {
+    "ar": "الديوك",
+    "en": "Les Bleus"
+   },
+   {
+    "ar": "لا روخا",
+    "en": "La Roja"
+   },
+   {
+    "ar": "الأسود",
+    "en": "Lions"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "بماذا يُلقب منتخب العراق؟",
+   "en": "What is Iraq's national-team nickname?"
+  },
+  "options": [
+   {
+    "ar": "أسود الرافدين",
+    "en": "Lions of Mesopotamia"
+   },
+   {
+    "ar": "النشامى",
+    "en": "Al-Nashama"
+   },
+   {
+    "ar": "الصقور الخضر",
+    "en": "Green Falcons"
+   },
+   {
+    "ar": "العنابي",
+    "en": "The Maroons"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "بماذا يُلقب منتخب السعودية؟",
+   "en": "What is Saudi Arabia's national-team nickname?"
+  },
+  "options": [
+   {
+    "ar": "الصقور الخضر (الأخضر)",
+    "en": "The Green Falcons"
+   },
+   {
+    "ar": "العنابي",
+    "en": "The Maroons"
+   },
+   {
+    "ar": "الأبيض",
+    "en": "The Whites"
+   },
+   {
+    "ar": "الأزرق",
+    "en": "The Blues"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "بماذا يُلقب منتخب قطر؟",
+   "en": "What is Qatar's national-team nickname?"
+  },
+  "options": [
+   {
+    "ar": "العنابي",
+    "en": "The Maroons"
+   },
+   {
+    "ar": "الأبيض",
+    "en": "The Whites"
+   },
+   {
+    "ar": "النشامى",
+    "en": "Al-Nashama"
+   },
+   {
+    "ar": "الأزرق",
+    "en": "The Blues"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "بماذا يُلقب منتخب الأردن؟",
+   "en": "What is Jordan's national-team nickname?"
+  },
+  "options": [
+   {
+    "ar": "النشامى",
+    "en": "Al-Nashama"
+   },
+   {
+    "ar": "العنابي",
+    "en": "The Maroons"
+   },
+   {
+    "ar": "أسود الرافدين",
+    "en": "Lions of Mesopotamia"
+   },
+   {
+    "ar": "الفدائي",
+    "en": "Al-Fida'i"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "بماذا يُلقب منتخب فلسطين؟",
+   "en": "What is Palestine's national-team nickname?"
+  },
+  "options": [
+   {
+    "ar": "الفدائي",
+    "en": "Al-Fida'i"
+   },
+   {
+    "ar": "النشامى",
+    "en": "Al-Nashama"
+   },
+   {
+    "ar": "نسور قاسيون",
+    "en": "Qasioun Eagles"
+   },
+   {
+    "ar": "الأخضر",
+    "en": "The Greens"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "بماذا يُلقب منتخب الإمارات؟",
+   "en": "What is UAE's national-team nickname?"
+  },
+  "options": [
+   {
+    "ar": "الأبيض",
+    "en": "The Whites"
+   },
+   {
+    "ar": "الأزرق",
+    "en": "The Blues"
+   },
+   {
+    "ar": "العنابي",
+    "en": "The Maroons"
+   },
+   {
+    "ar": "الأحمر",
+    "en": "The Reds"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "بماذا يُلقب منتخب الكويت؟",
+   "en": "What is Kuwait's national-team nickname?"
+  },
+  "options": [
+   {
+    "ar": "الأزرق",
+    "en": "The Blues"
+   },
+   {
+    "ar": "الأبيض",
+    "en": "The Whites"
+   },
+   {
+    "ar": "الأحمر",
+    "en": "The Reds"
+   },
+   {
+    "ar": "الأخضر",
+    "en": "The Greens"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما جنسية اللاعب أشرف حكيمي؟",
+   "en": "What is Achraf Hakimi's nationality?"
+  },
+  "options": [
+   {
+    "ar": "المغرب",
+    "en": "Morocco"
+   },
+   {
+    "ar": "الجزائر",
+    "en": "Algeria"
+   },
+   {
+    "ar": "تونس",
+    "en": "Tunisia"
+   },
+   {
+    "ar": "مصر",
+    "en": "Egypt"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما جنسية اللاعب رياض محرز؟",
+   "en": "What is Riyad Mahrez's nationality?"
+  },
+  "options": [
+   {
+    "ar": "الجزائر",
+    "en": "Algeria"
+   },
+   {
+    "ar": "المغرب",
+    "en": "Morocco"
+   },
+   {
+    "ar": "تونس",
+    "en": "Tunisia"
+   },
+   {
+    "ar": "فرنسا",
+    "en": "France"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما جنسية اللاعب ساديو مانيه؟",
+   "en": "What is Sadio Mané's nationality?"
+  },
+  "options": [
+   {
+    "ar": "السنغال",
+    "en": "Senegal"
+   },
+   {
+    "ar": "مالي",
+    "en": "Mali"
+   },
+   {
+    "ar": "غينيا",
+    "en": "Guinea"
+   },
+   {
+    "ar": "ساحل العاج",
+    "en": "Ivory Coast"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما جنسية اللاعب فيكتور أوسيمين؟",
+   "en": "What is Victor Osimhen's nationality?"
+  },
+  "options": [
+   {
+    "ar": "نيجيريا",
+    "en": "Nigeria"
+   },
+   {
+    "ar": "غانا",
+    "en": "Ghana"
+   },
+   {
+    "ar": "الكاميرون",
+    "en": "Cameroon"
+   },
+   {
+    "ar": "السنغال",
+    "en": "Senegal"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما جنسية اللاعب سون هيونغ مين؟",
+   "en": "What is Son Heung-min's nationality?"
+  },
+  "options": [
+   {
+    "ar": "كوريا الجنوبية",
+    "en": "South Korea"
+   },
+   {
+    "ar": "اليابان",
+    "en": "Japan"
+   },
+   {
+    "ar": "الصين",
+    "en": "China"
+   },
+   {
+    "ar": "فيتنام",
+    "en": "Vietnam"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما جنسية اللاعب روبرت ليفاندوفسكي؟",
+   "en": "What is Robert Lewandowski's nationality?"
+  },
+  "options": [
+   {
+    "ar": "بولندا",
+    "en": "Poland"
+   },
+   {
+    "ar": "التشيك",
+    "en": "Czechia"
+   },
+   {
+    "ar": "أوكرانيا",
+    "en": "Ukraine"
+   },
+   {
+    "ar": "ألمانيا",
+    "en": "Germany"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما جنسية اللاعب لوكا مودريتش؟",
+   "en": "What is Luka Modrić's nationality?"
+  },
+  "options": [
+   {
+    "ar": "كرواتيا",
+    "en": "Croatia"
+   },
+   {
+    "ar": "صربيا",
+    "en": "Serbia"
+   },
+   {
+    "ar": "سلوفينيا",
+    "en": "Slovenia"
+   },
+   {
+    "ar": "البوسنة",
+    "en": "Bosnia"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما جنسية اللاعب كيفين دي بروين؟",
+   "en": "What is Kevin De Bruyne's nationality?"
+  },
+  "options": [
+   {
+    "ar": "بلجيكا",
+    "en": "Belgium"
+   },
+   {
+    "ar": "هولندا",
+    "en": "Netherlands"
+   },
+   {
+    "ar": "فرنسا",
+    "en": "France"
+   },
+   {
+    "ar": "الدنمارك",
+    "en": "Denmark"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما جنسية اللاعب إيرلينغ هالاند؟",
+   "en": "What is Erling Haaland's nationality?"
+  },
+  "options": [
+   {
+    "ar": "النرويج",
+    "en": "Norway"
+   },
+   {
+    "ar": "السويد",
+    "en": "Sweden"
+   },
+   {
+    "ar": "الدنمارك",
+    "en": "Denmark"
+   },
+   {
+    "ar": "أيسلندا",
+    "en": "Iceland"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما جنسية اللاعب فينيسيوس جونيور؟",
+   "en": "What is Vinícius Júnior's nationality?"
+  },
+  "options": [
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "البرتغال",
+    "en": "Portugal"
+   },
+   {
+    "ar": "الأرجنتين",
+    "en": "Argentina"
+   },
+   {
+    "ar": "كولومبيا",
+    "en": "Colombia"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما جنسية اللاعب جود بيلينغهام؟",
+   "en": "What is Jude Bellingham's nationality?"
+  },
+  "options": [
+   {
+    "ar": "إنجلترا",
+    "en": "England"
+   },
+   {
+    "ar": "أيرلندا",
+    "en": "Ireland"
+   },
+   {
+    "ar": "ويلز",
+    "en": "Wales"
+   },
+   {
+    "ar": "اسكتلندا",
+    "en": "Scotland"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما جنسية اللاعب لامين يامال؟",
+   "en": "What is Lamine Yamal's nationality?"
+  },
+  "options": [
+   {
+    "ar": "إسبانيا",
+    "en": "Spain"
+   },
+   {
+    "ar": "المغرب",
+    "en": "Morocco"
+   },
+   {
+    "ar": "فرنسا",
+    "en": "France"
+   },
+   {
+    "ar": "غينيا الاستوائية",
+    "en": "Eq. Guinea"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما جنسية اللاعب ديدييه دروغبا؟",
+   "en": "What is Didier Drogba's nationality?"
+  },
+  "options": [
+   {
+    "ar": "كوت ديفوار",
+    "en": "Ivory Coast"
+   },
+   {
+    "ar": "غانا",
+    "en": "Ghana"
+   },
+   {
+    "ar": "الكاميرون",
+    "en": "Cameroon"
+   },
+   {
+    "ar": "نيجيريا",
+    "en": "Nigeria"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما جنسية اللاعب صامويل إيتو؟",
+   "en": "What is Samuel Eto'o's nationality?"
+  },
+  "options": [
+   {
+    "ar": "الكاميرون",
+    "en": "Cameroon"
+   },
+   {
+    "ar": "نيجيريا",
+    "en": "Nigeria"
+   },
+   {
+    "ar": "السنغال",
+    "en": "Senegal"
+   },
+   {
+    "ar": "مالي",
+    "en": "Mali"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما جنسية اللاعب ياسين بونو؟",
+   "en": "What is Yassine Bounou's nationality?"
+  },
+  "options": [
+   {
+    "ar": "المغرب",
+    "en": "Morocco"
+   },
+   {
+    "ar": "الجزائر",
+    "en": "Algeria"
+   },
+   {
+    "ar": "تونس",
+    "en": "Tunisia"
+   },
+   {
+    "ar": "السنغال",
+    "en": "Senegal"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما جنسية اللاعب زلاتان إبراهيموفيتش؟",
+   "en": "What is Zlatan Ibrahimović's nationality?"
+  },
+  "options": [
+   {
+    "ar": "السويد",
+    "en": "Sweden"
+   },
+   {
+    "ar": "النرويج",
+    "en": "Norway"
+   },
+   {
+    "ar": "كرواتيا",
+    "en": "Croatia"
+   },
+   {
+    "ar": "البوسنة",
+    "en": "Bosnia"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "إلى أي نادٍ انتقل كريستيانو رونالدو نهاية 2022؟",
+   "en": "Which club did Cristiano Ronaldo join in late 2022?"
+  },
+  "options": [
+   {
+    "ar": "النصر السعودي",
+    "en": "Al Nassr"
+   },
+   {
+    "ar": "الهلال",
+    "en": "Al Hilal"
+   },
+   {
+    "ar": "إنتر ميامي",
+    "en": "Inter Miami"
+   },
+   {
+    "ar": "الاتحاد",
+    "en": "Al Ittihad"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "إلى أي نادٍ انتقل ميسي عام 2023؟",
+   "en": "Which club did Messi join in 2023?"
+  },
+  "options": [
+   {
+    "ar": "إنتر ميامي",
+    "en": "Inter Miami"
+   },
+   {
+    "ar": "النصر",
+    "en": "Al Nassr"
+   },
+   {
+    "ar": "برشلونة",
+    "en": "Barcelona"
+   },
+   {
+    "ar": "لوس أنجلوس",
+    "en": "LA Galaxy"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "إلى أي نادٍ سعودي انتقل كريم بنزيما عام 2023؟",
+   "en": "Which Saudi club did Benzema join in 2023?"
+  },
+  "options": [
+   {
+    "ar": "الاتحاد",
+    "en": "Al Ittihad"
+   },
+   {
+    "ar": "الهلال",
+    "en": "Al Hilal"
+   },
+   {
+    "ar": "النصر",
+    "en": "Al Nassr"
+   },
+   {
+    "ar": "الأهلي",
+    "en": "Al Ahli"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "إلى أي نادٍ انتقل نيمار عام 2023؟",
+   "en": "Which club did Neymar join in 2023?"
+  },
+  "options": [
+   {
+    "ar": "الهلال السعودي",
+    "en": "Al Hilal"
+   },
+   {
+    "ar": "النصر",
+    "en": "Al Nassr"
+   },
+   {
+    "ar": "سانتوس",
+    "en": "Santos"
+   },
+   {
+    "ar": "تشيلسي",
+    "en": "Chelsea"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما الصفقة القياسية عالمياً عام 2017 (222 مليون يورو)؟",
+   "en": "Which 2017 transfer set the world record (€222m)?"
+  },
+  "options": [
+   {
+    "ar": "نيمار إلى باريس",
+    "en": "Neymar to PSG"
+   },
+   {
+    "ar": "مبابي إلى باريس",
+    "en": "Mbappé to PSG"
+   },
+   {
+    "ar": "كوتينيو إلى برشلونة",
+    "en": "Coutinho to Barça"
+   },
+   {
+    "ar": "بوغبا إلى يونايتد",
+    "en": "Pogba to United"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "إلى أي نادٍ انتقل مبابي صيف 2024؟",
+   "en": "Which club did Mbappé join in summer 2024?"
+  },
+  "options": [
+   {
+    "ar": "ريال مدريد",
+    "en": "Real Madrid"
+   },
+   {
+    "ar": "ليفربول",
+    "en": "Liverpool"
+   },
+   {
+    "ar": "برشلونة",
+    "en": "Barcelona"
+   },
+   {
+    "ar": "أرسنال",
+    "en": "Arsenal"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "إلى أي نادٍ انتقل هاري كين عام 2023؟",
+   "en": "Which club did Harry Kane join in 2023?"
+  },
+  "options": [
+   {
+    "ar": "بايرن ميونخ",
+    "en": "Bayern Munich"
+   },
+   {
+    "ar": "ريال مدريد",
+    "en": "Real Madrid"
+   },
+   {
+    "ar": "مانشستر يونايتد",
+    "en": "Man United"
+   },
+   {
+    "ar": "باريس",
+    "en": "PSG"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من أي نادٍ انتقل محمد صلاح إلى ليفربول عام 2017؟",
+   "en": "From which club did Salah join Liverpool in 2017?"
+  },
+  "options": [
+   {
+    "ar": "روما",
+    "en": "Roma"
+   },
+   {
+    "ar": "تشيلسي",
+    "en": "Chelsea"
+   },
+   {
+    "ar": "فيورنتينا",
+    "en": "Fiorentina"
+   },
+   {
+    "ar": "بازل",
+    "en": "Basel"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "في أي نادٍ لعب ميسي طوال مسيرته الأوروبية قبل باريس؟",
+   "en": "Messi spent his whole European career before PSG at which club?"
+  },
+  "options": [
+   {
+    "ar": "برشلونة",
+    "en": "Barcelona"
+   },
+   {
+    "ar": "ريال مدريد",
+    "en": "Real Madrid"
+   },
+   {
+    "ar": "نيوويلز",
+    "en": "Newell's"
+   },
+   {
+    "ar": "أتلتيكو",
+    "en": "Atlético"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "بأي رقم اشتهر كريستيانو رونالدو؟",
+   "en": "Which shirt number is Cristiano Ronaldo famous for?"
+  },
+  "options": [
+   {
+    "ar": "7",
+    "en": "7"
+   },
+   {
+    "ar": "9",
+    "en": "9"
+   },
+   {
+    "ar": "10",
+    "en": "10"
+   },
+   {
+    "ar": "11",
+    "en": "11"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "بأي رقم اشتهر ميسي في برشلونة؟",
+   "en": "Which number did Messi wear at Barcelona?"
+  },
+  "options": [
+   {
+    "ar": "10",
+    "en": "10"
+   },
+   {
+    "ar": "7",
+    "en": "7"
+   },
+   {
+    "ar": "30",
+    "en": "30"
+   },
+   {
+    "ar": "9",
+    "en": "9"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "ما الرقم الذي ارتداه زيدان في ريال مدريد؟",
+   "en": "Which number did Zidane wear at Real Madrid?"
+  },
+  "options": [
+   {
+    "ar": "5",
+    "en": "5"
+   },
+   {
+    "ar": "10",
+    "en": "10"
+   },
+   {
+    "ar": "7",
+    "en": "7"
+   },
+   {
+    "ar": "21",
+    "en": "21"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من حصد جائزة أفضل لاعب (الكرة الذهبية) في مونديال 2022؟",
+   "en": "Who won the Golden Ball at the 2022 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "ليونيل ميسي",
+    "en": "Lionel Messi"
+   },
+   {
+    "ar": "مبابي",
+    "en": "Mbappé"
+   },
+   {
+    "ar": "مودريتش",
+    "en": "Modrić"
+   },
+   {
+    "ar": "غريزمان",
+    "en": "Griezmann"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بالقفاز الذهبي لأفضل حارس في مونديال 2022؟",
+   "en": "Who won the Golden Glove at the 2022 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "إيميليانو مارتينيز",
+    "en": "Emiliano Martínez"
+   },
+   {
+    "ar": "بونو",
+    "en": "Bounou"
+   },
+   {
+    "ar": "لوريس",
+    "en": "Lloris"
+   },
+   {
+    "ar": "كورتوا",
+    "en": "Courtois"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "أي منتخب عربي هزم الأرجنتين في مونديال 2022؟",
+   "en": "Which Arab team beat Argentina at the 2022 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "السعودية",
+    "en": "Saudi Arabia"
+   },
+   {
+    "ar": "تونس",
+    "en": "Tunisia"
+   },
+   {
+    "ar": "المغرب",
+    "en": "Morocco"
+   },
+   {
+    "ar": "قطر",
+    "en": "Qatar"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من سجل هاتريك في نهائي مونديال 2022؟",
+   "en": "Who scored a hat-trick in the 2022 World Cup final?"
+  },
+  "options": [
+   {
+    "ar": "كيليان مبابي",
+    "en": "Kylian Mbappé"
+   },
+   {
+    "ar": "ميسي",
+    "en": "Messi"
+   },
+   {
+    "ar": "دي ماريا",
+    "en": "Di María"
+   },
+   {
+    "ar": "جيرو",
+    "en": "Giroud"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "بأي نتيجة انتهى الوقت الإضافي لنهائي مونديال 2022؟",
+   "en": "What was the score after extra time in the 2022 final?"
+  },
+  "options": [
+   {
+    "ar": "3-3",
+    "en": "3-3"
+   },
+   {
+    "ar": "2-2",
+    "en": "2-2"
+   },
+   {
+    "ar": "1-1",
+    "en": "1-1"
+   },
+   {
+    "ar": "4-2",
+    "en": "4-2"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "أي منتخبين أقصاهما المغرب بمونديال 2022 قبل نصف النهائي؟",
+   "en": "Which two giants did Morocco knock out before the 2022 semis?"
+  },
+  "options": [
+   {
+    "ar": "إسبانيا والبرتغال",
+    "en": "Spain & Portugal"
+   },
+   {
+    "ar": "فرنسا وألمانيا",
+    "en": "France & Germany"
+   },
+   {
+    "ar": "البرازيل وبلجيكا",
+    "en": "Brazil & Belgium"
+   },
+   {
+    "ar": "إنجلترا وهولندا",
+    "en": "England & Netherlands"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "من سجل هدف تونس التاريخي في مرمى فرنسا بمونديال 2022؟",
+   "en": "Who scored Tunisia's famous goal vs France in 2022?"
+  },
+  "options": [
+   {
+    "ar": "وهبي الخزري",
+    "en": "Wahbi Khazri"
+   },
+   {
+    "ar": "يوسف المساكني",
+    "en": "Youssef Msakni"
+   },
+   {
+    "ar": "عيسى العيدوني",
+    "en": "Aïssa Laïdouni"
+   },
+   {
+    "ar": "منتصر الطالبي",
+    "en": "Montassar Talbi"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "كم منتخباً شارك في مونديال قطر 2022؟",
+   "en": "How many teams played at the 2022 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "32",
+    "en": "32"
+   },
+   {
+    "ar": "24",
+    "en": "24"
+   },
+   {
+    "ar": "48",
+    "en": "48"
+   },
+   {
+    "ar": "16",
+    "en": "16"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من هو أكبر هدّاف سناً في تاريخ كأس العالم (42 عاماً)؟",
+   "en": "Who is the oldest scorer in World Cup history (42)?"
+  },
+  "options": [
+   {
+    "ar": "روجيه ميلا",
+    "en": "Roger Milla"
+   },
+   {
+    "ar": "بيليه",
+    "en": "Pelé"
+   },
+   {
+    "ar": "زلاتان",
+    "en": "Zlatan"
+   },
+   {
+    "ar": "مالديني",
+    "en": "Maldini"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "بأي رقم اشتهر يوهان كرويف؟",
+   "en": "Which number is Johan Cruyff famous for?"
+  },
+  "options": [
+   {
+    "ar": "14",
+    "en": "14"
+   },
+   {
+    "ar": "10",
+    "en": "10"
+   },
+   {
+    "ar": "9",
+    "en": "9"
+   },
+   {
+    "ar": "7",
+    "en": "7"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "مع أي نادٍ إيطالي تألق مارادونا؟",
+   "en": "At which Italian club did Maradona shine?"
+  },
+  "options": [
+   {
+    "ar": "نابولي",
+    "en": "Napoli"
+   },
+   {
+    "ar": "يوفنتوس",
+    "en": "Juventus"
+   },
+   {
+    "ar": "ميلان",
+    "en": "AC Milan"
+   },
+   {
+    "ar": "روما",
+    "en": "Roma"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "بماذا لُقّب فرانز بيكنباور؟",
+   "en": "What was Franz Beckenbauer's nickname?"
+  },
+  "options": [
+   {
+    "ar": "القيصر",
+    "en": "Der Kaiser"
+   },
+   {
+    "ar": "الطائر",
+    "en": "The Flyer"
+   },
+   {
+    "ar": "الجنرال",
+    "en": "The General"
+   },
+   {
+    "ar": "الأسطورة",
+    "en": "The Legend"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "بماذا لُقّب أوزيبيو نجم البرتغال؟",
+   "en": "What was Eusébio's nickname?"
+  },
+  "options": [
+   {
+    "ar": "النمر الأسود",
+    "en": "The Black Panther"
+   },
+   {
+    "ar": "الجوهرة",
+    "en": "The Jewel"
+   },
+   {
+    "ar": "الملك",
+    "en": "The King"
+   },
+   {
+    "ar": "الصاروخ",
+    "en": "The Rocket"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "بماذا لُقّب رونالدو البرازيلي؟",
+   "en": "What was Brazilian Ronaldo's nickname?"
+  },
+  "options": [
+   {
+    "ar": "الظاهرة",
+    "en": "The Phenomenon"
+   },
+   {
+    "ar": "الساحر",
+    "en": "The Magician"
+   },
+   {
+    "ar": "الملك",
+    "en": "The King"
+   },
+   {
+    "ar": "الصقر",
+    "en": "The Falcon"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من أضاع ركلة الترجيح الحاسمة بنهائي مونديال 1994؟",
+   "en": "Who missed the decisive penalty in the 1994 WC final?"
+  },
+  "options": [
+   {
+    "ar": "روبرتو باجيو",
+    "en": "Roberto Baggio"
+   },
+   {
+    "ar": "مالديني",
+    "en": "Maldini"
+   },
+   {
+    "ar": "باريزي",
+    "en": "Baresi"
+   },
+   {
+    "ar": "زولا",
+    "en": "Zola"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "لماذا يُعد بيليه استثناءً بين الأساطير أوروبياً؟",
+   "en": "Why is Pelé unusual among legends regarding Europe?"
+  },
+  "options": [
+   {
+    "ar": "لم يلعب لنادٍ أوروبي قط",
+    "en": "He never played for a European club"
+   },
+   {
+    "ar": "لعب لناديين أوروبيين فقط",
+    "en": "Only two European clubs"
+   },
+   {
+    "ar": "اعتزل في أوروبا",
+    "en": "Retired in Europe"
+   },
+   {
+    "ar": "درّب في أوروبا فقط",
+    "en": "Only coached in Europe"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "في أي مونديال سجل زيدان ثنائية رأسية في النهائي؟",
+   "en": "In which final did Zidane score two headers?"
+  },
+  "options": [
+   {
+    "ar": "فرنسا 1998",
+    "en": "France 1998"
+   },
+   {
+    "ar": "2006",
+    "en": "2006"
+   },
+   {
+    "ar": "2002",
+    "en": "2002"
+   },
+   {
+    "ar": "يورو 2000",
+    "en": "Euro 2000"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "من هو 'دون' ريال مدريد التاريخي خماسي كؤوس أوروبا الأولى؟",
+   "en": "Which Real legend won the first five European Cups?"
+  },
+  "options": [
+   {
+    "ar": "دي ستيفانو",
+    "en": "Di Stéfano"
+   },
+   {
+    "ar": "بوشكاش",
+    "en": "Puskás"
+   },
+   {
+    "ar": "خنتو",
+    "en": "Gento"
+   },
+   {
+    "ar": "كوبالا",
+    "en": "Kubala"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من هو الحارس أسطورة يوفنتوس وإيطاليا؟",
+   "en": "Who is the legendary Juventus & Italy goalkeeper?"
+  },
+  "options": [
+   {
+    "ar": "جانلويجي بوفون",
+    "en": "Gianluigi Buffon"
+   },
+   {
+    "ar": "دوناروما",
+    "en": "Donnarumma"
+   },
+   {
+    "ar": "زوف",
+    "en": "Zoff"
+   },
+   {
+    "ar": "باليوكا",
+    "en": "Pagliuca"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من هو حارس إسبانيا الأسطوري الملقب بالقديس؟",
+   "en": "Who is Spain's legendary keeper nicknamed 'San'?"
+  },
+  "options": [
+   {
+    "ar": "إيكر كاسياس",
+    "en": "Iker Casillas"
+   },
+   {
+    "ar": "دي خيا",
+    "en": "De Gea"
+   },
+   {
+    "ar": "رينا",
+    "en": "Reina"
+   },
+   {
+    "ar": "سيمون",
+    "en": "Simón"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من هو حارس المغرب بطل مونديال 2022 بركلات الترجيح؟",
+   "en": "Who was Morocco's 2022 shoot-out hero keeper?"
+  },
+  "options": [
+   {
+    "ar": "ياسين بونو",
+    "en": "Yassine Bounou"
+   },
+   {
+    "ar": "منير",
+    "en": "Munir"
+   },
+   {
+    "ar": "الكجوي",
+    "en": "El Kajoui"
+   },
+   {
+    "ar": "طاغناوتي",
+    "en": "Tagnaouti"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "أي حارس اشتهر بأسلوب 'الحارس المكتسح' الحديث؟",
+   "en": "Which keeper popularized the modern 'sweeper-keeper' style?"
+  },
+  "options": [
+   {
+    "ar": "مانويل نوير",
+    "en": "Manuel Neuer"
+   },
+   {
+    "ar": "بوفون",
+    "en": "Buffon"
+   },
+   {
+    "ar": "تشيك",
+    "en": "Čech"
+   },
+   {
+    "ar": "فان دير سار",
+    "en": "Van der Sar"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "كم تبعد نقطة ركلة الجزاء عن خط المرمى؟",
+   "en": "How far is the penalty spot from the goal line?"
+  },
+  "options": [
+   {
+    "ar": "11 متراً",
+    "en": "11 meters"
+   },
+   {
+    "ar": "9 أمتار",
+    "en": "9 meters"
+   },
+   {
+    "ar": "12 متراً",
+    "en": "12 meters"
+   },
+   {
+    "ar": "10 أمتار",
+    "en": "10 meters"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "كم دقيقة يستمر الشوط الواحد؟",
+   "en": "How long is one half of football?"
+  },
+  "options": [
+   {
+    "ar": "45 دقيقة",
+    "en": "45 minutes"
+   },
+   {
+    "ar": "40 دقيقة",
+    "en": "40 minutes"
+   },
+   {
+    "ar": "50 دقيقة",
+    "en": "50 minutes"
+   },
+   {
+    "ar": "35 دقيقة",
+    "en": "35 minutes"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "كم مدة استراحة ما بين الشوطين رسمياً؟",
+   "en": "How long is half-time officially?"
+  },
+  "options": [
+   {
+    "ar": "15 دقيقة",
+    "en": "15 minutes"
+   },
+   {
+    "ar": "10 دقائق",
+    "en": "10 minutes"
+   },
+   {
+    "ar": "20 دقيقة",
+    "en": "20 minutes"
+   },
+   {
+    "ar": "5 دقائق",
+    "en": "5 minutes"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "كم مدة الشوطين الإضافيين معاً؟",
+   "en": "How long is extra time in total?"
+  },
+  "options": [
+   {
+    "ar": "30 دقيقة",
+    "en": "30 minutes"
+   },
+   {
+    "ar": "20 دقيقة",
+    "en": "20 minutes"
+   },
+   {
+    "ar": "15 دقيقة",
+    "en": "15 minutes"
+   },
+   {
+    "ar": "45 دقيقة",
+    "en": "45 minutes"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "كم ركلة ترجيح أساسية لكل فريق؟",
+   "en": "How many kicks per team in a standard shoot-out?"
+  },
+  "options": [
+   {
+    "ar": "5",
+    "en": "5"
+   },
+   {
+    "ar": "3",
+    "en": "3"
+   },
+   {
+    "ar": "7",
+    "en": "7"
+   },
+   {
+    "ar": "10",
+    "en": "10"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ماذا يعني اختصار VAR؟",
+   "en": "What does VAR stand for?"
+  },
+  "options": [
+   {
+    "ar": "حكم الفيديو المساعد",
+    "en": "Video Assistant Referee"
+   },
+   {
+    "ar": "إعادة الفيديو الآلية",
+    "en": "Automatic Video Replay"
+   },
+   {
+    "ar": "مراجعة الحكم بالفيديو",
+    "en": "Referee Video Review"
+   },
+   {
+    "ar": "تقنية خط المرمى",
+    "en": "Goal-line Technology"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "كم عدد التبديلات المسموحة حالياً في أغلب البطولات؟",
+   "en": "How many substitutions are allowed in most competitions now?"
+  },
+  "options": [
+   {
+    "ar": "5",
+    "en": "5"
+   },
+   {
+    "ar": "3",
+    "en": "3"
+   },
+   {
+    "ar": "7",
+    "en": "7"
+   },
+   {
+    "ar": "2",
+    "en": "2"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "ما ارتفاع المرمى القانوني؟",
+   "en": "What is the regulation goal height?"
+  },
+  "options": [
+   {
+    "ar": "2.44 متر",
+    "en": "2.44 m"
+   },
+   {
+    "ar": "2.20 متر",
+    "en": "2.20 m"
+   },
+   {
+    "ar": "2.60 متر",
+    "en": "2.60 m"
+   },
+   {
+    "ar": "2.00 متر",
+    "en": "2.00 m"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "ما عرض المرمى القانوني؟",
+   "en": "What is the regulation goal width?"
+  },
+  "options": [
+   {
+    "ar": "7.32 متر",
+    "en": "7.32 m"
+   },
+   {
+    "ar": "6.50 متر",
+    "en": "6.50 m"
+   },
+   {
+    "ar": "8 أمتار",
+    "en": "8 m"
+   },
+   {
+    "ar": "7 أمتار",
+    "en": "7 m"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "هل يُحتسب التسلل من رمية التماس؟",
+   "en": "Is there offside from a throw-in?"
+  },
+  "options": [
+   {
+    "ar": "لا",
+    "en": "No"
+   },
+   {
+    "ar": "نعم",
+    "en": "Yes"
+   },
+   {
+    "ar": "فقط في الشوط الثاني",
+    "en": "Only in 2nd half"
+   },
+   {
+    "ar": "حسب الحكم",
+    "en": "Referee decides"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ماذا تُمنح إذا لمس المدافع الكرة بيده داخل منطقة جزائه؟",
+   "en": "What is given for a defender's handball in his own box?"
+  },
+  "options": [
+   {
+    "ar": "ركلة جزاء",
+    "en": "A penalty"
+   },
+   {
+    "ar": "ركلة حرة غير مباشرة",
+    "en": "Indirect free kick"
+   },
+   {
+    "ar": "ركنية",
+    "en": "Corner"
+   },
+   {
+    "ar": "رمية تماس",
+    "en": "Throw-in"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "كم حكماً أساسياً يدير المباراة داخل وحول الملعب (دون الفيديو)؟",
+   "en": "How many on-field officials run a match (excluding VAR)?"
+  },
+  "options": [
+   {
+    "ar": "4",
+    "en": "4"
+   },
+   {
+    "ar": "3",
+    "en": "3"
+   },
+   {
+    "ar": "2",
+    "en": "2"
+   },
+   {
+    "ar": "5",
+    "en": "5"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ماذا يُسمى لقاء ريال مدريد وبرشلونة؟",
+   "en": "What is Real Madrid vs Barcelona called?"
+  },
+  "options": [
+   {
+    "ar": "الكلاسيكو",
+    "en": "El Clásico"
+   },
+   {
+    "ar": "الديربي",
+    "en": "El Derbi"
+   },
+   {
+    "ar": "السوبر كلاسيكو",
+    "en": "Superclásico"
+   },
+   {
+    "ar": "كلاسيكو الشمال",
+    "en": "Northern Clásico"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما اسم ديربي بوكا جونيورز وريفر بليت؟",
+   "en": "What is Boca Juniors vs River Plate called?"
+  },
+  "options": [
+   {
+    "ar": "السوبر كلاسيكو",
+    "en": "Superclásico"
+   },
+   {
+    "ar": "الكلاسيكو",
+    "en": "El Clásico"
+   },
+   {
+    "ar": "ديربي التانغو",
+    "en": "Tango Derby"
+   },
+   {
+    "ar": "ديربي الفضة",
+    "en": "Silver Derby"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "أي ناديين يلعبان ديربي القاهرة؟",
+   "en": "Which two clubs play the Cairo Derby?"
+  },
+  "options": [
+   {
+    "ar": "الأهلي والزمالك",
+    "en": "Al Ahly & Zamalek"
+   },
+   {
+    "ar": "الأهلي والإسماعيلي",
+    "en": "Al Ahly & Ismaily"
+   },
+   {
+    "ar": "الزمالك وبيراميدز",
+    "en": "Zamalek & Pyramids"
+   },
+   {
+    "ar": "الاتحاد والمصري",
+    "en": "Ittihad & Masry"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "أي ناديين يلعبان ديربي الدار البيضاء؟",
+   "en": "Which two clubs play the Casablanca Derby?"
+  },
+  "options": [
+   {
+    "ar": "الوداد والرجاء",
+    "en": "Wydad & Raja"
+   },
+   {
+    "ar": "الجيش والفتح",
+    "en": "FAR & FUS"
+   },
+   {
+    "ar": "المغرب التطواني والوداد",
+    "en": "MAT & Wydad"
+   },
+   {
+    "ar": "الرجاء والفتح",
+    "en": "Raja & FUS"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "أي ناديين يلعبان ديربي طرابلس في ليبيا؟",
+   "en": "Which two clubs play the Tripoli Derby in Libya?"
+  },
+  "options": [
+   {
+    "ar": "الأهلي والاتحاد",
+    "en": "Al Ahly & Al Ittihad"
+   },
+   {
+    "ar": "الأهلي والنصر",
+    "en": "Al Ahly & Al Nasr"
+   },
+   {
+    "ar": "الاتحاد والأولمبي",
+    "en": "Ittihad & Olympic"
+   },
+   {
+    "ar": "المدينة والأهلي",
+    "en": "Al Madina & Al Ahly"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ماذا يُسمى ديربي ليفربول وإيفرتون؟",
+   "en": "What is Liverpool vs Everton called?"
+  },
+  "options": [
+   {
+    "ar": "ديربي الميرسيسايد",
+    "en": "Merseyside Derby"
+   },
+   {
+    "ar": "ديربي الشمال الغربي",
+    "en": "North-West Derby"
+   },
+   {
+    "ar": "ديربي المدينة",
+    "en": "City Derby"
+   },
+   {
+    "ar": "الكلاسيكو الإنجليزي",
+    "en": "English Clásico"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "أي ناديين يلعبان ديربي الهلال والمريخ الشهير؟",
+   "en": "The famous Al-Hilal vs Al-Merrikh derby is in which country?"
+  },
+  "options": [
+   {
+    "ar": "السودان",
+    "en": "Sudan"
+   },
+   {
+    "ar": "السعودية",
+    "en": "Saudi Arabia"
+   },
+   {
+    "ar": "قطر",
+    "en": "Qatar"
+   },
+   {
+    "ar": "عمان",
+    "en": "Oman"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بكأس آسيا 2023 (أقيمت مطلع 2024)؟",
+   "en": "Who won the 2023 Asian Cup (played in early 2024)?"
+  },
+  "options": [
+   {
+    "ar": "قطر",
+    "en": "Qatar"
+   },
+   {
+    "ar": "الأردن",
+    "en": "Jordan"
+   },
+   {
+    "ar": "اليابان",
+    "en": "Japan"
+   },
+   {
+    "ar": "كوريا الجنوبية",
+    "en": "South Korea"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من وصل لنهائي كأس آسيا 2023 كأول إنجاز عربي أردني؟",
+   "en": "Which Arab team reached its first Asian Cup final in 2023?"
+  },
+  "options": [
+   {
+    "ar": "الأردن",
+    "en": "Jordan"
+   },
+   {
+    "ar": "العراق",
+    "en": "Iraq"
+   },
+   {
+    "ar": "لبنان",
+    "en": "Lebanon"
+   },
+   {
+    "ar": "فلسطين",
+    "en": "Palestine"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بكأس آسيا 2007 بإنجاز تاريخي؟",
+   "en": "Who famously won the 2007 Asian Cup?"
+  },
+  "options": [
+   {
+    "ar": "العراق",
+    "en": "Iraq"
+   },
+   {
+    "ar": "السعودية",
+    "en": "Saudi Arabia"
+   },
+   {
+    "ar": "اليابان",
+    "en": "Japan"
+   },
+   {
+    "ar": "أستراليا",
+    "en": "Australia"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "كم لقباً آسيوياً للسعودية في كأس آسيا؟",
+   "en": "How many Asian Cup titles does Saudi Arabia have?"
+  },
+  "options": [
+   {
+    "ar": "3",
+    "en": "3"
+   },
+   {
+    "ar": "2",
+    "en": "2"
+   },
+   {
+    "ar": "4",
+    "en": "4"
+   },
+   {
+    "ar": "1",
+    "en": "1"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "أي نادٍ إماراتي توّج بدوري أبطال آسيا 2024؟",
+   "en": "Which UAE club won the 2024 AFC Champions League?"
+  },
+  "options": [
+   {
+    "ar": "العين",
+    "en": "Al Ain"
+   },
+   {
+    "ar": "الوحدة",
+    "en": "Al Wahda"
+   },
+   {
+    "ar": "شباب الأهلي",
+    "en": "Shabab Al Ahli"
+   },
+   {
+    "ar": "الجزيرة",
+    "en": "Al Jazira"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "أي نادٍ مغربي فاز بدوري أبطال أفريقيا 2022؟",
+   "en": "Which Moroccan club won the 2022 CAF Champions League?"
+  },
+  "options": [
+   {
+    "ar": "الوداد",
+    "en": "Wydad"
+   },
+   {
+    "ar": "الرجاء",
+    "en": "Raja"
+   },
+   {
+    "ar": "الجيش الملكي",
+    "en": "FAR Rabat"
+   },
+   {
+    "ar": "نهضة بركان",
+    "en": "RS Berkane"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "بماذا يُلقب الأهلي المصري قارياً؟",
+   "en": "What is Al Ahly's continental nickname?"
+  },
+  "options": [
+   {
+    "ar": "نادي القرن الأفريقي",
+    "en": "African Club of the Century"
+   },
+   {
+    "ar": "ملك أفريقيا",
+    "en": "King of Africa"
+   },
+   {
+    "ar": "العملاق الأحمر",
+    "en": "Red Giant"
+   },
+   {
+    "ar": "سيد القارة",
+    "en": "Master of the Continent"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "من هو هداف الدوريات الأوروبية الملقب بالفرعون الذي تُوج هدافاً للبريميرليغ ثلاث مرات؟",
+   "en": "Which 'Pharaoh' won the Premier League Golden Boot three times?"
+  },
+  "options": [
+   {
+    "ar": "محمد صلاح",
+    "en": "Mohamed Salah"
+   },
+   {
+    "ar": "عمرو زكي",
+    "en": "Amr Zaki"
+   },
+   {
+    "ar": "محمد النني",
+    "en": "Mohamed Elneny"
+   },
+   {
+    "ar": "تريزيغيه",
+    "en": "Trezeguet"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "مع أي منتخب توج ساديو مانيه بأمم أفريقيا 2021؟",
+   "en": "Mané won AFCON 2021 with which team?"
+  },
+  "options": [
+   {
+    "ar": "السنغال",
+    "en": "Senegal"
+   },
+   {
+    "ar": "مالي",
+    "en": "Mali"
+   },
+   {
+    "ar": "غينيا",
+    "en": "Guinea"
+   },
+   {
+    "ar": "غامبيا",
+    "en": "Gambia"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "من قاد نيجيريا هدافاً وتوج أفضل لاعب أفريقي 2023؟",
+   "en": "Who was 2023 African Player of the Year from Nigeria?"
+  },
+  "options": [
+   {
+    "ar": "فيكتور أوسيمين",
+    "en": "Victor Osimhen"
+   },
+   {
+    "ar": "لوكمان",
+    "en": "Lookman"
+   },
+   {
+    "ar": "تشوكويزي",
+    "en": "Chukwueze"
+   },
+   {
+    "ar": "إيهيناتشو",
+    "en": "Iheanacho"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما النادي الأكثر تتويجاً بالدوري الليبي الممتاز؟",
+   "en": "Which club has the most Libyan Premier League titles?"
+  },
+  "options": [
+   {
+    "ar": "الاتحاد",
+    "en": "Al Ittihad"
+   },
+   {
+    "ar": "الأهلي طرابلس",
+    "en": "Al Ahly Tripoli"
+   },
+   {
+    "ar": "الأهلي بنغازي",
+    "en": "Al Ahly Benghazi"
+   },
+   {
+    "ar": "النصر",
+    "en": "Al Nasr"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "في أي مدينة يلعب نادي الأهلي بنغازي؟",
+   "en": "In which city does Al Ahly Benghazi play?"
+  },
+  "options": [
+   {
+    "ar": "بنغازي",
+    "en": "Benghazi"
+   },
+   {
+    "ar": "طرابلس",
+    "en": "Tripoli"
+   },
+   {
+    "ar": "مصراتة",
+    "en": "Misrata"
+   },
+   {
+    "ar": "البيضاء",
+    "en": "Bayda"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "من درّب منتخب ليبيا عند التتويج بالشان 2014؟",
+   "en": "Who coached Libya to the 2014 CHAN title?"
+  },
+  "options": [
+   {
+    "ar": "خافيير كليمنتي",
+    "en": "Javier Clemente"
+   },
+   {
+    "ar": "برانكو",
+    "en": "Branko"
+   },
+   {
+    "ar": "فوزي العيساوي",
+    "en": "Fawzi Al-Issawi"
+   },
+   {
+    "ar": "ماركوس باكيتا",
+    "en": "Marcos Paquetá"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ضد من لعبت ليبيا نهائي كأس أمم أفريقيا 1982؟",
+   "en": "Who did Libya face in the 1982 AFCON final?"
+  },
+  "options": [
+   {
+    "ar": "غانا",
+    "en": "Ghana"
+   },
+   {
+    "ar": "نيجيريا",
+    "en": "Nigeria"
+   },
+   {
+    "ar": "الكاميرون",
+    "en": "Cameroon"
+   },
+   {
+    "ar": "الجزائر",
+    "en": "Algeria"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما اسم أكبر ملاعب طرابلس؟",
+   "en": "What is Tripoli's biggest stadium called?"
+  },
+  "options": [
+   {
+    "ar": "ملعب طرابلس الدولي",
+    "en": "Tripoli International Stadium"
+   },
+   {
+    "ar": "ملعب الشهداء",
+    "en": "Martyrs Stadium"
+   },
+   {
+    "ar": "ملعب 28 مارس",
+    "en": "28 March Stadium"
+   },
+   {
+    "ar": "ملعب بنينا",
+    "en": "Benina Stadium"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "بأي لون يشتهر قميص نادي الاتحاد الليبي؟",
+   "en": "What color is Al Ittihad (Libya)'s famous kit?"
+  },
+  "options": [
+   {
+    "ar": "الأحمر",
+    "en": "Red"
+   },
+   {
+    "ar": "الأخضر",
+    "en": "Green"
+   },
+   {
+    "ar": "الأزرق",
+    "en": "Blue"
+   },
+   {
+    "ar": "الأصفر",
+    "en": "Yellow"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "أي نجم ليبي لعب وسط ميدان المنتخب وقاد جيله لعرس الشان؟",
+   "en": "Which midfield star led Libya's CHAN generation?"
+  },
+  "options": [
+   {
+    "ar": "المعتصم المصراتي",
+    "en": "Al-Mutasem Al-Musrati"
+   },
+   {
+    "ar": "أحمد بن علي",
+    "en": "Ahmed Ben Ali"
+   },
+   {
+    "ar": "محمد الغديوي",
+    "en": "Mohamed Ghadiwi"
+   },
+   {
+    "ar": "سند الورفلي",
+    "en": "Sanad Al-Warfali"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما المنتخب الوحيد الذي شارك في كل نسخ كأس العالم؟",
+   "en": "Which is the only team to play every World Cup?"
+  },
+  "options": [
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "ألمانيا",
+    "en": "Germany"
+   },
+   {
+    "ar": "الأرجنتين",
+    "en": "Argentina"
+   },
+   {
+    "ar": "إيطاليا",
+    "en": "Italy"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من يملك أكثر ألقاب كوبا أمريكا (16)؟",
+   "en": "Who has the most Copa América titles (16)?"
+  },
+  "options": [
+   {
+    "ar": "الأرجنتين",
+    "en": "Argentina"
+   },
+   {
+    "ar": "الأوروغواي",
+    "en": "Uruguay"
+   },
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "تشيلي",
+    "en": "Chile"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بكوبا أمريكا 2021 و2024؟",
+   "en": "Who won Copa América 2021 and 2024?"
+  },
+  "options": [
+   {
+    "ar": "الأرجنتين",
+    "en": "Argentina"
+   },
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "الأوروغواي",
+    "en": "Uruguay"
+   },
+   {
+    "ar": "كولومبيا",
+    "en": "Colombia"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "ما 'الماراكانازو' الشهير؟",
+   "en": "What was the famous 'Maracanazo'?"
+  },
+  "options": [
+   {
+    "ar": "فوز الأوروغواي على البرازيل 1950",
+    "en": "Uruguay beating Brazil in 1950"
+   },
+   {
+    "ar": "هدف مارادونا 1986",
+    "en": "Maradona's 1986 goal"
+   },
+   {
+    "ar": "ريمونتادا برشلونة",
+    "en": "Barcelona's comeback"
+   },
+   {
+    "ar": "نهائي 2014",
+    "en": "The 2014 final"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بجائزة أفضل لاعب شاب في مونديال 2018؟",
+   "en": "Who won the Best Young Player award at the 2018 World Cup?"
+  },
+  "options": [
+   {
+    "ar": "كيليان مبابي",
+    "en": "Kylian Mbappé"
+   },
+   {
+    "ar": "هالاند",
+    "en": "Haaland"
+   },
+   {
+    "ar": "فينيسيوس",
+    "en": "Vinícius"
+   },
+   {
+    "ar": "سانشو",
+    "en": "Sancho"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما الجائزة الممنوحة لهداف كأس العالم؟",
+   "en": "What award goes to the World Cup top scorer?"
+  },
+  "options": [
+   {
+    "ar": "الحذاء الذهبي",
+    "en": "Golden Boot"
+   },
+   {
+    "ar": "الكرة الذهبية",
+    "en": "Golden Ball"
+   },
+   {
+    "ar": "القفاز الذهبي",
+    "en": "Golden Glove"
+   },
+   {
+    "ar": "الصافرة الذهبية",
+    "en": "Golden Whistle"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بالحذاء الذهبي لمونديال 2014 برصيد 6 أهداف؟",
+   "en": "Who won the 2014 WC Golden Boot with 6 goals?"
+  },
+  "options": [
+   {
+    "ar": "خاميس رودريغيز",
+    "en": "James Rodríguez"
+   },
+   {
+    "ar": "ميسي",
+    "en": "Messi"
+   },
+   {
+    "ar": "مولر",
+    "en": "Müller"
+   },
+   {
+    "ar": "نيمار",
+    "en": "Neymar"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من فاز بالحذاء الذهبي لمونديال 2018؟",
+   "en": "Who won the 2018 WC Golden Boot?"
+  },
+  "options": [
+   {
+    "ar": "هاري كين",
+    "en": "Harry Kane"
+   },
+   {
+    "ar": "مبابي",
+    "en": "Mbappé"
+   },
+   {
+    "ar": "غريزمان",
+    "en": "Griezmann"
+   },
+   {
+    "ar": "لوكاكو",
+    "en": "Lukaku"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "كم استمرت أطول سلسلة لا هزيمة لإيطاليا (رقم عالمي حتى 2021)؟",
+   "en": "Italy's world-record unbeaten run (to 2021) lasted how many games?"
+  },
+  "options": [
+   {
+    "ar": "37",
+    "en": "37"
+   },
+   {
+    "ar": "31",
+    "en": "31"
+   },
+   {
+    "ar": "40",
+    "en": "40"
+   },
+   {
+    "ar": "28",
+    "en": "28"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "بماذا يُعرف مدرب مانشستر يونايتد الأسطوري صاحب الـ26 عاماً؟",
+   "en": "Who is Man United's legendary 26-year manager?"
+  },
+  "options": [
+   {
+    "ar": "أليكس فيرغسون",
+    "en": "Alex Ferguson"
+   },
+   {
+    "ar": "مات بازبي",
+    "en": "Matt Busby"
+   },
+   {
+    "ar": "مورينيو",
+    "en": "Mourinho"
+   },
+   {
+    "ar": "فان غال",
+    "en": "Van Gaal"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من لُقّب بـ'السبيشل وان'؟",
+   "en": "Who called himself 'The Special One'?"
+  },
+  "options": [
+   {
+    "ar": "جوزيه مورينيو",
+    "en": "José Mourinho"
+   },
+   {
+    "ar": "غوارديولا",
+    "en": "Guardiola"
+   },
+   {
+    "ar": "كلوب",
+    "en": "Klopp"
+   },
+   {
+    "ar": "أنشيلوتي",
+    "en": "Ancelotti"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "أي مدرب قاد مانشستر سيتي للثلاثية عام 2023؟",
+   "en": "Which coach led Man City to the 2023 treble?"
+  },
+  "options": [
+   {
+    "ar": "بيب غوارديولا",
+    "en": "Pep Guardiola"
+   },
+   {
+    "ar": "أرتيتا",
+    "en": "Arteta"
+   },
+   {
+    "ar": "كلوب",
+    "en": "Klopp"
+   },
+   {
+    "ar": "توخيل",
+    "en": "Tuchel"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما النادي الأكثر تتويجاً بالدوري الإسباني؟",
+   "en": "Which club has the most La Liga titles?"
+  },
+  "options": [
+   {
+    "ar": "ريال مدريد",
+    "en": "Real Madrid"
+   },
+   {
+    "ar": "برشلونة",
+    "en": "Barcelona"
+   },
+   {
+    "ar": "أتلتيكو مدريد",
+    "en": "Atlético Madrid"
+   },
+   {
+    "ar": "أتلتيك بلباو",
+    "en": "Athletic Club"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما النادي الأكثر تتويجاً بالدوري الإيطالي؟",
+   "en": "Which club has the most Serie A titles?"
+  },
+  "options": [
+   {
+    "ar": "يوفنتوس",
+    "en": "Juventus"
+   },
+   {
+    "ar": "ميلان",
+    "en": "AC Milan"
+   },
+   {
+    "ar": "إنتر",
+    "en": "Inter"
+   },
+   {
+    "ar": "روما",
+    "en": "Roma"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما النادي الأكثر تتويجاً بالدوري الألماني؟",
+   "en": "Which club has the most Bundesliga titles?"
+  },
+  "options": [
+   {
+    "ar": "بايرن ميونخ",
+    "en": "Bayern Munich"
+   },
+   {
+    "ar": "دورتموند",
+    "en": "Dortmund"
+   },
+   {
+    "ar": "شالكه",
+    "en": "Schalke"
+   },
+   {
+    "ar": "لايبزيغ",
+    "en": "Leipzig"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "فاز المغرب بكأس العالم 2022.",
+   "en": "Morocco won the 2022 World Cup."
+  },
+  "options": [
+   {
+    "ar": "خطأ",
+    "en": "False"
+   },
+   {
+    "ar": "صح",
+    "en": "True"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "تقام كأس العالم كل أربع سنوات.",
+   "en": "The World Cup is held every four years."
+  },
+  "options": [
+   {
+    "ar": "صح",
+    "en": "True"
+   },
+   {
+    "ar": "خطأ",
+    "en": "False"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "سجل كريستيانو رونالدو في خمس نسخ مختلفة من كأس العالم.",
+   "en": "Cristiano Ronaldo has scored in five different World Cups."
+  },
+  "options": [
+   {
+    "ar": "صح",
+    "en": "True"
+   },
+   {
+    "ar": "خطأ",
+    "en": "False"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ميسي لم يفز بكأس العالم قبل نسخة 2022.",
+   "en": "Messi never won a World Cup before 2022."
+  },
+  "options": [
+   {
+    "ar": "صح",
+    "en": "True"
+   },
+   {
+    "ar": "خطأ",
+    "en": "False"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "يُسمح للحارس بالتقاط تمريرة زميله المتعمدة بالقدم بيديه.",
+   "en": "A keeper may handle a deliberate back-pass from a teammate's foot."
+  },
+  "options": [
+   {
+    "ar": "خطأ",
+    "en": "False"
+   },
+   {
+    "ar": "صح",
+    "en": "True"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "يمكن تسجيل هدف مباشرة من ركلة حرة مباشرة.",
+   "en": "You can score directly from a direct free kick."
+  },
+  "options": [
+   {
+    "ar": "صح",
+    "en": "True"
+   },
+   {
+    "ar": "خطأ",
+    "en": "False"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "يمكن تسجيل هدف مباشرة من رمية التماس.",
+   "en": "You can score directly from a throw-in."
+  },
+  "options": [
+   {
+    "ar": "خطأ",
+    "en": "False"
+   },
+   {
+    "ar": "صح",
+    "en": "True"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "زين الدين زيدان من أصول جزائرية.",
+   "en": "Zinedine Zidane is of Algerian descent."
+  },
+  "options": [
+   {
+    "ar": "صح",
+    "en": "True"
+   },
+   {
+    "ar": "خطأ",
+    "en": "False"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "أنفيلد هو ملعب مانشستر سيتي.",
+   "en": "Anfield is Manchester City's stadium."
+  },
+  "options": [
+   {
+    "ar": "خطأ",
+    "en": "False"
+   },
+   {
+    "ar": "صح",
+    "en": "True"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "سون هيونغ مين لاعب ياباني.",
+   "en": "Son Heung-min is Japanese."
+  },
+  "options": [
+   {
+    "ar": "خطأ",
+    "en": "False"
+   },
+   {
+    "ar": "صح",
+    "en": "True"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "أول كأس عالم للسيدات أقيمت عام 1991.",
+   "en": "The first Women's World Cup was in 1991."
+  },
+  "options": [
+   {
+    "ar": "صح",
+    "en": "True"
+   },
+   {
+    "ar": "خطأ",
+    "en": "False"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "الأهلي المصري هو النادي الأكثر تتويجاً بدوري أبطال أفريقيا.",
+   "en": "Al Ahly has the most CAF Champions League titles."
+  },
+  "options": [
+   {
+    "ar": "صح",
+    "en": "True"
+   },
+   {
+    "ar": "خطأ",
+    "en": "False"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "فازت اليونان بأمم أوروبا 2004 رغم أنها لم تكن مرشحة.",
+   "en": "Underdogs Greece won Euro 2004."
+  },
+  "options": [
+   {
+    "ar": "صح",
+    "en": "True"
+   },
+   {
+    "ar": "خطأ",
+    "en": "False"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "يُحتسب التسلل إذا استقبل اللاعب الكرة من ركلة مرمى.",
+   "en": "You can be offside straight from a goal kick."
+  },
+  "options": [
+   {
+    "ar": "خطأ",
+    "en": "False"
+   },
+   {
+    "ar": "صح",
+    "en": "True"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "الكلاسيكو يجمع ريال مدريد وأتلتيكو مدريد.",
+   "en": "El Clásico is Real Madrid vs Atlético Madrid."
+  },
+  "options": [
+   {
+    "ar": "خطأ",
+    "en": "False"
+   },
+   {
+    "ar": "صح",
+    "en": "True"
+   }
+  ],
+  "correctIndex": 0
+ }
+]

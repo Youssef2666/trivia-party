@@ -1,0 +1,24 @@
+{
+  "name": "trivia-party",
+  "version": "1.0.0",
+  "description": "Real-time multiplayer trivia party game",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js"
+  },
+  "keywords": [
+    "trivia",
+    "multiplayer",
+    "party",
+    "game",
+    "websocket"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.2.1",
+    "qrcode": "^1.5.4",
+    "socket.io": "^4.8.3",
+    "uuid": "^14.0.1"
+  }
+}

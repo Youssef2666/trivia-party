@@ -1,0 +1,290 @@
+[
+ {
+  "type": "guess",
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "كم هدفاً سُجّل في كأس العالم 2022 بقطر كاملة؟",
+   "en": "How many goals were scored in total at the 2022 World Cup in Qatar?"
+  },
+  "answer": 172,
+  "unit": {
+   "ar": "هدف",
+   "en": "goals"
+  }
+ },
+ {
+  "type": "guess",
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "كم متفرجاً يتسع ملعب لوسيل الذي أقيم عليه نهائي مونديال 2022؟",
+   "en": "What is the capacity of Lusail Stadium, venue of the 2022 World Cup final?"
+  },
+  "answer": 88966,
+  "unit": {
+   "ar": "متفرج",
+   "en": "seats"
+  }
+ },
+ {
+  "type": "guess",
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "كم هدفاً سجل ميسي في السنة الميلادية 2012 (رقم قياسي عالمي)؟",
+   "en": "How many goals did Messi score in the 2012 calendar year (world record)?"
+  },
+  "answer": 91,
+  "unit": {
+   "ar": "هدف",
+   "en": "goals"
+  }
+ },
+ {
+  "type": "guess",
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "كم بطولة كوبا أمريكا حققتها البرازيل؟",
+   "en": "How many Copa América titles has Brazil won?"
+  },
+  "answer": 9,
+  "unit": {
+   "ar": "بطولة",
+   "en": "titles"
+  }
+ },
+ {
+  "type": "guess",
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "في أي سنة تأسس نادي برشلونة؟",
+   "en": "In what year was FC Barcelona founded?"
+  },
+  "answer": 1899
+ },
+ {
+  "type": "guess",
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "كم كيلومتراً يركض لاعب كرة القدم تقريباً في المباراة الواحدة؟",
+   "en": "About how many kilometers does a footballer run in a single match?"
+  },
+  "answer": 10,
+  "unit": {
+   "ar": "كم",
+   "en": "km"
+  }
+ },
+ {
+  "type": "guess",
+  "category": "general",
+  "difficulty": "easy",
+  "question": {
+   "ar": "كم عدد عظام جسم الإنسان البالغ؟",
+   "en": "How many bones are in the adult human body?"
+  },
+  "answer": 206,
+  "unit": {
+   "ar": "عظمة",
+   "en": "bones"
+  }
+ },
+ {
+  "type": "guess",
+  "category": "general",
+  "difficulty": "medium",
+  "question": {
+   "ar": "كم يبلغ ارتفاع قمة إيفرست بالأمتار؟",
+   "en": "How tall is Mount Everest in meters?"
+  },
+  "answer": 8849,
+  "unit": {
+   "ar": "متر",
+   "en": "meters"
+  }
+ },
+ {
+  "type": "guess",
+  "category": "general",
+  "difficulty": "medium",
+  "question": {
+   "ar": "كم يبلغ طول نهر النيل بالكيلومترات؟",
+   "en": "How long is the Nile River in kilometers?"
+  },
+  "answer": 6650,
+  "unit": {
+   "ar": "كم",
+   "en": "km"
+  }
+ },
+ {
+  "type": "guess",
+  "category": "general",
+  "difficulty": "hard",
+  "question": {
+   "ar": "في أي سنة سجّل غراهام بيل براءة اختراع الهاتف؟",
+   "en": "In what year did Graham Bell patent the telephone?"
+  },
+  "answer": 1876
+ },
+ {
+  "type": "guess",
+  "category": "general",
+  "difficulty": "easy",
+  "question": {
+   "ar": "كم عدد سكان ليبيا تقريباً بالملايين؟",
+   "en": "What is Libya's approximate population in millions?"
+  },
+  "answer": 7,
+  "unit": {
+   "ar": "مليون",
+   "en": "million"
+  }
+ },
+ {
+  "type": "guess",
+  "category": "general",
+  "difficulty": "easy",
+  "question": {
+   "ar": "كم ثانية في الساعة الواحدة؟",
+   "en": "How many seconds are in one hour?"
+  },
+  "answer": 3600,
+  "unit": {
+   "ar": "ثانية",
+   "en": "seconds"
+  }
+ },
+ {
+  "type": "guess",
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "في أي سنة تأسس نادي ريال مدريد؟",
+   "en": "In what year was Real Madrid founded?"
+  },
+  "answer": 1902
+ },
+ {
+  "type": "guess",
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "في أي سنة تأسس نادي الأهلي المصري؟",
+   "en": "In what year was Al Ahly (Egypt) founded?"
+  },
+  "answer": 1907
+ },
+ {
+  "type": "guess",
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "كم هدفاً سجل محمد صلاح في موسمه الأول بالبريميرليغ مع ليفربول (2017-18)؟",
+   "en": "How many PL goals did Salah score in 2017-18?"
+  },
+  "answer": 32,
+  "unit": {
+   "ar": "هدف",
+   "en": "goals"
+  }
+ },
+ {
+  "type": "guess",
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "كم متفرجاً تقريباً يتسع ملعب ويمبلي؟",
+   "en": "What is Wembley's capacity?"
+  },
+  "answer": 90000,
+  "unit": {
+   "ar": "متفرج",
+   "en": "seats"
+  }
+ },
+ {
+  "type": "guess",
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "كم مباراة لعب ميسي في كأس العالم حتى نهاية 2022 (رقم قياسي)؟",
+   "en": "How many WC matches had Messi played by end of 2022 (record)?"
+  },
+  "answer": 26,
+  "unit": {
+   "ar": "مباراة",
+   "en": "matches"
+  }
+ },
+ {
+  "type": "guess",
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "كم هدفاً سجل ميسي في مونديال 2022؟",
+   "en": "How many goals did Messi score at the 2022 World Cup?"
+  },
+  "answer": 7,
+  "unit": {
+   "ar": "أهداف",
+   "en": "goals"
+  }
+ },
+ {
+  "type": "guess",
+  "category": "football",
+  "difficulty": "easy",
+  "question": {
+   "ar": "كم لاعباً في قائمة المنتخب بكأس العالم 2022؟",
+   "en": "How many players in a 2022 World Cup squad?"
+  },
+  "answer": 26,
+  "unit": {
+   "ar": "لاعباً",
+   "en": "players"
+  }
+ },
+ {
+  "type": "guess",
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "كم منتخباً يشارك في كأس أمم أفريقيا حالياً؟",
+   "en": "How many teams play in the current AFCON?"
+  },
+  "answer": 24,
+  "unit": {
+   "ar": "منتخباً",
+   "en": "teams"
+  }
+ },
+ {
+  "type": "guess",
+  "category": "football",
+  "difficulty": "hard",
+  "question": {
+   "ar": "في أي سنة أقيمت أول مباراة دولية رسمية في التاريخ (اسكتلندا وإنجلترا)؟",
+   "en": "When was the first official international match (Scotland v England)?"
+  },
+  "answer": 1872
+ },
+ {
+  "type": "guess",
+  "category": "football",
+  "difficulty": "medium",
+  "question": {
+   "ar": "كم لقب دوري إنجليزي حصده أليكس فيرغسون مع يونايتد؟",
+   "en": "How many league titles did Ferguson win with United?"
+  },
+  "answer": 13,
+  "unit": {
+   "ar": "لقباً",
+   "en": "titles"
+  }
+ }
+]

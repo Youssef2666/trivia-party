@@ -1,0 +1,2303 @@
+[
+ {
+  "category": "science",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما هو العنصر الكيميائي الذي يرمز له بـ O؟",
+   "en": "What chemical element has the symbol O?"
+  },
+  "options": [
+   {
+    "ar": "الأكسجين",
+    "en": "Oxygen"
+   },
+   {
+    "ar": "الذهب",
+    "en": "Gold"
+   },
+   {
+    "ar": "الفضة",
+    "en": "Silver"
+   },
+   {
+    "ar": "الحديد",
+    "en": "Iron"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "science",
+  "difficulty": "easy",
+  "question": {
+   "ar": "كم عدد كواكب المجموعة الشمسية؟",
+   "en": "How many planets are in the solar system?"
+  },
+  "options": [
+   {
+    "ar": "7",
+    "en": "7"
+   },
+   {
+    "ar": "8",
+    "en": "8"
+   },
+   {
+    "ar": "9",
+    "en": "9"
+   },
+   {
+    "ar": "10",
+    "en": "10"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "science",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما هو أكبر عضو في جسم الإنسان؟",
+   "en": "What is the largest organ in the human body?"
+  },
+  "options": [
+   {
+    "ar": "القلب",
+    "en": "Heart"
+   },
+   {
+    "ar": "الكبد",
+    "en": "Liver"
+   },
+   {
+    "ar": "الجلد",
+    "en": "Skin"
+   },
+   {
+    "ar": "الدماغ",
+    "en": "Brain"
+   }
+  ],
+  "correctIndex": 2
+ },
+ {
+  "category": "science",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما هو الغاز الأكثر وفرة في الغلاف الجوي للأرض؟",
+   "en": "What is the most abundant gas in Earth's atmosphere?"
+  },
+  "options": [
+   {
+    "ar": "الأكسجين",
+    "en": "Oxygen"
+   },
+   {
+    "ar": "ثاني أكسيد الكربون",
+    "en": "Carbon Dioxide"
+   },
+   {
+    "ar": "النيتروجين",
+    "en": "Nitrogen"
+   },
+   {
+    "ar": "الهيدروجين",
+    "en": "Hydrogen"
+   }
+  ],
+  "correctIndex": 2
+ },
+ {
+  "category": "science",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما هي سرعة الضوء تقريباً بالكيلومتر في الثانية؟",
+   "en": "What is the approximate speed of light in km/s?"
+  },
+  "options": [
+   {
+    "ar": "150,000 كم/ث",
+    "en": "150,000 km/s"
+   },
+   {
+    "ar": "300,000 كم/ث",
+    "en": "300,000 km/s"
+   },
+   {
+    "ar": "500,000 كم/ث",
+    "en": "500,000 km/s"
+   },
+   {
+    "ar": "1,000,000 كم/ث",
+    "en": "1,000,000 km/s"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "science",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما هو الحمض النووي الذي يحمل المعلومات الوراثية؟",
+   "en": "What nucleic acid carries genetic information?"
+  },
+  "options": [
+   {
+    "ar": "RNA",
+    "en": "RNA"
+   },
+   {
+    "ar": "DNA",
+    "en": "DNA"
+   },
+   {
+    "ar": "ATP",
+    "en": "ATP"
+   },
+   {
+    "ar": "ADP",
+    "en": "ADP"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "science",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما هو العنصر الأكثر وفرة في الكون؟",
+   "en": "What is the most abundant element in the universe?"
+  },
+  "options": [
+   {
+    "ar": "الهيليوم",
+    "en": "Helium"
+   },
+   {
+    "ar": "الكربون",
+    "en": "Carbon"
+   },
+   {
+    "ar": "الأكسجين",
+    "en": "Oxygen"
+   },
+   {
+    "ar": "الهيدروجين",
+    "en": "Hydrogen"
+   }
+  ],
+  "correctIndex": 3
+ },
+ {
+  "category": "science",
+  "difficulty": "hard",
+  "question": {
+   "ar": "ما هو عدد أفوغادرو تقريباً؟",
+   "en": "What is Avogadro's number approximately?"
+  },
+  "options": [
+   {
+    "ar": "6.022 × 10²³",
+    "en": "6.022 × 10²³"
+   },
+   {
+    "ar": "3.14 × 10²³",
+    "en": "3.14 × 10²³"
+   },
+   {
+    "ar": "6.022 × 10²⁰",
+    "en": "6.022 × 10²⁰"
+   },
+   {
+    "ar": "9.8 × 10²³",
+    "en": "9.8 × 10²³"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "science",
+  "difficulty": "hard",
+  "question": {
+   "ar": "ما هي الجسيمات دون الذرية التي تحمل شحنة سالبة؟",
+   "en": "Which subatomic particles carry a negative charge?"
+  },
+  "options": [
+   {
+    "ar": "البروتونات",
+    "en": "Protons"
+   },
+   {
+    "ar": "النيوترونات",
+    "en": "Neutrons"
+   },
+   {
+    "ar": "الإلكترونات",
+    "en": "Electrons"
+   },
+   {
+    "ar": "الفوتونات",
+    "en": "Photons"
+   }
+  ],
+  "correctIndex": 2
+ },
+ {
+  "category": "science",
+  "difficulty": "hard",
+  "question": {
+   "ar": "ما هي الوحدة الدولية لقياس شدة التيار الكهربائي؟",
+   "en": "What is the SI unit for measuring electric current?"
+  },
+  "options": [
+   {
+    "ar": "فولت",
+    "en": "Volt"
+   },
+   {
+    "ar": "أوم",
+    "en": "Ohm"
+   },
+   {
+    "ar": "واط",
+    "en": "Watt"
+   },
+   {
+    "ar": "أمبير",
+    "en": "Ampere"
+   }
+  ],
+  "correctIndex": 3
+ },
+ {
+  "category": "history",
+  "difficulty": "easy",
+  "question": {
+   "ar": "في أي عام هبط أول إنسان على سطح القمر؟",
+   "en": "In what year did the first human land on the Moon?"
+  },
+  "options": [
+   {
+    "ar": "1965",
+    "en": "1965"
+   },
+   {
+    "ar": "1969",
+    "en": "1969"
+   },
+   {
+    "ar": "1972",
+    "en": "1972"
+   },
+   {
+    "ar": "1959",
+    "en": "1959"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "history",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من بنى الأهرامات الكبرى في الجيزة؟",
+   "en": "Who built the Great Pyramids of Giza?"
+  },
+  "options": [
+   {
+    "ar": "الرومان",
+    "en": "Romans"
+   },
+   {
+    "ar": "الإغريق",
+    "en": "Greeks"
+   },
+   {
+    "ar": "المصريون القدماء",
+    "en": "Ancient Egyptians"
+   },
+   {
+    "ar": "الفرس",
+    "en": "Persians"
+   }
+  ],
+  "correctIndex": 2
+ },
+ {
+  "category": "history",
+  "difficulty": "easy",
+  "question": {
+   "ar": "في أي قرن بدأت الثورة الصناعية؟",
+   "en": "In which century did the Industrial Revolution begin?"
+  },
+  "options": [
+   {
+    "ar": "القرن 16",
+    "en": "16th century"
+   },
+   {
+    "ar": "القرن 17",
+    "en": "17th century"
+   },
+   {
+    "ar": "القرن 18",
+    "en": "18th century"
+   },
+   {
+    "ar": "القرن 19",
+    "en": "19th century"
+   }
+  ],
+  "correctIndex": 2
+ },
+ {
+  "category": "history",
+  "difficulty": "medium",
+  "question": {
+   "ar": "في أي عام سقط جدار برلين؟",
+   "en": "In what year did the Berlin Wall fall?"
+  },
+  "options": [
+   {
+    "ar": "1987",
+    "en": "1987"
+   },
+   {
+    "ar": "1989",
+    "en": "1989"
+   },
+   {
+    "ar": "1991",
+    "en": "1991"
+   },
+   {
+    "ar": "1985",
+    "en": "1985"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "history",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من هو مؤسس الدولة الأموية؟",
+   "en": "Who founded the Umayyad Caliphate?"
+  },
+  "options": [
+   {
+    "ar": "عمر بن الخطاب",
+    "en": "Umar ibn Al-Khattab"
+   },
+   {
+    "ar": "معاوية بن أبي سفيان",
+    "en": "Muawiya ibn Abi Sufyan"
+   },
+   {
+    "ar": "أبو بكر الصديق",
+    "en": "Abu Bakr Al-Siddiq"
+   },
+   {
+    "ar": "هارون الرشيد",
+    "en": "Harun al-Rashid"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "history",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما اسم السفينة التي غرقت عام 1912؟",
+   "en": "What ship sank in 1912?"
+  },
+  "options": [
+   {
+    "ar": "لوزيتانيا",
+    "en": "Lusitania"
+   },
+   {
+    "ar": "تيتانيك",
+    "en": "Titanic"
+   },
+   {
+    "ar": "بريتانيك",
+    "en": "Britannic"
+   },
+   {
+    "ar": "أوليمبيك",
+    "en": "Olympic"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "history",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما هي أطول حضارة استمرت في التاريخ؟",
+   "en": "What is the longest-lasting civilization in history?"
+  },
+  "options": [
+   {
+    "ar": "الحضارة الرومانية",
+    "en": "Roman civilization"
+   },
+   {
+    "ar": "الحضارة المصرية القديمة",
+    "en": "Ancient Egyptian civilization"
+   },
+   {
+    "ar": "الحضارة الصينية",
+    "en": "Chinese civilization"
+   },
+   {
+    "ar": "حضارة بلاد الرافدين",
+    "en": "Mesopotamian civilization"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "history",
+  "difficulty": "hard",
+  "question": {
+   "ar": "في أي معركة هُزم نابليون نهائياً عام 1815؟",
+   "en": "In which battle was Napoleon finally defeated in 1815?"
+  },
+  "options": [
+   {
+    "ar": "معركة أوسترليتز",
+    "en": "Battle of Austerlitz"
+   },
+   {
+    "ar": "معركة ترافلغار",
+    "en": "Battle of Trafalgar"
+   },
+   {
+    "ar": "معركة واترلو",
+    "en": "Battle of Waterloo"
+   },
+   {
+    "ar": "معركة لايبزيغ",
+    "en": "Battle of Leipzig"
+   }
+  ],
+  "correctIndex": 2
+ },
+ {
+  "category": "history",
+  "difficulty": "hard",
+  "question": {
+   "ar": "ما هو أقدم نظام كتابة معروف في التاريخ؟",
+   "en": "What is the oldest known writing system?"
+  },
+  "options": [
+   {
+    "ar": "الهيروغليفية",
+    "en": "Hieroglyphics"
+   },
+   {
+    "ar": "الكتابة المسمارية",
+    "en": "Cuneiform"
+   },
+   {
+    "ar": "الأبجدية الفينيقية",
+    "en": "Phoenician alphabet"
+   },
+   {
+    "ar": "الكتابة الصينية",
+    "en": "Chinese script"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "history",
+  "difficulty": "hard",
+  "question": {
+   "ar": "في أي عام تم اكتشاف مقبرة توت عنخ آمون؟",
+   "en": "In what year was Tutankhamun's tomb discovered?"
+  },
+  "options": [
+   {
+    "ar": "1912",
+    "en": "1912"
+   },
+   {
+    "ar": "1922",
+    "en": "1922"
+   },
+   {
+    "ar": "1932",
+    "en": "1932"
+   },
+   {
+    "ar": "1902",
+    "en": "1902"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "geography",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما هي أكبر قارة في العالم من حيث المساحة؟",
+   "en": "What is the largest continent by area?"
+  },
+  "options": [
+   {
+    "ar": "أفريقيا",
+    "en": "Africa"
+   },
+   {
+    "ar": "أوروبا",
+    "en": "Europe"
+   },
+   {
+    "ar": "آسيا",
+    "en": "Asia"
+   },
+   {
+    "ar": "أمريكا الشمالية",
+    "en": "North America"
+   }
+  ],
+  "correctIndex": 2
+ },
+ {
+  "category": "geography",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما هي عاصمة فرنسا؟",
+   "en": "What is the capital of France?"
+  },
+  "options": [
+   {
+    "ar": "لندن",
+    "en": "London"
+   },
+   {
+    "ar": "باريس",
+    "en": "Paris"
+   },
+   {
+    "ar": "مدريد",
+    "en": "Madrid"
+   },
+   {
+    "ar": "روما",
+    "en": "Rome"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "geography",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما هو أطول نهر في العالم؟",
+   "en": "What is the longest river in the world?"
+  },
+  "options": [
+   {
+    "ar": "نهر الأمازون",
+    "en": "Amazon River"
+   },
+   {
+    "ar": "نهر النيل",
+    "en": "Nile River"
+   },
+   {
+    "ar": "نهر المسيسيبي",
+    "en": "Mississippi River"
+   },
+   {
+    "ar": "نهر اليانغتسي",
+    "en": "Yangtze River"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "geography",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما هي أصغر دولة في العالم من حيث المساحة؟",
+   "en": "What is the smallest country in the world by area?"
+  },
+  "options": [
+   {
+    "ar": "موناكو",
+    "en": "Monaco"
+   },
+   {
+    "ar": "الفاتيكان",
+    "en": "Vatican City"
+   },
+   {
+    "ar": "سان مارينو",
+    "en": "San Marino"
+   },
+   {
+    "ar": "مالطا",
+    "en": "Malta"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "geography",
+  "difficulty": "medium",
+  "question": {
+   "ar": "في أي دولة يقع جبل كليمنجارو؟",
+   "en": "In which country is Mount Kilimanjaro located?"
+  },
+  "options": [
+   {
+    "ar": "كينيا",
+    "en": "Kenya"
+   },
+   {
+    "ar": "تنزانيا",
+    "en": "Tanzania"
+   },
+   {
+    "ar": "أوغندا",
+    "en": "Uganda"
+   },
+   {
+    "ar": "إثيوبيا",
+    "en": "Ethiopia"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "geography",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما هي الصحراء الأكبر في العالم؟",
+   "en": "What is the largest desert in the world?"
+  },
+  "options": [
+   {
+    "ar": "صحراء غوبي",
+    "en": "Gobi Desert"
+   },
+   {
+    "ar": "الصحراء الكبرى",
+    "en": "Sahara Desert"
+   },
+   {
+    "ar": "صحراء القطب الجنوبي",
+    "en": "Antarctic Desert"
+   },
+   {
+    "ar": "صحراء كالاهاري",
+    "en": "Kalahari Desert"
+   }
+  ],
+  "correctIndex": 2
+ },
+ {
+  "category": "geography",
+  "difficulty": "medium",
+  "question": {
+   "ar": "كم عدد الدول العربية؟",
+   "en": "How many Arab countries are there?"
+  },
+  "options": [
+   {
+    "ar": "18",
+    "en": "18"
+   },
+   {
+    "ar": "20",
+    "en": "20"
+   },
+   {
+    "ar": "22",
+    "en": "22"
+   },
+   {
+    "ar": "25",
+    "en": "25"
+   }
+  ],
+  "correctIndex": 2
+ },
+ {
+  "category": "geography",
+  "difficulty": "hard",
+  "question": {
+   "ar": "ما هي العاصمة القديمة لميانمار قبل نايبيداو؟",
+   "en": "What was the old capital of Myanmar before Naypyidaw?"
+  },
+  "options": [
+   {
+    "ar": "ماندالاي",
+    "en": "Mandalay"
+   },
+   {
+    "ar": "يانغون (رانغون)",
+    "en": "Yangon (Rangoon)"
+   },
+   {
+    "ar": "باغان",
+    "en": "Bagan"
+   },
+   {
+    "ar": "موالمين",
+    "en": "Mawlamyine"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "geography",
+  "difficulty": "hard",
+  "question": {
+   "ar": "ما هو أعمق نقطة في محيطات العالم؟",
+   "en": "What is the deepest point in the world's oceans?"
+  },
+  "options": [
+   {
+    "ar": "خندق تونغا",
+    "en": "Tonga Trench"
+   },
+   {
+    "ar": "خندق ماريانا",
+    "en": "Mariana Trench"
+   },
+   {
+    "ar": "خندق بورتوريكو",
+    "en": "Puerto Rico Trench"
+   },
+   {
+    "ar": "خندق اليابان",
+    "en": "Japan Trench"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "geography",
+  "difficulty": "hard",
+  "question": {
+   "ar": "ما هي الدولة الوحيدة التي تقع في قارتين؟",
+   "en": "Which country spans two continents with its largest city?"
+  },
+  "options": [
+   {
+    "ar": "روسيا",
+    "en": "Russia"
+   },
+   {
+    "ar": "تركيا",
+    "en": "Turkey"
+   },
+   {
+    "ar": "مصر",
+    "en": "Egypt"
+   },
+   {
+    "ar": "كازاخستان",
+    "en": "Kazakhstan"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "pop_culture",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من هو مؤلف سلسلة هاري بوتر؟",
+   "en": "Who is the author of the Harry Potter series?"
+  },
+  "options": [
+   {
+    "ar": "ج. ر. ر. تولكين",
+    "en": "J.R.R. Tolkien"
+   },
+   {
+    "ar": "ج. ك. رولينغ",
+    "en": "J.K. Rowling"
+   },
+   {
+    "ar": "سي. إس. لويس",
+    "en": "C.S. Lewis"
+   },
+   {
+    "ar": "ستيفن كينغ",
+    "en": "Stephen King"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "pop_culture",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما اسم الشخصية الرئيسية في فيلم الأسد الملك؟",
+   "en": "What is the main character's name in The Lion King?"
+  },
+  "options": [
+   {
+    "ar": "موفاسا",
+    "en": "Mufasa"
+   },
+   {
+    "ar": "سكار",
+    "en": "Scar"
+   },
+   {
+    "ar": "سيمبا",
+    "en": "Simba"
+   },
+   {
+    "ar": "تيمون",
+    "en": "Timon"
+   }
+  ],
+  "correctIndex": 2
+ },
+ {
+  "category": "pop_culture",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما هي منصة التواصل الاجتماعي التي يرمز لها بطائر؟",
+   "en": "Which social media platform was symbolized by a bird?"
+  },
+  "options": [
+   {
+    "ar": "فيسبوك",
+    "en": "Facebook"
+   },
+   {
+    "ar": "إنستغرام",
+    "en": "Instagram"
+   },
+   {
+    "ar": "تويتر (X)",
+    "en": "Twitter (X)"
+   },
+   {
+    "ar": "سناب شات",
+    "en": "Snapchat"
+   }
+  ],
+  "correctIndex": 2
+ },
+ {
+  "category": "pop_culture",
+  "difficulty": "medium",
+  "question": {
+   "ar": "في أي عام صدر أول فيلم من سلسلة أفنجرز؟",
+   "en": "In what year was the first Avengers movie released?"
+  },
+  "options": [
+   {
+    "ar": "2010",
+    "en": "2010"
+   },
+   {
+    "ar": "2012",
+    "en": "2012"
+   },
+   {
+    "ar": "2014",
+    "en": "2014"
+   },
+   {
+    "ar": "2008",
+    "en": "2008"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "pop_culture",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما هي أكثر أغنية مشاهدة على يوتيوب؟",
+   "en": "What is the most viewed song on YouTube?"
+  },
+  "options": [
+   {
+    "ar": "Despacito",
+    "en": "Despacito"
+   },
+   {
+    "ar": "Baby Shark",
+    "en": "Baby Shark"
+   },
+   {
+    "ar": "Shape of You",
+    "en": "Shape of You"
+   },
+   {
+    "ar": "Gangnam Style",
+    "en": "Gangnam Style"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "pop_culture",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من هو صوت شخصية وودي في فيلم Toy Story؟",
+   "en": "Who voiced Woody in Toy Story?"
+  },
+  "options": [
+   {
+    "ar": "توم كروز",
+    "en": "Tom Cruise"
+   },
+   {
+    "ar": "توم هانكس",
+    "en": "Tom Hanks"
+   },
+   {
+    "ar": "ويل سميث",
+    "en": "Will Smith"
+   },
+   {
+    "ar": "روبن ويليامز",
+    "en": "Robin Williams"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "pop_culture",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما اسم لعبة الفيديو التي تتضمن بناء وتدمير مكعبات؟",
+   "en": "What video game involves building and destroying blocks?"
+  },
+  "options": [
+   {
+    "ar": "فورتنايت",
+    "en": "Fortnite"
+   },
+   {
+    "ar": "ماينكرافت",
+    "en": "Minecraft"
+   },
+   {
+    "ar": "روبلوكس",
+    "en": "Roblox"
+   },
+   {
+    "ar": "تيراريا",
+    "en": "Terraria"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "pop_culture",
+  "difficulty": "hard",
+  "question": {
+   "ar": "في أي عام تم إطلاق أول آيفون؟",
+   "en": "In what year was the first iPhone launched?"
+  },
+  "options": [
+   {
+    "ar": "2005",
+    "en": "2005"
+   },
+   {
+    "ar": "2006",
+    "en": "2006"
+   },
+   {
+    "ar": "2007",
+    "en": "2007"
+   },
+   {
+    "ar": "2008",
+    "en": "2008"
+   }
+  ],
+  "correctIndex": 2
+ },
+ {
+  "category": "pop_culture",
+  "difficulty": "hard",
+  "question": {
+   "ar": "ما هو الاسم الحقيقي للمغني دريك؟",
+   "en": "What is Drake's real name?"
+  },
+  "options": [
+   {
+    "ar": "أوبري دريك غراهام",
+    "en": "Aubrey Drake Graham"
+   },
+   {
+    "ar": "شون كارتر",
+    "en": "Shawn Carter"
+   },
+   {
+    "ar": "كاني ويست",
+    "en": "Kanye West"
+   },
+   {
+    "ar": "مارشال ماذرز",
+    "en": "Marshall Mathers"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "pop_culture",
+  "difficulty": "hard",
+  "question": {
+   "ar": "ما هو أول فيلم رسوم متحركة أنتجته ديزني؟",
+   "en": "What was Disney's first animated feature film?"
+  },
+  "options": [
+   {
+    "ar": "بينوكيو",
+    "en": "Pinocchio"
+   },
+   {
+    "ar": "سنو وايت والأقزام السبعة",
+    "en": "Snow White and the Seven Dwarfs"
+   },
+   {
+    "ar": "فانتازيا",
+    "en": "Fantasia"
+   },
+   {
+    "ar": "دامبو",
+    "en": "Dumbo"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "sports",
+  "difficulty": "easy",
+  "question": {
+   "ar": "كم عدد اللاعبين في فريق كرة القدم؟",
+   "en": "How many players are on a football (soccer) team?"
+  },
+  "options": [
+   {
+    "ar": "9",
+    "en": "9"
+   },
+   {
+    "ar": "10",
+    "en": "10"
+   },
+   {
+    "ar": "11",
+    "en": "11"
+   },
+   {
+    "ar": "12",
+    "en": "12"
+   }
+  ],
+  "correctIndex": 2
+ },
+ {
+  "category": "sports",
+  "difficulty": "easy",
+  "question": {
+   "ar": "في أي رياضة تُستخدم المضرب والكرة الصفراء؟",
+   "en": "In which sport is a racket and yellow ball used?"
+  },
+  "options": [
+   {
+    "ar": "كرة الريشة",
+    "en": "Badminton"
+   },
+   {
+    "ar": "التنس",
+    "en": "Tennis"
+   },
+   {
+    "ar": "الاسكواش",
+    "en": "Squash"
+   },
+   {
+    "ar": "تنس الطاولة",
+    "en": "Table Tennis"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "sports",
+  "difficulty": "easy",
+  "question": {
+   "ar": "كل كم سنة تُقام الألعاب الأولمبية الصيفية؟",
+   "en": "How often are the Summer Olympic Games held?"
+  },
+  "options": [
+   {
+    "ar": "كل سنتين",
+    "en": "Every 2 years"
+   },
+   {
+    "ar": "كل 3 سنوات",
+    "en": "Every 3 years"
+   },
+   {
+    "ar": "كل 4 سنوات",
+    "en": "Every 4 years"
+   },
+   {
+    "ar": "كل 5 سنوات",
+    "en": "Every 5 years"
+   }
+  ],
+  "correctIndex": 2
+ },
+ {
+  "category": "sports",
+  "difficulty": "medium",
+  "question": {
+   "ar": "من هو أكثر لاعب فاز بجائزة الكرة الذهبية؟",
+   "en": "Who has won the most Ballon d'Or awards?"
+  },
+  "options": [
+   {
+    "ar": "كريستيانو رونالدو",
+    "en": "Cristiano Ronaldo"
+   },
+   {
+    "ar": "ليونيل ميسي",
+    "en": "Lionel Messi"
+   },
+   {
+    "ar": "ميشيل بلاتيني",
+    "en": "Michel Platini"
+   },
+   {
+    "ar": "يوهان كرويف",
+    "en": "Johan Cruyff"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "sports",
+  "difficulty": "medium",
+  "question": {
+   "ar": "في أي دولة نشأت رياضة الجودو؟",
+   "en": "In which country did Judo originate?"
+  },
+  "options": [
+   {
+    "ar": "الصين",
+    "en": "China"
+   },
+   {
+    "ar": "كوريا الجنوبية",
+    "en": "South Korea"
+   },
+   {
+    "ar": "اليابان",
+    "en": "Japan"
+   },
+   {
+    "ar": "تايلاند",
+    "en": "Thailand"
+   }
+  ],
+  "correctIndex": 2
+ },
+ {
+  "category": "sports",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما هي المسافة الكاملة لسباق الماراثون بالكيلومترات؟",
+   "en": "What is the full marathon distance in kilometers?"
+  },
+  "options": [
+   {
+    "ar": "38.195 كم",
+    "en": "38.195 km"
+   },
+   {
+    "ar": "40 كم",
+    "en": "40 km"
+   },
+   {
+    "ar": "42.195 كم",
+    "en": "42.195 km"
+   },
+   {
+    "ar": "45 كم",
+    "en": "45 km"
+   }
+  ],
+  "correctIndex": 2
+ },
+ {
+  "category": "sports",
+  "difficulty": "medium",
+  "question": {
+   "ar": "أي منتخب فاز بأكثر عدد من كؤوس العالم لكرة القدم؟",
+   "en": "Which national team has won the most FIFA World Cups?"
+  },
+  "options": [
+   {
+    "ar": "ألمانيا",
+    "en": "Germany"
+   },
+   {
+    "ar": "الأرجنتين",
+    "en": "Argentina"
+   },
+   {
+    "ar": "البرازيل",
+    "en": "Brazil"
+   },
+   {
+    "ar": "إيطاليا",
+    "en": "Italy"
+   }
+  ],
+  "correctIndex": 2
+ },
+ {
+  "category": "sports",
+  "difficulty": "hard",
+  "question": {
+   "ar": "من هو أسرع إنسان في التاريخ في سباق 100 متر؟",
+   "en": "Who holds the 100m world record?"
+  },
+  "options": [
+   {
+    "ar": "يوسين بولت",
+    "en": "Usain Bolt"
+   },
+   {
+    "ar": "تايسون غاي",
+    "en": "Tyson Gay"
+   },
+   {
+    "ar": "كارل لويس",
+    "en": "Carl Lewis"
+   },
+   {
+    "ar": "أسافا باول",
+    "en": "Asafa Powell"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "sports",
+  "difficulty": "hard",
+  "question": {
+   "ar": "في أي عام أُقيمت أول بطولة كأس عالم لكرة القدم؟",
+   "en": "In what year was the first FIFA World Cup held?"
+  },
+  "options": [
+   {
+    "ar": "1926",
+    "en": "1926"
+   },
+   {
+    "ar": "1930",
+    "en": "1930"
+   },
+   {
+    "ar": "1934",
+    "en": "1934"
+   },
+   {
+    "ar": "1928",
+    "en": "1928"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "sports",
+  "difficulty": "hard",
+  "question": {
+   "ar": "كم يبلغ طول ملعب كرة السلة NBA بالمتر؟",
+   "en": "What is the length of an NBA basketball court in meters?"
+  },
+  "options": [
+   {
+    "ar": "25.6 متر",
+    "en": "25.6 m"
+   },
+   {
+    "ar": "28.65 متر",
+    "en": "28.65 m"
+   },
+   {
+    "ar": "30 متر",
+    "en": "30 m"
+   },
+   {
+    "ar": "32 متر",
+    "en": "32 m"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "technology",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما هي لغة البرمجة الأكثر استخداماً في تطوير الويب؟",
+   "en": "What programming language is most used in web development?"
+  },
+  "options": [
+   {
+    "ar": "بايثون",
+    "en": "Python"
+   },
+   {
+    "ar": "جافاسكريبت",
+    "en": "JavaScript"
+   },
+   {
+    "ar": "جافا",
+    "en": "Java"
+   },
+   {
+    "ar": "سي++",
+    "en": "C++"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "technology",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ماذا يعني اختصار Wi-Fi؟",
+   "en": "What does Wi-Fi stand for?"
+  },
+  "options": [
+   {
+    "ar": "Wireless Fidelity",
+    "en": "Wireless Fidelity"
+   },
+   {
+    "ar": "Wired Functionality",
+    "en": "Wired Functionality"
+   },
+   {
+    "ar": "لا يرمز لشيء محدد",
+    "en": "It doesn't stand for anything specific"
+   },
+   {
+    "ar": "Wide Frequency",
+    "en": "Wide Frequency"
+   }
+  ],
+  "correctIndex": 2
+ },
+ {
+  "category": "technology",
+  "difficulty": "easy",
+  "question": {
+   "ar": "من هو مؤسس شركة مايكروسوفت؟",
+   "en": "Who founded Microsoft?"
+  },
+  "options": [
+   {
+    "ar": "ستيف جوبز",
+    "en": "Steve Jobs"
+   },
+   {
+    "ar": "بيل غيتس",
+    "en": "Bill Gates"
+   },
+   {
+    "ar": "مارك زوكربيرغ",
+    "en": "Mark Zuckerberg"
+   },
+   {
+    "ar": "إيلون ماسك",
+    "en": "Elon Musk"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "technology",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما هو نظام التشغيل مفتوح المصدر الأكثر شهرة؟",
+   "en": "What is the most famous open-source operating system?"
+  },
+  "options": [
+   {
+    "ar": "ويندوز",
+    "en": "Windows"
+   },
+   {
+    "ar": "ماك أو إس",
+    "en": "macOS"
+   },
+   {
+    "ar": "لينكس",
+    "en": "Linux"
+   },
+   {
+    "ar": "كروم أو إس",
+    "en": "Chrome OS"
+   }
+  ],
+  "correctIndex": 2
+ },
+ {
+  "category": "technology",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ماذا يعني اختصار HTML؟",
+   "en": "What does HTML stand for?"
+  },
+  "options": [
+   {
+    "ar": "HyperText Markup Language",
+    "en": "HyperText Markup Language"
+   },
+   {
+    "ar": "High Tech Modern Language",
+    "en": "High Tech Modern Language"
+   },
+   {
+    "ar": "HyperText Machine Learning",
+    "en": "HyperText Machine Learning"
+   },
+   {
+    "ar": "Home Tool Markup Language",
+    "en": "Home Tool Markup Language"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "technology",
+  "difficulty": "medium",
+  "question": {
+   "ar": "في أي عام تم إطلاق منصة يوتيوب؟",
+   "en": "In what year was YouTube launched?"
+  },
+  "options": [
+   {
+    "ar": "2003",
+    "en": "2003"
+   },
+   {
+    "ar": "2005",
+    "en": "2005"
+   },
+   {
+    "ar": "2007",
+    "en": "2007"
+   },
+   {
+    "ar": "2004",
+    "en": "2004"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "technology",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما هي وحدة قياس سرعة المعالج؟",
+   "en": "What unit measures processor speed?"
+  },
+  "options": [
+   {
+    "ar": "ميغابايت",
+    "en": "Megabytes"
+   },
+   {
+    "ar": "غيغاهرتز",
+    "en": "Gigahertz"
+   },
+   {
+    "ar": "تيرابايت",
+    "en": "Terabytes"
+   },
+   {
+    "ar": "بكسل",
+    "en": "Pixels"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "technology",
+  "difficulty": "hard",
+  "question": {
+   "ar": "ما هو بروتوكول الإنترنت المسؤول عن نقل البريد الإلكتروني؟",
+   "en": "What internet protocol handles email transmission?"
+  },
+  "options": [
+   {
+    "ar": "HTTP",
+    "en": "HTTP"
+   },
+   {
+    "ar": "FTP",
+    "en": "FTP"
+   },
+   {
+    "ar": "SMTP",
+    "en": "SMTP"
+   },
+   {
+    "ar": "TCP",
+    "en": "TCP"
+   }
+  ],
+  "correctIndex": 2
+ },
+ {
+  "category": "technology",
+  "difficulty": "hard",
+  "question": {
+   "ar": "ما هو عدد البتات في بايت واحد؟",
+   "en": "How many bits are in one byte?"
+  },
+  "options": [
+   {
+    "ar": "4",
+    "en": "4"
+   },
+   {
+    "ar": "8",
+    "en": "8"
+   },
+   {
+    "ar": "16",
+    "en": "16"
+   },
+   {
+    "ar": "32",
+    "en": "32"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "technology",
+  "difficulty": "hard",
+  "question": {
+   "ar": "ما هو أول فيروس حاسوب معروف في التاريخ؟",
+   "en": "What was the first known computer virus?"
+  },
+  "options": [
+   {
+    "ar": "ILOVEYOU",
+    "en": "ILOVEYOU"
+   },
+   {
+    "ar": "Creeper",
+    "en": "Creeper"
+   },
+   {
+    "ar": "Morris Worm",
+    "en": "Morris Worm"
+   },
+   {
+    "ar": "Melissa",
+    "en": "Melissa"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "arab_world",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما هي عاصمة ليبيا؟",
+   "en": "What is the capital of Libya?"
+  },
+  "options": [
+   {
+    "ar": "طرابلس",
+    "en": "Tripoli"
+   },
+   {
+    "ar": "بنغازي",
+    "en": "Benghazi"
+   },
+   {
+    "ar": "مصراتة",
+    "en": "Misrata"
+   },
+   {
+    "ar": "سبها",
+    "en": "Sabha"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "arab_world",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما هي عاصمة مصر؟",
+   "en": "What is the capital of Egypt?"
+  },
+  "options": [
+   {
+    "ar": "القاهرة",
+    "en": "Cairo"
+   },
+   {
+    "ar": "الإسكندرية",
+    "en": "Alexandria"
+   },
+   {
+    "ar": "الجيزة",
+    "en": "Giza"
+   },
+   {
+    "ar": "أسوان",
+    "en": "Aswan"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "arab_world",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما هو أطول نهر يمر في الوطن العربي؟",
+   "en": "What is the longest river running through the Arab world?"
+  },
+  "options": [
+   {
+    "ar": "النيل",
+    "en": "The Nile"
+   },
+   {
+    "ar": "الفرات",
+    "en": "The Euphrates"
+   },
+   {
+    "ar": "دجلة",
+    "en": "The Tigris"
+   },
+   {
+    "ar": "نهر الأردن",
+    "en": "The Jordan River"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "arab_world",
+  "difficulty": "easy",
+  "question": {
+   "ar": "أي بحر يفصل بين مصر والسعودية؟",
+   "en": "Which sea separates Egypt and Saudi Arabia?"
+  },
+  "options": [
+   {
+    "ar": "البحر الأحمر",
+    "en": "The Red Sea"
+   },
+   {
+    "ar": "البحر الأبيض المتوسط",
+    "en": "The Mediterranean Sea"
+   },
+   {
+    "ar": "بحر العرب",
+    "en": "The Arabian Sea"
+   },
+   {
+    "ar": "الخليج العربي",
+    "en": "The Arabian Gulf"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "arab_world",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما هي العملة الرسمية في ليبيا؟",
+   "en": "What is the official currency of Libya?"
+  },
+  "options": [
+   {
+    "ar": "الدينار",
+    "en": "The Dinar"
+   },
+   {
+    "ar": "الدرهم",
+    "en": "The Dirham"
+   },
+   {
+    "ar": "الريال",
+    "en": "The Riyal"
+   },
+   {
+    "ar": "الجنيه",
+    "en": "The Pound"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "arab_world",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما هي أكبر دولة عربية من حيث المساحة؟",
+   "en": "What is the largest Arab country by area?"
+  },
+  "options": [
+   {
+    "ar": "الجزائر",
+    "en": "Algeria"
+   },
+   {
+    "ar": "السعودية",
+    "en": "Saudi Arabia"
+   },
+   {
+    "ar": "السودان",
+    "en": "Sudan"
+   },
+   {
+    "ar": "ليبيا",
+    "en": "Libya"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "arab_world",
+  "difficulty": "medium",
+  "question": {
+   "ar": "في أي دولة تقع مدينة غدامس المدرجة في قائمة التراث العالمي؟",
+   "en": "In which country is the UNESCO World Heritage city of Ghadames?"
+  },
+  "options": [
+   {
+    "ar": "ليبيا",
+    "en": "Libya"
+   },
+   {
+    "ar": "تونس",
+    "en": "Tunisia"
+   },
+   {
+    "ar": "الجزائر",
+    "en": "Algeria"
+   },
+   {
+    "ar": "المغرب",
+    "en": "Morocco"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "arab_world",
+  "difficulty": "medium",
+  "question": {
+   "ar": "أين تقع جبال أكاكوس الشهيرة بالرسوم الصخرية القديمة؟",
+   "en": "Where are the Acacus Mountains, famous for ancient rock art?"
+  },
+  "options": [
+   {
+    "ar": "جنوب غرب ليبيا",
+    "en": "Southwestern Libya"
+   },
+   {
+    "ar": "شمال تشاد",
+    "en": "Northern Chad"
+   },
+   {
+    "ar": "شرق النيجر",
+    "en": "Eastern Niger"
+   },
+   {
+    "ar": "وسط مالي",
+    "en": "Central Mali"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "arab_world",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما هي عاصمة المغرب؟",
+   "en": "What is the capital of Morocco?"
+  },
+  "options": [
+   {
+    "ar": "الرباط",
+    "en": "Rabat"
+   },
+   {
+    "ar": "الدار البيضاء",
+    "en": "Casablanca"
+   },
+   {
+    "ar": "مراكش",
+    "en": "Marrakesh"
+   },
+   {
+    "ar": "فاس",
+    "en": "Fes"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "arab_world",
+  "difficulty": "medium",
+  "question": {
+   "ar": "كم عدد الدول الأعضاء في جامعة الدول العربية؟",
+   "en": "How many member states are in the Arab League?"
+  },
+  "options": [
+   {
+    "ar": "22",
+    "en": "22"
+   },
+   {
+    "ar": "18",
+    "en": "18"
+   },
+   {
+    "ar": "25",
+    "en": "25"
+   },
+   {
+    "ar": "20",
+    "en": "20"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "arab_world",
+  "difficulty": "medium",
+  "question": {
+   "ar": "أي دولة عربية يمر فيها نهرا دجلة والفرات معاً؟",
+   "en": "Through which Arab country do both the Tigris and Euphrates flow?"
+  },
+  "options": [
+   {
+    "ar": "العراق",
+    "en": "Iraq"
+   },
+   {
+    "ar": "لبنان",
+    "en": "Lebanon"
+   },
+   {
+    "ar": "الأردن",
+    "en": "Jordan"
+   },
+   {
+    "ar": "مصر",
+    "en": "Egypt"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "arab_world",
+  "difficulty": "hard",
+  "question": {
+   "ar": "في أي سنة تأسست جامعة الدول العربية؟",
+   "en": "In what year was the Arab League founded?"
+  },
+  "options": [
+   {
+    "ar": "1945",
+    "en": "1945"
+   },
+   {
+    "ar": "1950",
+    "en": "1950"
+   },
+   {
+    "ar": "1939",
+    "en": "1939"
+   },
+   {
+    "ar": "1958",
+    "en": "1958"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "arab_world",
+  "difficulty": "hard",
+  "question": {
+   "ar": "ما اسم أقدم جامعة في العالم ما زالت تعمل وتقع في المغرب؟",
+   "en": "What is the oldest continuously operating university in the world, located in Morocco?"
+  },
+  "options": [
+   {
+    "ar": "جامعة القرويين",
+    "en": "University of al-Qarawiyyin"
+   },
+   {
+    "ar": "جامعة الأزهر",
+    "en": "Al-Azhar University"
+   },
+   {
+    "ar": "جامعة الزيتونة",
+    "en": "University of Ez-Zitouna"
+   },
+   {
+    "ar": "الجامعة المستنصرية",
+    "en": "Al-Mustansiriya University"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "arab_world",
+  "difficulty": "hard",
+  "question": {
+   "ar": "كم عدد الدول العربية الواقعة في قارة أفريقيا؟",
+   "en": "How many Arab countries are located in Africa?"
+  },
+  "options": [
+   {
+    "ar": "10",
+    "en": "10"
+   },
+   {
+    "ar": "8",
+    "en": "8"
+   },
+   {
+    "ar": "12",
+    "en": "12"
+   },
+   {
+    "ar": "9",
+    "en": "9"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "general",
+  "difficulty": "easy",
+  "question": {
+   "ar": "كم عدد ألوان قوس قزح؟",
+   "en": "How many colors are in a rainbow?"
+  },
+  "options": [
+   {
+    "ar": "7",
+    "en": "7"
+   },
+   {
+    "ar": "5",
+    "en": "5"
+   },
+   {
+    "ar": "6",
+    "en": "6"
+   },
+   {
+    "ar": "8",
+    "en": "8"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "general",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ما هو الحيوان الملقب بسفينة الصحراء؟",
+   "en": "Which animal is nicknamed the ship of the desert?"
+  },
+  "options": [
+   {
+    "ar": "الجمل",
+    "en": "The camel"
+   },
+   {
+    "ar": "الحصان",
+    "en": "The horse"
+   },
+   {
+    "ar": "الفيل",
+    "en": "The elephant"
+   },
+   {
+    "ar": "النعامة",
+    "en": "The ostrich"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "general",
+  "difficulty": "easy",
+  "question": {
+   "ar": "ماذا يسمى صغير الأسد؟",
+   "en": "What is a baby lion called?"
+  },
+  "options": [
+   {
+    "ar": "الشبل",
+    "en": "A cub"
+   },
+   {
+    "ar": "الجرو",
+    "en": "A puppy"
+   },
+   {
+    "ar": "المهر",
+    "en": "A foal"
+   },
+   {
+    "ar": "الحوار",
+    "en": "A calf"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "general",
+  "difficulty": "medium",
+  "question": {
+   "ar": "كم عدد أيام السنة الكبيسة؟",
+   "en": "How many days are in a leap year?"
+  },
+  "options": [
+   {
+    "ar": "366",
+    "en": "366"
+   },
+   {
+    "ar": "365",
+    "en": "365"
+   },
+   {
+    "ar": "364",
+    "en": "364"
+   },
+   {
+    "ar": "360",
+    "en": "360"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "general",
+  "difficulty": "medium",
+  "question": {
+   "ar": "ما هي اللغة الأكثر تحدثاً في العالم كلغة أم؟",
+   "en": "What is the most spoken native language in the world?"
+  },
+  "options": [
+   {
+    "ar": "الماندرين الصينية",
+    "en": "Mandarin Chinese"
+   },
+   {
+    "ar": "الإنجليزية",
+    "en": "English"
+   },
+   {
+    "ar": "الإسبانية",
+    "en": "Spanish"
+   },
+   {
+    "ar": "العربية",
+    "en": "Arabic"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "general",
+  "difficulty": "medium",
+  "question": {
+   "ar": "كم عدد قلوب الأخطبوط؟",
+   "en": "How many hearts does an octopus have?"
+  },
+  "options": [
+   {
+    "ar": "3",
+    "en": "3"
+   },
+   {
+    "ar": "1",
+    "en": "1"
+   },
+   {
+    "ar": "2",
+    "en": "2"
+   },
+   {
+    "ar": "4",
+    "en": "4"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "general",
+  "difficulty": "hard",
+  "question": {
+   "ar": "كم عدد مفاتيح البيانو القياسي؟",
+   "en": "How many keys does a standard piano have?"
+  },
+  "options": [
+   {
+    "ar": "88",
+    "en": "88"
+   },
+   {
+    "ar": "76",
+    "en": "76"
+   },
+   {
+    "ar": "61",
+    "en": "61"
+   },
+   {
+    "ar": "100",
+    "en": "100"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "general",
+  "difficulty": "easy",
+  "question": {
+   "ar": "العسل الطبيعي لا يفسد مع مرور الزمن.",
+   "en": "Natural honey never spoils."
+  },
+  "options": [
+   {
+    "ar": "صح",
+    "en": "True"
+   },
+   {
+    "ar": "خطأ",
+    "en": "False"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "general",
+  "difficulty": "easy",
+  "question": {
+   "ar": "يمكن رؤية سور الصين العظيم من القمر بالعين المجردة.",
+   "en": "The Great Wall of China is visible from the Moon with the naked eye."
+  },
+  "options": [
+   {
+    "ar": "صح",
+    "en": "True"
+   },
+   {
+    "ar": "خطأ",
+    "en": "False"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "general",
+  "difficulty": "medium",
+  "question": {
+   "ar": "الطماطم تصنف نباتياً كفاكهة.",
+   "en": "Botanically, a tomato is classified as a fruit."
+  },
+  "options": [
+   {
+    "ar": "صح",
+    "en": "True"
+   },
+   {
+    "ar": "خطأ",
+    "en": "False"
+   }
+  ],
+  "correctIndex": 0
+ },
+ {
+  "category": "general",
+  "difficulty": "medium",
+  "question": {
+   "ar": "النعامة قادرة على الطيران لمسافات قصيرة.",
+   "en": "Ostriches can fly for short distances."
+  },
+  "options": [
+   {
+    "ar": "صح",
+    "en": "True"
+   },
+   {
+    "ar": "خطأ",
+    "en": "False"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "general",
+  "difficulty": "medium",
+  "question": {
+   "ar": "نبتة الموز تصنف علمياً كشجرة حقيقية.",
+   "en": "The banana plant is scientifically classified as a true tree."
+  },
+  "options": [
+   {
+    "ar": "صح",
+    "en": "True"
+   },
+   {
+    "ar": "خطأ",
+    "en": "False"
+   }
+  ],
+  "correctIndex": 1
+ },
+ {
+  "category": "general",
+  "difficulty": "hard",
+  "question": {
+   "ar": "قلب الروبيان (الجمبري) يقع في رأسه.",
+   "en": "A shrimp's heart is located in its head."
+  },
+  "options": [
+   {
+    "ar": "صح",
+    "en": "True"
+   },
+   {
+    "ar": "خطأ",
+    "en": "False"
+   }
+  ],
+  "correctIndex": 0
+ }
+]

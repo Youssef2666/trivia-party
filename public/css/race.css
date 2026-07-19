@@ -1,0 +1,523 @@
+/* ==========================================================================
+   Night Grand Prix — the race-mode مضمار
+   A cinematic night straightaway built with real CSS 3D:
+   - a ground plane rotated into perspective, receding into a glowing
+     city horizon (cars are billboarded children of the plane, so
+     distance produces true scale/convergence for free)
+   - neon side rails, scrolling lane dashes, floodlight sweep
+   - camera flashes blinking in the dark stands
+   - luxury rear-view cars: tail-lights, underglow, exhaust flames
+   ========================================================================== */
+
+.gp-scene {
+  --tilt: 55deg;
+  --horizon: 33%;
+  position: relative;
+  width: 100%;
+  height: 440px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  margin-bottom: var(--space-4);
+  isolation: isolate;
+  background: linear-gradient(180deg,
+    hsl(252, 42%, 8%) 0%,
+    hsl(255, 44%, 13%) 18%,
+    hsl(268, 48%, 20%) 30%,
+    hsl(285, 55%, 26%) var(--horizon),
+    hsl(250, 30%, 9%) calc(var(--horizon) + 1%),
+    hsl(249, 28%, 7%) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow:
+    var(--shadow-xl),
+    inset 0 0 90px rgba(0, 0, 0, 0.55),
+    0 0 60px hsla(285, 80%, 40%, 0.12);
+  animation: gp-scene-in 900ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
+.stage-mode .gp-scene { height: 580px; }
+
+@keyframes gp-scene-in {
+  from { opacity: 0; transform: translateY(26px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ── Sky ─────────────────────────────────────────────────────────── */
+.gp-sky {
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  height: var(--horizon);
+  overflow: hidden;
+  /* star field */
+  background-image:
+    radial-gradient(1.4px 1.4px at 8% 24%, rgba(255,255,255,0.9) 50%, transparent 51%),
+    radial-gradient(1px 1px at 19% 62%, rgba(255,255,255,0.6) 50%, transparent 51%),
+    radial-gradient(1.6px 1.6px at 27% 18%, rgba(255,255,255,0.85) 50%, transparent 51%),
+    radial-gradient(1px 1px at 36% 44%, rgba(255,255,255,0.5) 50%, transparent 51%),
+    radial-gradient(1.3px 1.3px at 47% 12%, rgba(255,255,255,0.8) 50%, transparent 51%),
+    radial-gradient(1px 1px at 55% 52%, rgba(255,255,255,0.55) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 64% 28%, rgba(255,255,255,0.9) 50%, transparent 51%),
+    radial-gradient(1px 1px at 72% 58%, rgba(255,255,255,0.5) 50%, transparent 51%),
+    radial-gradient(1.4px 1.4px at 82% 16%, rgba(255,255,255,0.85) 50%, transparent 51%),
+    radial-gradient(1px 1px at 91% 40%, rgba(255,255,255,0.6) 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 96% 70%, rgba(255,255,255,0.7) 50%, transparent 51%);
+}
+
+/* Moon with soft bloom */
+.gp-moon {
+  position: absolute;
+  top: 14%;
+  inset-inline-end: 12%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 38% 34%, #FFF7E0 0%, #F3E3B2 55%, #E4CD8F 100%);
+  box-shadow:
+    0 0 28px 8px hsla(45, 90%, 80%, 0.35),
+    0 0 90px 30px hsla(45, 90%, 70%, 0.12);
+}
+
+.gp-moon::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 9px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(190, 168, 116, 0.5);
+  box-shadow: 14px 8px 0 -2px rgba(190, 168, 116, 0.4), 4px 18px 0 -3px rgba(190, 168, 116, 0.35);
+}
+
+/* City skyline (inline SVG sits here) */
+.gp-city {
+  position: absolute;
+  bottom: -2px;
+  inset-inline: 0;
+  height: 58%;
+  opacity: 0.95;
+}
+
+.gp-city svg { width: 100%; height: 100%; display: block; }
+
+/* Horizon haze — the city glow the track melts into */
+.gp-haze {
+  position: absolute;
+  bottom: -14px;
+  inset-inline: -5%;
+  height: 34px;
+  background: radial-gradient(ellipse 60% 100% at 50% 100%,
+    hsla(300, 95%, 68%, 0.55) 0%,
+    hsla(280, 90%, 60%, 0.28) 45%,
+    transparent 78%);
+  filter: blur(6px);
+}
+
+/* ── Camera flashes in the dark stands ───────────────────────────── */
+.gp-flash {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  opacity: 0;
+  animation: gp-flash 4.2s ease-out infinite;
+  box-shadow: 0 0 12px 4px rgba(255, 255, 255, 0.7);
+  z-index: 3;
+}
+
+@keyframes gp-flash {
+  0%, 91% { opacity: 0; transform: scale(0.4); }
+  93% { opacity: 0.95; transform: scale(1.25); }
+  100% { opacity: 0; transform: scale(0.5); }
+}
+
+/* ── 3D world ────────────────────────────────────────────────────── */
+.gp-world {
+  position: absolute;
+  inset-inline: 0;
+  top: calc(var(--horizon) - 3%);
+  bottom: 0;
+  perspective: 560px;
+  perspective-origin: 50% 0%;
+}
+
+.gp-track {
+  position: absolute;
+  left: 50%;
+  bottom: -8%;
+  width: min(96%, 560px);
+  height: 170%;
+  transform: translateX(-50%) rotateX(var(--tilt));
+  transform-origin: 50% 100%;
+  transform-style: preserve-3d;
+  border-radius: 10px 10px 0 0;
+  background:
+    /* asphalt speckle */
+    radial-gradient(1.2px 1.2px at 12% 22%, rgba(255,255,255,0.05) 50%, transparent 51%),
+    radial-gradient(1px 1px at 34% 64%, rgba(255,255,255,0.045) 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 58% 38%, rgba(255,255,255,0.05) 50%, transparent 51%),
+    radial-gradient(1px 1px at 81% 74%, rgba(255,255,255,0.04) 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 92% 12%, rgba(255,255,255,0.05) 50%, transparent 51%),
+    /* tarmac */
+    linear-gradient(180deg, hsl(253, 26%, 20%) 0%, hsl(251, 26%, 15%) 55%, hsl(250, 25%, 12%) 100%);
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
+}
+
+/* Floodlight sweep gliding down the tarmac */
+.gp-track::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) 42%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.05) 58%,
+    transparent 100%);
+  background-size: 100% 320px;
+  background-repeat: no-repeat;
+  animation: gp-sweep 5.5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes gp-sweep {
+  0%, 100% { background-position: 0 -320px; }
+  55% { background-position: 0 115%; }
+}
+
+/* ── Neon side rails ─────────────────────────────────────────────── */
+.gp-rail {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  border-radius: 4px;
+  animation: gp-rail-pulse 2.6s ease-in-out infinite;
+}
+
+.gp-rail-l {
+  left: -2px;
+  background: linear-gradient(180deg, hsl(262, 92%, 72%), hsl(262, 92%, 55%));
+  box-shadow:
+    0 0 10px 2px hsla(262, 92%, 66%, 0.8),
+    0 0 34px 8px hsla(262, 92%, 66%, 0.35),
+    -14px 0 40px 4px hsla(262, 92%, 66%, 0.14);
+}
+
+.gp-rail-r {
+  right: -2px;
+  background: linear-gradient(180deg, hsl(330, 92%, 70%), hsl(330, 92%, 56%));
+  box-shadow:
+    0 0 10px 2px hsla(330, 90%, 64%, 0.8),
+    0 0 34px 8px hsla(330, 90%, 64%, 0.35),
+    14px 0 40px 4px hsla(330, 90%, 64%, 0.14);
+  animation-delay: 1.3s;
+}
+
+@keyframes gp-rail-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.62; }
+}
+
+/* ── Lane separators (scrolling dashes toward the camera) ────────── */
+.gp-sep {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc((100% / var(--lanes)) * var(--i));
+  width: 3px;
+  transform: translateX(-50%);
+  background: repeating-linear-gradient(180deg,
+    rgba(255, 255, 255, 0.16) 0 34px,
+    transparent 34px 86px);
+  animation: gp-dash-scroll 1.5s linear infinite;
+}
+
+@keyframes gp-dash-scroll {
+  from { background-position-y: 0; }
+  to { background-position-y: 86px; }
+}
+
+/* ── Start & finish ──────────────────────────────────────────────── */
+.gp-startline {
+  position: absolute;
+  bottom: 26px;
+  inset-inline: 0;
+  height: 9px;
+  background: repeating-linear-gradient(90deg, rgba(255,255,255,0.55) 0 16px, rgba(20,16,40,0.6) 16px 32px);
+  opacity: 0.55;
+}
+
+.gp-finishband {
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  height: 34px;
+  background: repeating-conic-gradient(#F2F0F7 0% 25%, #100C1E 0% 50%) 0 0 / 17px 17px;
+  border-bottom: 3px solid var(--gold);
+  box-shadow:
+    0 6px 30px hsla(43, 96%, 56%, 0.5),
+    0 0 60px hsla(43, 96%, 56%, 0.25);
+}
+
+/* Holographic finish sign floating at the horizon */
+.gp-finish-sign {
+  position: absolute;
+  top: calc(var(--horizon) - 8%);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  white-space: nowrap;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-black);
+  letter-spacing: 0.06em;
+  color: var(--gold);
+  background: rgba(10, 7, 22, 0.66);
+  border: 1px solid hsla(43, 96%, 56%, 0.7);
+  border-radius: var(--radius-full);
+  padding: 4px 16px;
+  backdrop-filter: blur(4px);
+  box-shadow:
+    0 0 18px hsla(43, 96%, 56%, 0.35),
+    inset 0 0 12px hsla(43, 96%, 56%, 0.12);
+  text-shadow: 0 0 12px hsla(43, 96%, 56%, 0.8);
+  animation: gp-sign-float 3.4s ease-in-out infinite;
+}
+
+@keyframes gp-sign-float {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-4px); }
+}
+
+/* ── Cars (billboarded on the plane) ─────────────────────────────── */
+.gp-car {
+  position: absolute;
+  left: calc((100% / var(--lanes)) * (var(--lane) + 0.5));
+  /* --p 0 = start line (near camera) … 1 = finish (horizon) */
+  top: calc(5% + (1 - var(--p, 0)) * 78%);
+  width: clamp(52px, calc(96% / var(--lanes)), 104px);
+  transform: translateX(-50%) rotateX(calc(-1 * var(--tilt)));
+  transform-origin: 50% 92%;
+  transition: top 1250ms cubic-bezier(0.22, 0.9, 0.24, 1.04);
+  transition-delay: var(--stagger, 0ms);
+  z-index: 2;
+}
+
+.gp-car-inner {
+  position: relative;
+  animation: gp-sway 3.2s ease-in-out infinite;
+  animation-delay: var(--sway, 0s);
+  filter: drop-shadow(0 8px 9px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes gp-sway {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  30% { transform: translateX(-2px) rotate(-0.8deg); }
+  70% { transform: translateX(2px) rotate(0.8deg); }
+}
+
+.gp-car .t-car { width: 100%; display: block; }
+
+/* Tail-lights breathe; underglow shimmers */
+.gp-car .car-tail { animation: gp-tail 1.7s ease-in-out infinite; }
+.gp-car .car-tailglow { animation: gp-tail 1.7s ease-in-out infinite; }
+
+@keyframes gp-tail {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+
+.gp-car .car-underglow { animation: gp-under 2.4s ease-in-out infinite; }
+
+@keyframes gp-under {
+  0%, 100% { opacity: 0.85; }
+  50% { opacity: 0.5; }
+}
+
+/* Hidden effect layers */
+.gp-car .car-flames,
+.gp-car .car-speedlines { opacity: 0; transition: opacity 160ms ease; }
+
+/* Boost: flames + speed lines + lunge */
+.gp-car.boost .car-flames { opacity: 1; animation: gp-flicker 110ms ease-in-out infinite alternate; }
+.gp-car.boost .car-speedlines { opacity: 1; animation: gp-lines 260ms linear infinite; }
+.gp-car.boost .gp-car-inner { animation: gp-lunge 480ms cubic-bezier(0.34, 1.56, 0.64, 1) 2; }
+
+@keyframes gp-flicker {
+  from { transform: scaleY(1); }
+  to { transform: scaleY(1.35) translateY(1px); }
+}
+
+@keyframes gp-lines {
+  0% { transform: translateY(0); opacity: 0.85; }
+  100% { transform: translateY(16px); opacity: 0.2; }
+}
+
+@keyframes gp-lunge {
+  0%, 100% { transform: translateY(0) scale(1); }
+  45% { transform: translateY(-7px) scale(1.05); }
+}
+
+/* Hit by a rocket: spin-out + red flash */
+.gp-car.hit .gp-car-inner { animation: gp-spinout 950ms cubic-bezier(0.3, 0.6, 0.3, 1); }
+
+@keyframes gp-spinout {
+  0% { transform: rotate(0deg); filter: drop-shadow(0 8px 9px rgba(0,0,0,0.5)); }
+  25% { filter: drop-shadow(0 0 22px rgba(255, 60, 90, 0.9)); }
+  70% { transform: rotate(348deg); }
+  85% { transform: rotate(366deg); }
+  100% { transform: rotate(360deg); filter: drop-shadow(0 8px 9px rgba(0,0,0,0.5)); }
+}
+
+/* Driver peeking over the wing */
+.gp-driver {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 27%;
+  aspect-ratio: 1;
+  z-index: -1;
+  animation: gp-driver-bob 2.6s ease-in-out infinite;
+  animation-delay: var(--sway, 0s);
+}
+
+.gp-driver .t-av { width: 100%; height: 100%; border-radius: 26%; }
+
+@keyframes gp-driver-bob {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-2px); }
+}
+
+/* Name chip above each car */
+.gp-name {
+  position: absolute;
+  top: -34px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  max-width: 130%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 10px;
+  font-weight: var(--fw-black);
+  color: var(--text-primary);
+  background: rgba(10, 7, 22, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 1.5px 9px;
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(3px);
+}
+
+.gp-car.me .gp-name {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary-strong);
+  box-shadow: 0 0 12px hsla(262, 92%, 66%, 0.45);
+}
+
+/* Leader crown */
+.gp-crown {
+  position: absolute;
+  top: -52px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-8deg);
+  color: var(--rank-gold);
+  filter: drop-shadow(0 0 8px hsla(45, 95%, 58%, 0.8));
+  animation: gp-sign-float 2.8s ease-in-out infinite;
+}
+
+.gp-crown .t-icon { width: 17px; height: 17px; }
+
+/* Finish rank medallion */
+.gp-rank {
+  position: absolute;
+  top: 2px;
+  inset-inline-end: -9px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--gradient-gold);
+  color: hsl(30, 80%, 16%);
+  font-size: 12px;
+  font-weight: var(--fw-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 16px hsla(43, 96%, 56%, 0.7);
+  z-index: 3;
+  animation: pop-in 500ms var(--ease-spring);
+}
+
+.gp-car.finished .t-car { filter: drop-shadow(0 0 14px hsla(43, 96%, 56%, 0.55)); }
+
+/* Shield aura */
+.gp-shield {
+  position: absolute;
+  inset: -8% -6% -2% -6%;
+  border-radius: 50%;
+  border: 2px solid hsla(205, 90%, 62%, 0.9);
+  box-shadow:
+    0 0 16px hsla(205, 90%, 62%, 0.55),
+    inset 0 0 18px hsla(205, 90%, 62%, 0.28);
+  animation: pulse 1.7s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* ── Standings HUD under the scene ───────────────────────────────── */
+.gp-hud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  justify-content: center;
+}
+
+.gp-hud-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 5px 12px 5px 6px;
+  border-radius: var(--radius-full);
+  background: var(--glass-bg);
+  border: var(--glass-border);
+  backdrop-filter: var(--glass-blur);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+}
+
+[dir="rtl"] .gp-hud-chip { padding: 5px 6px 5px 12px; }
+
+.gp-hud-chip .avatar { width: 24px; height: 24px; border-radius: 8px; }
+.gp-hud-chip b { font-variant-numeric: tabular-nums; }
+.gp-hud-chip .gp-hud-rank {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-secondary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: var(--fw-black);
+  flex-shrink: 0;
+}
+
+.gp-hud-chip.finished { border-color: var(--gold); }
+.gp-hud-chip.finished .gp-hud-rank { background: var(--gold-soft); color: var(--gold); }
+.gp-hud-chip.me { border-color: var(--accent-primary); }
+
+/* ── Reduced motion ──────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .gp-track::after,
+  .gp-sep,
+  .gp-flash,
+  .gp-rail,
+  .gp-car-inner,
+  .gp-driver,
+  .gp-finish-sign,
+  .gp-crown,
+  .gp-car .car-tail,
+  .gp-car .car-tailglow,
+  .gp-car .car-underglow { animation: none; }
+}

@@ -1,0 +1,187 @@
+/* ==========================================================================
+   Animations — keyframes + utility classes
+   All motion respects prefers-reduced-motion (global kill-switch at bottom).
+   ========================================================================== */
+
+/* ── Core keyframes ──────────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInDown {
+  from { opacity: 0; transform: translateY(-24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes screen-in {
+  from { opacity: 0; transform: translateY(14px) scale(0.99); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes pop-in {
+  0% { opacity: 0; transform: scale(0.55); }
+  70% { transform: scale(1.06); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes bounceIn {
+  0% { opacity: 0; transform: scale(0.3); }
+  50% { transform: scale(1.08); }
+  70% { transform: scale(0.94); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-7px); }
+  40% { transform: translateX(7px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+}
+
+@keyframes scoreFloat {
+  0% { opacity: 0; transform: translateY(0) scale(0.6); }
+  20% { opacity: 1; transform: translateY(-8px) scale(1.1); }
+  100% { opacity: 0; transform: translateY(-46px) scale(1); }
+}
+
+/* ── Aurora background ───────────────────────────────────────────── */
+@keyframes aurora-drift-a {
+  from { transform: translate(0, 0) scale(1); }
+  to { transform: translate(9vmax, 7vmax) scale(1.15); }
+}
+
+@keyframes aurora-drift-b {
+  from { transform: translate(0, 0) scale(1.1); }
+  to { transform: translate(-8vmax, -6vmax) scale(0.95); }
+}
+
+@keyframes aurora-drift-c {
+  from { transform: translate(0, 0) scale(1); }
+  to { transform: translate(-12vmax, 8vmax) scale(1.2); }
+}
+
+@keyframes gradient-slide {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* ── Avatars ─────────────────────────────────────────────────────── */
+@keyframes av-blink {
+  0%, 91%, 100% { transform: scaleY(1); }
+  93.5% { transform: scaleY(0.08); }
+  96% { transform: scaleY(1); }
+}
+
+@keyframes av-bounce {
+  0% { transform: translateY(0) scale(1); }
+  35% { transform: translateY(-9px) scale(1.06); }
+  70% { transform: translateY(2px) scale(0.98); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+@keyframes av-droop {
+  0% { transform: translateY(0) rotate(0deg); }
+  40% { transform: translateY(4px) rotate(-4deg); }
+  100% { transform: translateY(2px) rotate(0deg); }
+}
+
+@keyframes idle-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* ── Game-show moments ───────────────────────────────────────────── */
+@keyframes count-punch {
+  0% { opacity: 0; transform: scale(2.4); filter: blur(8px); }
+  55% { opacity: 1; transform: scale(0.92); filter: blur(0); }
+  75% { transform: scale(1.06); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes timer-panic {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.07); }
+}
+
+@keyframes vignette-pulse {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}
+
+@keyframes correct-pop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes banner-in {
+  0% { opacity: 0; transform: translateY(-14px) scale(0.8); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes bell-swing {
+  0%, 100% { transform: rotate(-13deg); }
+  50% { transform: rotate(13deg); }
+}
+
+@keyframes flame-flicker {
+  from { transform: scale(1) rotate(-3deg); }
+  to { transform: scale(1.18) rotate(3deg); }
+}
+
+@keyframes crown-drop {
+  0% { opacity: 0; transform: translateX(-50%) translateY(-26px) rotate(18deg); }
+  100% { opacity: 1; transform: translateX(-50%) translateY(0) rotate(-6deg); }
+}
+
+@keyframes pillar-rise {
+  0% { transform: scaleY(0); opacity: 0; }
+  100% { transform: scaleY(1); opacity: 1; }
+}
+
+@keyframes emoji-rise {
+  0% { opacity: 0; transform: translateY(0) scale(0.5) rotate(0deg); }
+  12% { opacity: 1; transform: translateY(-9vh) scale(1.15) rotate(-8deg); }
+  100% { opacity: 0; transform: translateY(-72vh) scale(0.9) rotate(10deg); }
+}
+
+/* ── Utility classes ─────────────────────────────────────────────── */
+.animate-fade-in { animation: fadeIn 500ms ease backwards; }
+.animate-slide-up { animation: slideInUp 500ms ease backwards; }
+.animate-bounce-in { animation: bounceIn 600ms var(--ease-spring) backwards; }
+.animate-pop-in { animation: pop-in 450ms var(--ease-spring) backwards; }
+.animate-shake { animation: shake 450ms ease; }
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+
+/* ── Reduced motion: calm everything down ────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

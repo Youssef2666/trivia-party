@@ -1,0 +1,18 @@
+{
+  "name": "تريفيا بارتي | Trivia Party",
+  "short_name": "Trivia Party",
+  "description": "لعبة تريفيا جماعية مباشرة - تحدى أصدقاءك في أسئلة سريعة!",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0d0b1a",
+  "theme_color": "#0d0b1a",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

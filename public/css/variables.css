@@ -1,0 +1,164 @@
+/* ==========================================================================
+   Design Tokens — Trivia Party v2 "Neon Arena"
+   Single source of truth for every color, size, shadow and motion value.
+   Dark, saturated game-show look: deep space navy + violet/coral neon,
+   with a dedicated GOLD set for السؤال الذهبي and celebration moments.
+   ========================================================================== */
+
+:root {
+  /* ---------- Colors: Backgrounds ---------- */
+  --bg-primary: hsl(248, 30%, 7%);
+  --bg-secondary: hsl(250, 28%, 11%);
+  --bg-surface: hsl(249, 24%, 14%);
+  --bg-surface-hover: hsl(249, 24%, 18%);
+  --bg-glass: rgba(255, 255, 255, 0.05);
+  --bg-glass-hover: rgba(255, 255, 255, 0.09);
+  --border-glass: rgba(255, 255, 255, 0.1);
+  --border-glass-hover: rgba(255, 255, 255, 0.18);
+
+  /* Aurora blobs (animated background) */
+  --aurora-1: hsla(265, 85%, 58%, 0.20);
+  --aurora-2: hsla(330, 85%, 58%, 0.13);
+  --aurora-3: hsla(200, 90%, 55%, 0.10);
+
+  /* ---------- Colors: Accents ---------- */
+  --accent-primary: hsl(262, 92%, 66%);
+  --accent-primary-rgb: 139, 92, 246;
+  --accent-primary-strong: hsl(262, 95%, 74%);
+  --accent-primary-glow: hsla(262, 92%, 66%, 0.35);
+  --accent-primary-soft: hsla(262, 92%, 66%, 0.16);
+  --accent-secondary: hsl(340, 90%, 64%);
+  --accent-secondary-rgb: 244, 94, 137;
+  --accent-secondary-glow: hsla(340, 90%, 64%, 0.35);
+  --accent-secondary-soft: hsla(340, 90%, 64%, 0.16);
+
+  --gradient-brand: linear-gradient(135deg, hsl(262, 92%, 66%), hsl(320, 90%, 62%), hsl(345, 92%, 64%));
+  --gradient-cool: linear-gradient(135deg, hsl(210, 95%, 62%), hsl(262, 92%, 66%));
+
+  /* ---------- Colors: Gold (golden question / winner) ---------- */
+  --gold: hsl(43, 96%, 56%);
+  --gold-strong: hsl(38, 100%, 50%);
+  --gold-soft: hsla(43, 96%, 56%, 0.16);
+  --gold-glow: hsla(43, 96%, 56%, 0.4);
+  --gradient-gold: linear-gradient(135deg, hsl(46, 100%, 62%), hsl(33, 100%, 52%));
+
+  /* ---------- Colors: Semantic ---------- */
+  --color-success: hsl(158, 74%, 52%);
+  --color-success-glow: hsla(158, 74%, 52%, 0.35);
+  --color-success-soft: hsla(158, 74%, 52%, 0.15);
+  --color-error: hsl(354, 84%, 62%);
+  --color-error-glow: hsla(354, 84%, 62%, 0.35);
+  --color-error-soft: hsla(354, 84%, 62%, 0.15);
+  --color-warning: hsl(40, 95%, 60%);
+  --color-warning-glow: hsla(40, 95%, 60%, 0.35);
+  --color-warning-soft: hsla(40, 95%, 60%, 0.15);
+  --color-info: hsl(205, 90%, 62%);
+  --color-info-soft: hsla(205, 90%, 62%, 0.15);
+
+  /* ---------- Colors: Answer Options (Kahoot-style shapes) ---------- */
+  --option-a: hsl(215, 90%, 64%);
+  --option-a-bg: hsla(215, 90%, 64%, 0.14);
+  --option-a-hover: hsla(215, 90%, 64%, 0.26);
+  --option-b: hsl(28, 92%, 58%);
+  --option-b-bg: hsla(28, 92%, 58%, 0.14);
+  --option-b-hover: hsla(28, 92%, 58%, 0.26);
+  --option-c: hsl(150, 72%, 50%);
+  --option-c-bg: hsla(150, 72%, 50%, 0.14);
+  --option-c-hover: hsla(150, 72%, 50%, 0.26);
+  --option-d: hsl(325, 85%, 64%);
+  --option-d-bg: hsla(325, 85%, 64%, 0.14);
+  --option-d-hover: hsla(325, 85%, 64%, 0.26);
+
+  /* ---------- Colors: Text ---------- */
+  --text-primary: hsl(240, 30%, 96%);
+  --text-secondary: hsl(245, 18%, 68%);
+  --text-muted: hsl(245, 12%, 47%);
+  --text-inverse: hsl(248, 30%, 8%);
+
+  /* ---------- Colors: Rank ---------- */
+  --rank-gold: hsl(45, 95%, 58%);
+  --rank-gold-bg: hsla(45, 95%, 58%, 0.14);
+  --rank-silver: hsl(220, 14%, 76%);
+  --rank-silver-bg: hsla(220, 14%, 76%, 0.13);
+  --rank-bronze: hsl(25, 65%, 55%);
+  --rank-bronze-bg: hsla(25, 65%, 55%, 0.14);
+
+  /* ---------- Typography ---------- */
+  --font-primary: 'Cairo', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Cairo', 'JetBrains Mono', 'Cascadia Code', monospace;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.25rem;
+  --fs-2xl: 1.5rem;
+  --fs-3xl: 2rem;
+  --fs-4xl: 2.5rem;
+  --fs-5xl: 3.5rem;
+
+  --fw-normal: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 800;
+
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.7;
+
+  /* ---------- Spacing ---------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-8: 3rem;
+  --space-10: 4rem;
+  --space-12: 5rem;
+
+  /* ---------- Borders & Radius ---------- */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
+  --radius-full: 9999px;
+
+  /* ---------- Shadows ---------- */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 36px rgba(0, 0, 0, 0.36);
+  --shadow-xl: 0 18px 56px rgba(0, 0, 0, 0.42);
+  --shadow-glow-primary: 0 0 24px var(--accent-primary-glow);
+  --shadow-glow-secondary: 0 0 24px var(--accent-secondary-glow);
+  --shadow-glow-success: 0 0 24px var(--color-success-glow);
+  --shadow-glow-error: 0 0 24px var(--color-error-glow);
+  --shadow-glow-warning: 0 0 24px var(--color-warning-glow);
+  --shadow-glow-gold: 0 0 32px var(--gold-glow);
+  --shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.07);
+
+  /* ---------- Transitions ---------- */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+  --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ---------- Glass Effect ---------- */
+  --glass-blur: blur(22px);
+  --glass-saturate: saturate(170%);
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-bg-strong: rgba(255, 255, 255, 0.085);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.1);
+  --glass-border-strong: 1px solid rgba(255, 255, 255, 0.16);
+
+  /* ---------- Z-index layers ---------- */
+  --z-base: 1;
+  --z-dropdown: 10;
+  --z-sticky: 20;
+  --z-overlay: 30;
+  --z-modal: 40;
+  --z-toast: 50;
+  --z-confetti: 60;
+  --z-language-toggle: 70;
+}

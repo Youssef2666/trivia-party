@@ -1,0 +1,296 @@
+/* ==========================================================================
+   Theme Skins — the host picks the whole show's vibe in the lobby.
+   Applied as <html data-theme="…">. 'neon' is the default (variables.css).
+
+   ليالي رمضان — emerald night + gold lanterns
+   الملعب      — floodlit pitch, chalk lines, mowed-grass race track
+   آركيد       — synthwave arcade: CRT scanlines, neon green/magenta grid
+   ========================================================================== */
+
+/* ════════ ليالي رمضان ════════ */
+[data-theme="ramadan"] {
+  --bg-primary: hsl(182, 48%, 6%);
+  --bg-secondary: hsl(180, 42%, 9%);
+  --bg-surface: hsl(179, 36%, 12%);
+  --bg-surface-hover: hsl(179, 36%, 16%);
+
+  --aurora-1: hsla(43, 96%, 56%, 0.16);
+  --aurora-2: hsla(160, 84%, 45%, 0.14);
+  --aurora-3: hsla(185, 90%, 50%, 0.10);
+
+  --accent-primary: hsl(43, 96%, 56%);
+  --accent-primary-rgb: 244, 196, 48;
+  --accent-primary-strong: hsl(45, 100%, 68%);
+  --accent-primary-glow: hsla(43, 96%, 56%, 0.35);
+  --accent-primary-soft: hsla(43, 96%, 56%, 0.15);
+  --accent-secondary: hsl(160, 74%, 46%);
+  --accent-secondary-rgb: 30, 200, 150;
+  --accent-secondary-glow: hsla(160, 74%, 46%, 0.35);
+  --accent-secondary-soft: hsla(160, 74%, 46%, 0.15);
+
+  --gradient-brand: linear-gradient(135deg, hsl(45, 100%, 62%), hsl(160, 74%, 46%));
+  --gradient-cool: linear-gradient(135deg, hsl(185, 90%, 50%), hsl(160, 74%, 46%));
+}
+
+[data-theme="ramadan"] .btn-primary {
+  color: hsl(170, 60%, 10%);
+  box-shadow: 0 4px 0 hsla(43, 70%, 26%, 0.9), var(--shadow-sm);
+}
+
+[data-theme="ramadan"] .home-title,
+[data-theme="ramadan"] .room-code { filter: drop-shadow(0 0 18px hsla(43, 96%, 56%, 0.4)); }
+
+/* Hanging lantern glows in the top corners */
+[data-theme="ramadan"] .aurora::before { background: radial-gradient(circle at center, hsla(43, 96%, 56%, 0.2) 0%, transparent 60%); }
+[data-theme="ramadan"] .aurora .aurora-dots {
+  background-image: radial-gradient(hsla(45, 100%, 70%, 0.09) 1px, transparent 1.4px);
+}
+
+/* Race scene: emerald night, golden crescent, gold/emerald rails */
+[data-theme="ramadan"] .gp-scene {
+  background: linear-gradient(180deg,
+    hsl(190, 55%, 7%) 0%, hsl(184, 50%, 11%) 18%, hsl(172, 46%, 15%) 30%,
+    hsl(160, 52%, 20%) var(--horizon),
+    hsl(180, 36%, 8%) calc(var(--horizon) + 1%), hsl(182, 40%, 6%) 100%);
+}
+
+[data-theme="ramadan"] .gp-moon {
+  background: radial-gradient(circle at 38% 34%, #FFF3C2 0%, #F6D879 55%, #E9BE4B 100%);
+  box-shadow: 0 0 28px 8px hsla(45, 95%, 65%, 0.45), 0 0 90px 30px hsla(45, 95%, 60%, 0.16);
+}
+
+/* Crescent: a dark disc bites the moon */
+[data-theme="ramadan"] .gp-moon::before {
+  content: '';
+  position: absolute;
+  top: -8%;
+  inset-inline-end: -22%;
+  width: 86%;
+  height: 86%;
+  border-radius: 50%;
+  background: hsl(184, 50%, 11%);
+}
+
+[data-theme="ramadan"] .gp-moon::after { display: none; }
+
+[data-theme="ramadan"] .gp-haze {
+  background: radial-gradient(ellipse 60% 100% at 50% 100%,
+    hsla(45, 100%, 62%, 0.5) 0%, hsla(160, 80%, 45%, 0.25) 45%, transparent 78%);
+}
+
+[data-theme="ramadan"] .gp-rail-l {
+  background: linear-gradient(180deg, hsl(45, 100%, 66%), hsl(43, 96%, 50%));
+  box-shadow: 0 0 10px 2px hsla(43, 96%, 56%, 0.8), 0 0 34px 8px hsla(43, 96%, 56%, 0.35), -14px 0 40px 4px hsla(43, 96%, 56%, 0.14);
+}
+
+[data-theme="ramadan"] .gp-rail-r {
+  background: linear-gradient(180deg, hsl(160, 80%, 55%), hsl(160, 74%, 42%));
+  box-shadow: 0 0 10px 2px hsla(160, 74%, 46%, 0.8), 0 0 34px 8px hsla(160, 74%, 46%, 0.35), 14px 0 40px 4px hsla(160, 74%, 46%, 0.14);
+}
+
+/* ════════ الملعب ════════ */
+[data-theme="stadium"] {
+  --bg-primary: hsl(152, 42%, 7%);
+  --bg-secondary: hsl(150, 38%, 10%);
+  --bg-surface: hsl(149, 32%, 13%);
+  --bg-surface-hover: hsl(149, 32%, 17%);
+
+  --aurora-1: hsla(150, 80%, 45%, 0.16);
+  --aurora-2: hsla(45, 95%, 55%, 0.12);
+  --aurora-3: hsla(200, 90%, 60%, 0.10);
+
+  --accent-primary: hsl(150, 76%, 46%);
+  --accent-primary-rgb: 34, 205, 128;
+  --accent-primary-strong: hsl(150, 80%, 60%);
+  --accent-primary-glow: hsla(150, 76%, 46%, 0.35);
+  --accent-primary-soft: hsla(150, 76%, 46%, 0.15);
+  --accent-secondary: hsl(45, 95%, 55%);
+  --accent-secondary-rgb: 245, 200, 40;
+  --accent-secondary-glow: hsla(45, 95%, 55%, 0.35);
+  --accent-secondary-soft: hsla(45, 95%, 55%, 0.15);
+
+  --gradient-brand: linear-gradient(135deg, hsl(150, 76%, 46%), hsl(45, 95%, 55%));
+  --gradient-cool: linear-gradient(135deg, hsl(200, 90%, 55%), hsl(150, 76%, 46%));
+}
+
+[data-theme="stadium"] .btn-primary {
+  color: hsl(150, 60%, 10%);
+  box-shadow: 0 4px 0 hsla(150, 60%, 20%, 0.9), var(--shadow-sm);
+}
+
+/* Race scene: floodlit stadium — the track becomes mowed grass */
+[data-theme="stadium"] .gp-scene {
+  background: linear-gradient(180deg,
+    hsl(215, 40%, 10%) 0%, hsl(213, 38%, 14%) 16%, hsl(208, 40%, 22%) 28%,
+    hsl(200, 55%, 34%) var(--horizon),
+    hsl(150, 35%, 10%) calc(var(--horizon) + 1%), hsl(152, 38%, 8%) 100%);
+}
+
+/* Floodlight instead of a moon */
+[data-theme="stadium"] .gp-moon {
+  width: 54px;
+  height: 20px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #EAF4FF, #9CC4E8);
+  box-shadow: 0 0 34px 12px hsla(205, 100%, 85%, 0.5), 0 60px 120px 40px hsla(205, 100%, 80%, 0.12);
+}
+
+[data-theme="stadium"] .gp-moon::after { display: none; }
+
+[data-theme="stadium"] .gp-haze {
+  background: radial-gradient(ellipse 60% 100% at 50% 100%,
+    hsla(200, 100%, 80%, 0.5) 0%, hsla(150, 80%, 55%, 0.22) 45%, transparent 78%);
+}
+
+/* Mowed grass with pitch stripes */
+[data-theme="stadium"] .gp-track {
+  background:
+    repeating-linear-gradient(180deg,
+      hsla(140, 45%, 30%, 0.55) 0 46px,
+      hsla(142, 48%, 22%, 0.55) 46px 92px),
+    linear-gradient(180deg, hsl(140, 45%, 26%) 0%, hsl(142, 48%, 18%) 60%, hsl(144, 48%, 14%) 100%);
+}
+
+/* Chalk-white touchlines */
+[data-theme="stadium"] .gp-rail-l,
+[data-theme="stadium"] .gp-rail-r {
+  background: linear-gradient(180deg, #FFFFFF, #D8E6DC);
+  box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.7), 0 0 26px 6px rgba(255, 255, 255, 0.25);
+}
+
+[data-theme="stadium"] .gp-sep {
+  background: repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0 34px, transparent 34px 86px);
+}
+
+/* ════════ آركيد ════════ */
+[data-theme="retro"] {
+  --bg-primary: hsl(260, 45%, 5%);
+  --bg-secondary: hsl(262, 42%, 8%);
+  --bg-surface: hsl(261, 36%, 11%);
+  --bg-surface-hover: hsl(261, 36%, 15%);
+
+  --aurora-1: hsla(130, 100%, 54%, 0.13);
+  --aurora-2: hsla(300, 100%, 60%, 0.14);
+  --aurora-3: hsla(190, 100%, 55%, 0.11);
+
+  --accent-primary: hsl(130, 100%, 54%);
+  --accent-primary-rgb: 20, 255, 90;
+  --accent-primary-strong: hsl(130, 100%, 68%);
+  --accent-primary-glow: hsla(130, 100%, 54%, 0.35);
+  --accent-primary-soft: hsla(130, 100%, 54%, 0.13);
+  --accent-secondary: hsl(300, 100%, 60%);
+  --accent-secondary-rgb: 255, 50, 255;
+  --accent-secondary-glow: hsla(300, 100%, 60%, 0.35);
+  --accent-secondary-soft: hsla(300, 100%, 60%, 0.14);
+
+  --gradient-brand: linear-gradient(135deg, hsl(130, 100%, 54%), hsl(190, 100%, 55%), hsl(300, 100%, 60%));
+  --gradient-cool: linear-gradient(135deg, hsl(190, 100%, 55%), hsl(130, 100%, 54%));
+}
+
+[data-theme="retro"] .btn-primary {
+  color: hsl(260, 60%, 8%);
+  box-shadow: 0 4px 0 hsla(130, 80%, 22%, 0.9), var(--shadow-sm);
+}
+
+/* CRT scanlines over everything */
+[data-theme="retro"] body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 998;
+  background: repeating-linear-gradient(0deg,
+    rgba(0, 0, 0, 0.18) 0 2px, transparent 2px 4px);
+}
+
+[data-theme="retro"] .home-title { filter: drop-shadow(0 0 16px hsla(130, 100%, 54%, 0.5)); }
+
+/* Race scene: synthwave — grid tarmac + striped retro sun */
+[data-theme="retro"] .gp-scene {
+  background: linear-gradient(180deg,
+    hsl(258, 60%, 6%) 0%, hsl(268, 62%, 11%) 18%, hsl(288, 66%, 18%) 30%,
+    hsl(320, 80%, 30%) var(--horizon),
+    hsl(260, 45%, 6%) calc(var(--horizon) + 1%), hsl(260, 45%, 5%) 100%);
+}
+
+[data-theme="retro"] .gp-moon {
+  width: 58px;
+  height: 58px;
+  background:
+    repeating-linear-gradient(180deg, transparent 0 7px, hsl(288, 66%, 14%) 7px 10px),
+    linear-gradient(180deg, #FFE45C 0%, #FF7BC0 70%, #FF4D9D 100%);
+  box-shadow: 0 0 30px 10px hsla(320, 100%, 60%, 0.4), 0 0 90px 30px hsla(320, 100%, 60%, 0.15);
+}
+
+[data-theme="retro"] .gp-moon::after { display: none; }
+
+[data-theme="retro"] .gp-haze {
+  background: radial-gradient(ellipse 60% 100% at 50% 100%,
+    hsla(300, 100%, 62%, 0.55) 0%, hsla(190, 100%, 55%, 0.25) 45%, transparent 78%);
+}
+
+/* Neon wireframe grid instead of asphalt */
+[data-theme="retro"] .gp-track {
+  background:
+    repeating-linear-gradient(90deg, hsla(300, 100%, 60%, 0.22) 0 2px, transparent 2px calc(100% / 8)),
+    repeating-linear-gradient(180deg, hsla(300, 100%, 60%, 0.22) 0 2px, transparent 2px 52px),
+    linear-gradient(180deg, hsl(262, 50%, 13%) 0%, hsl(260, 50%, 8%) 100%);
+}
+
+[data-theme="retro"] .gp-rail-l {
+  background: linear-gradient(180deg, hsl(130, 100%, 62%), hsl(130, 100%, 45%));
+  box-shadow: 0 0 10px 2px hsla(130, 100%, 54%, 0.8), 0 0 34px 8px hsla(130, 100%, 54%, 0.35);
+}
+
+[data-theme="retro"] .gp-rail-r {
+  background: linear-gradient(180deg, hsl(300, 100%, 66%), hsl(300, 100%, 50%));
+  box-shadow: 0 0 10px 2px hsla(300, 100%, 60%, 0.8), 0 0 34px 8px hsla(300, 100%, 60%, 0.35);
+}
+
+[data-theme="retro"] .gp-sep {
+  background: repeating-linear-gradient(180deg, hsla(190, 100%, 60%, 0.3) 0 34px, transparent 34px 86px);
+}
+
+/* ── Theme picker swatches (lobby) ───────────────────────────────── */
+.theme-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-2);
+}
+
+.theme-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: var(--space-2);
+  border-radius: var(--radius-md);
+  background: var(--bg-surface);
+  border: 2px solid var(--border-glass);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  color: var(--text-secondary);
+  user-select: none;
+}
+
+.theme-card:hover { transform: translateY(-2px); border-color: var(--border-glass-hover); }
+
+.theme-card.active {
+  border-color: var(--accent-primary);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-glow-primary);
+}
+
+.theme-swatch {
+  width: 100%;
+  height: 34px;
+  border-radius: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.theme-swatch.sw-neon { background: linear-gradient(135deg, hsl(248, 30%, 10%) 40%, hsl(262, 92%, 66%), hsl(345, 92%, 64%)); }
+.theme-swatch.sw-ramadan { background: linear-gradient(135deg, hsl(182, 48%, 8%) 40%, hsl(43, 96%, 56%), hsl(160, 74%, 46%)); }
+.theme-swatch.sw-stadium { background: linear-gradient(135deg, hsl(150, 40%, 9%) 40%, hsl(150, 76%, 46%), hsl(45, 95%, 55%)); }
+.theme-swatch.sw-retro { background: linear-gradient(135deg, hsl(260, 45%, 6%) 40%, hsl(130, 100%, 54%), hsl(300, 100%, 60%)); }
