@@ -1,0 +1,5 @@
+.worktrees/
+.superpowers/
+public/games/protocol-zero/
+test-results/
+playwright-report/
