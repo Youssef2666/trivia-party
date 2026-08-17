@@ -33,6 +33,7 @@ The shared display presents the current crisis, countdown, crew readiness, share
 
 ### Player-Count Rules
 
+- **Shared-display host:** The device that creates the room is the dedicated stage and is not counted among the 2–5 contestants. A host who also wants to play joins the room from a separate phone as a normal contestant.
 - **Two players — Anomaly rules:** Both players are crew. The system injects misleading or conflicting private instructions so they must decide what to trust without making one human traitor obvious.
 - **Three to five players — Infiltrator rules:** Exactly one player is the secret infiltrator. Their legal action set overlaps with crew actions so sabotage is deniable. The infiltrator wins by causing station failure or meeting the corruption objective without being contained.
 
