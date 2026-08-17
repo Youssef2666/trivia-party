@@ -1,0 +1,80 @@
+<style>
+  :root{--pz-bg:#050812;--pz-panel:#0b1120;--pz-line:rgba(177,199,255,.14);--pz-cyan:#67f5d2;--pz-violet:#8c7cff;--pz-red:#ff496f;--pz-text:#f5f7ff;--pz-muted:#8f9aba}
+  .pz-wrap{max-width:1180px;margin:0 auto}.pz-kicker{font-size:.69rem;letter-spacing:.18em;text-transform:uppercase;color:var(--pz-cyan);font-weight:900}
+  .pz-hero{display:grid;grid-template-columns:minmax(0,1.85fr) minmax(280px,.72fr);gap:20px;margin-top:24px;align-items:stretch}
+  .pz-stage,.pz-phone{position:relative;overflow:hidden;background:var(--pz-bg);border:1px solid rgba(154,174,255,.2);box-shadow:0 35px 90px rgba(0,0,0,.36)}
+  .pz-stage{min-height:560px;border-radius:28px;padding:24px;isolation:isolate}
+  .pz-stage:before{content:"";position:absolute;z-index:-2;inset:0;background:radial-gradient(circle at 50% 44%,rgba(81,62,218,.3),transparent 25%),radial-gradient(circle at 8% 100%,rgba(54,245,206,.14),transparent 35%),linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:auto,auto,34px 34px,34px 34px}
+  .pz-stage:after{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(transparent 50%,rgba(0,0,0,.13) 50%);background-size:100% 4px;pointer-events:none;opacity:.3}
+  .pz-top{display:flex;justify-content:space-between;align-items:center;gap:18px;padding-bottom:18px;border-bottom:1px solid var(--pz-line)}
+  .pz-brand{display:flex;align-items:center;gap:12px;color:var(--pz-text);font-weight:900;letter-spacing:.13em}.pz-mark{width:30px;height:30px;border:2px solid var(--pz-cyan);border-radius:50%;display:grid;place-items:center;box-shadow:0 0 24px rgba(103,245,210,.25)}
+  .pz-mark:after{content:"";width:8px;height:8px;background:var(--pz-cyan);border-radius:50%;box-shadow:0 0 12px var(--pz-cyan)}
+  .pz-stats{display:flex;gap:12px}.pz-stat{min-width:105px;padding:8px 12px;border-radius:12px;background:rgba(255,255,255,.035);border:1px solid var(--pz-line)}
+  .pz-stat small{display:block;color:var(--pz-muted);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase}.pz-stat b{display:block;color:var(--pz-text);font-size:.84rem;margin-top:3px}.pz-stat.danger b{color:#ff6f8d}
+  .pz-alert{text-align:center;margin:30px auto 8px}.pz-alert span{display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border-radius:999px;color:#ff7894;background:rgba(255,73,111,.1);border:1px solid rgba(255,73,111,.3);font-size:.66rem;font-weight:900;letter-spacing:.1em}.pz-alert h3{font-size:clamp(1.65rem,3vw,2.55rem);margin:12px 0 5px;color:var(--pz-text);letter-spacing:-.03em}.pz-alert p{margin:0;color:var(--pz-muted);font-size:.83rem}
+  .pz-reactor{width:210px;height:210px;margin:22px auto 25px;position:relative;display:grid;place-items:center;border-radius:50%;background:radial-gradient(circle,rgba(103,245,210,.17),rgba(13,18,36,.92) 48%,rgba(5,8,18,.98) 70%);box-shadow:0 0 90px rgba(104,91,255,.3),inset 0 0 50px rgba(103,245,210,.13)}
+  .pz-reactor:before,.pz-reactor:after{content:"";position:absolute;border-radius:50%}.pz-reactor:before{inset:-11px;border:2px dashed rgba(140,124,255,.65);transform:rotate(21deg)}.pz-reactor:after{inset:18px;border:1px solid rgba(103,245,210,.55);box-shadow:0 0 22px rgba(103,245,210,.22)}
+  .pz-reactor-value{text-align:center;z-index:1}.pz-reactor-value b{display:block;color:#fff;font-size:3.1rem;line-height:1}.pz-reactor-value small{display:block;color:var(--pz-cyan);font-size:.65rem;font-weight:900;letter-spacing:.13em;margin-top:7px}
+  .pz-crew{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin:0 auto;max-width:650px}.pz-crew-member{padding:11px 7px;border:1px solid var(--pz-line);background:rgba(255,255,255,.035);border-radius:13px;text-align:center}.pz-crew-member i{display:block;width:9px;height:9px;border-radius:50%;margin:0 auto 7px;background:var(--pz-cyan);box-shadow:0 0 10px var(--pz-cyan)}.pz-crew-member.suspect i{background:var(--pz-red);box-shadow:0 0 10px var(--pz-red)}.pz-crew-member b{display:block;color:#dfe4fb;font-size:.67rem}.pz-crew-member small{color:#7e89ab;font-size:.55rem}
+  .pz-timeline{display:flex;align-items:center;gap:7px;margin-top:22px}.pz-timeline span{height:4px;flex:1;border-radius:999px;background:rgba(255,255,255,.08)}.pz-timeline .done{background:#615be7}.pz-timeline .active{background:var(--pz-cyan);box-shadow:0 0 10px rgba(103,245,210,.5)}
+  .pz-phone{border-radius:34px;min-height:560px;padding:13px}.pz-phone-shell{height:100%;min-height:532px;border:1px solid rgba(255,255,255,.08);border-radius:25px;padding:20px 15px 15px;background:radial-gradient(circle at 50% 0,rgba(140,124,255,.16),transparent 35%)}
+  .pz-phone-head{display:flex;justify-content:space-between;align-items:center;color:var(--pz-muted);font-size:.6rem}.pz-role{margin:26px 0 8px}.pz-role small{display:block;color:var(--pz-cyan);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;font-weight:900}.pz-role h3{color:#fff;margin:4px 0 3px;font-size:1.35rem}.pz-role p{color:var(--pz-muted);font-size:.72rem;margin:0;line-height:1.55}.pz-private{margin:16px 0;padding:12px;border-radius:14px;border:1px solid rgba(140,124,255,.35);background:rgba(140,124,255,.08)}.pz-private small{display:block;color:#a9a0ff;font-size:.57rem;font-weight:900;letter-spacing:.11em}.pz-private b{display:block;color:#eceaff;font-size:.76rem;line-height:1.55;margin-top:5px}
+  .pz-choice-label{font-size:.61rem;color:#858fad;margin:12px 0 8px}.pz-choice{display:flex;align-items:center;gap:11px;width:100%;margin:8px 0;padding:14px 12px;border-radius:15px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.045);color:#e7ebff;text-align:right;font-weight:800;font-size:.76rem}.pz-choice .icon{width:30px;height:30px;display:grid;place-items:center;border-radius:10px;background:rgba(255,255,255,.07);color:#bbc5e6}.pz-choice.selected{border-color:var(--pz-cyan);background:rgba(103,245,210,.09);box-shadow:0 0 0 2px rgba(103,245,210,.07)}.pz-choice.selected .icon{background:var(--pz-cyan);color:#071018}.pz-lock{margin-top:11px;width:100%;padding:14px;border:none;border-radius:15px;background:linear-gradient(135deg,#7a6cff,#59e7cc);color:#061018;font-weight:950;letter-spacing:.04em;box-shadow:0 10px 30px rgba(96,105,245,.28)}.pz-undo{text-align:center;color:#747f9f;font-size:.58rem;margin-top:8px}
+  .pz-principles{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-top:20px}.pz-principle{padding:15px;border-radius:16px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03)}.pz-principle b{display:block;color:#eef1ff;font-size:.76rem;margin-bottom:5px}.pz-principle span{color:#8f99b8;font-size:.66rem;line-height:1.5;display:block}
+  .pz-approval{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}.pz-approval .option{margin:0}
+  @media(max-width:900px){.pz-hero{grid-template-columns:1fr}.pz-stage{min-height:520px}.pz-phone{max-width:380px;width:100%;margin:0 auto}.pz-principles{grid-template-columns:1fr 1fr}}@media(max-width:560px){.pz-stage{padding:16px}.pz-stats{display:none}.pz-crew{grid-template-columns:repeat(5,1fr);gap:5px}.pz-crew-member{padding:8px 2px}.pz-crew-member small{display:none}.pz-principles,.pz-approval{grid-template-columns:1fr}}
+</style>
+
+<div class="pz-wrap" dir="rtl">
+  <div class="pz-kicker">Protocol: Zero · Premium UI direction</div>
+  <h2>شاشة عرض سينمائية، وهاتف ما يحتاجش شرح</h2>
+  <p class="subtitle">المعلومة العامة فوق التلفاز؛ القرار السري فقط على الهاتف. كل لون وحركة عندهم معنى، مش زينة زايدة.</p>
+
+  <div class="pz-hero">
+    <section class="pz-stage">
+      <div class="pz-top">
+        <div class="pz-brand"><span class="pz-mark"></span><span>PROTOCOL: ZERO</span></div>
+        <div class="pz-stats">
+          <div class="pz-stat"><small>الجولة</small><b>03 / 06</b></div>
+          <div class="pz-stat danger"><small>الثقة</small><b>غير مستقرة</b></div>
+        </div>
+      </div>
+      <div class="pz-alert"><span>⚠ أزمة حرجة</span><h3>نظام التبريد ينهار</h3><p>عندكم 18 ثانية قبل ما يقفل المفاعل القرارات</p></div>
+      <div class="pz-reactor"><div class="pz-reactor-value"><b>67%</b><small>استقرار المفاعل</small></div></div>
+      <div class="pz-crew">
+        <div class="pz-crew-member"><i></i><b>ليان</b><small>جاهزة</small></div>
+        <div class="pz-crew-member suspect"><i></i><b>سالم</b><small>مشتبه</small></div>
+        <div class="pz-crew-member"><i></i><b>آية</b><small>اختارت</small></div>
+        <div class="pz-crew-member"><i></i><b>مؤيد</b><small>يفكر</small></div>
+        <div class="pz-crew-member"><i></i><b>نور</b><small>اختارت</small></div>
+      </div>
+      <div class="pz-timeline"><span class="done"></span><span class="done"></span><span class="active"></span><span></span><span></span><span></span></div>
+    </section>
+
+    <aside class="pz-phone">
+      <div class="pz-phone-shell">
+        <div class="pz-phone-head"><span>03:42</span><span>الجولة 3</span></div>
+        <div class="pz-role"><small>دورك السري</small><h3>مهندس الطاقة</h3><p>قرارك يغيّر استقرار المفاعل مباشرة.</p></div>
+        <div class="pz-private"><small>تعليمات خاصة</small><b>التحويل آمن فقط لو شخص ثاني اختار «ثبّت».</b></div>
+        <div class="pz-choice-label">اختار إجراء واحد — تقدر تغيّره قبل التأكيد</div>
+        <button class="pz-choice selected"><span class="icon">◉</span><span>ثبّت قلب المفاعل</span></button>
+        <button class="pz-choice"><span class="icon">↯</span><span>حوّل طاقة الطوارئ</span></button>
+        <button class="pz-choice"><span class="icon">⌁</span><span>افتح سجل النظام</span></button>
+        <button class="pz-lock">تأكيد القرار</button>
+        <div class="pz-undo">اهتزاز خفيف عند التأكيد · لا كشف قبل انتهاء الوقت</div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="pz-principles">
+    <div class="pz-principle"><b>وضوح فوري</b><span>هدف واحد بارز، ومؤشرات قليلة ما تتنافسش على الانتباه.</span></div>
+    <div class="pz-principle"><b>لمس مريح</b><span>أزرار كبيرة، مناطق آمنة، وتأكيد يمنع اللمسات بالغلط.</span></div>
+    <div class="pz-principle"><b>حركة لها معنى</b><span>المفاعل والحالة يتحركوا حسب نتيجة اللعب، مع وضع Reduced Motion.</span></div>
+    <div class="pz-principle"><b>متاح للجميع</b><span>اللون مع رمز ونص، تباين قوي، وصوت واهتزاز اختياريين.</span></div>
+  </div>
+
+  <div class="pz-approval options">
+    <div class="option" data-choice="approve-ui" onclick="toggleSelect(this)"><div class="letter">✓</div><div class="content"><h3>نعتمد الاتجاه</h3><p>هذا هو مستوى وشخصية Protocol: Zero.</p></div></div>
+    <div class="option" data-choice="adjust-ui" onclick="toggleSelect(this)"><div class="letter">↺</div><div class="content"><h3>نعدّل الاتجاه</h3><p>نبي تغييرات في الألوان، الكثافة، أو طابع الخيال العلمي.</p></div></div>
+  </div>
+</div>

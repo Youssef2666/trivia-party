@@ -1,0 +1,97 @@
+<style>
+  .concept-kicker { letter-spacing: .14em; text-transform: uppercase; color: #8b9cff; font-size: .72rem; font-weight: 800; }
+  .concept-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin-top:24px; }
+  .concept-card { position:relative; overflow:hidden; border:1px solid rgba(255,255,255,.12); border-radius:24px; background:linear-gradient(155deg,rgba(19,25,54,.96),rgba(7,10,24,.98)); cursor:pointer; transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease; }
+  .concept-card:hover { transform:translateY(-5px); border-color:rgba(139,156,255,.65); box-shadow:0 24px 64px rgba(0,0,0,.3); }
+  .concept-card.selected { border-color:#78f6d1; box-shadow:0 0 0 2px rgba(120,246,209,.2),0 24px 70px rgba(0,0,0,.42); }
+  .concept-card.recommended:before { content:"اختيار مقيل"; position:absolute; z-index:3; top:14px; left:14px; padding:6px 10px; border-radius:999px; background:#78f6d1; color:#071018; font-size:.67rem; font-weight:900; }
+  .stage { min-height:265px; padding:24px; display:flex; flex-direction:column; justify-content:space-between; position:relative; isolation:isolate; }
+  .stage:after { content:""; position:absolute; inset:0; z-index:-1; opacity:.75; }
+  .stage-a:after { background:radial-gradient(circle at 80% 10%,rgba(96,72,255,.55),transparent 44%),radial-gradient(circle at 12% 88%,rgba(0,232,190,.22),transparent 46%); }
+  .stage-b:after { background:radial-gradient(circle at 20% 15%,rgba(255,61,108,.42),transparent 45%),radial-gradient(circle at 90% 88%,rgba(255,151,73,.18),transparent 40%); }
+  .stage-c:after { background:radial-gradient(circle at 70% 10%,rgba(0,184,255,.42),transparent 44%),radial-gradient(circle at 12% 88%,rgba(60,255,159,.18),transparent 46%); }
+  .hud { display:flex; justify-content:space-between; gap:10px; font-size:.66rem; color:#aab2d5; letter-spacing:.08em; text-transform:uppercase; }
+  .core { margin:18px auto; width:108px; height:108px; border-radius:50%; display:grid; place-items:center; position:relative; background:rgba(7,10,24,.8); box-shadow:inset 0 0 30px rgba(255,255,255,.06); }
+  .core:before,.core:after { content:""; position:absolute; border-radius:50%; border:1px solid currentColor; }
+  .core:before { inset:-8px; opacity:.42; border-style:dashed; }
+  .core:after { inset:12px; opacity:.75; }
+  .core-a { color:#78f6d1; box-shadow:0 0 45px rgba(120,246,209,.22),inset 0 0 30px rgba(120,246,209,.12); }
+  .core-b { color:#ff627f; box-shadow:0 0 45px rgba(255,98,127,.22),inset 0 0 30px rgba(255,98,127,.12); }
+  .core-c { color:#65cfff; box-shadow:0 0 45px rgba(101,207,255,.22),inset 0 0 30px rgba(101,207,255,.12); }
+  .core strong { font-size:1.45rem; color:#fff; }
+  .decision { background:rgba(0,0,0,.24); border:1px solid rgba(255,255,255,.09); border-radius:16px; padding:13px 14px; text-align:center; }
+  .decision small { display:block; color:#929bc3; margin-bottom:5px; }
+  .decision b { color:#fff; font-size:.9rem; }
+  .phone-actions { display:grid; grid-template-columns:repeat(3,1fr); gap:7px; margin-top:10px; }
+  .phone-actions span { padding:8px 4px; text-align:center; border-radius:10px; font-size:.64rem; font-weight:800; background:rgba(255,255,255,.07); color:#dce1ff; }
+  .concept-copy { padding:20px 22px 22px; border-top:1px solid rgba(255,255,255,.08); }
+  .concept-copy h3 { margin:0 0 7px; font-size:1.15rem; color:#fff; }
+  .concept-copy p { margin:0; color:#aeb6d7; font-size:.83rem; line-height:1.65; }
+  .chips { display:flex; flex-wrap:wrap; gap:7px; margin-top:13px; }
+  .chips span { font-size:.66rem; color:#c8cff5; padding:5px 8px; border-radius:999px; background:rgba(255,255,255,.07); }
+  .tradeoff { margin-top:12px; padding-top:12px; border-top:1px solid rgba(255,255,255,.08); color:#ffcd77 !important; }
+  .tap-hint { margin-top:22px; text-align:center; color:#8e97bb; font-size:.8rem; }
+  @media (max-width:900px){ .concept-grid{grid-template-columns:1fr;} .stage{min-height:220px;} }
+</style>
+
+<div class="concept-kicker">Flagship game direction · 2–5 players · 10–15 min</div>
+<h2>شن النمط اللي يستاهل نرفعوا بيه سقف الجودة؟</h2>
+<p class="subtitle">ثلاث توجهات مختلفة. الأول هو توصيتي لأنه يجمع الخداع، القرارات الإبداعية، والتعاون في تجربة سينمائية وحدة.</p>
+
+<div class="concept-grid">
+  <article class="concept-card recommended" data-choice="protocol-zero" onclick="toggleSelect(this)">
+    <div class="stage stage-a">
+      <div class="hud"><span>PROTOCOL: ZERO</span><span>03:42</span></div>
+      <div class="core core-a"><strong>67%</strong></div>
+      <div class="decision">
+        <small>المفاعل ينهار — اختاروا خطتكم سراً</small>
+        <b>هل نثقوا في بعض؟</b>
+        <div class="phone-actions"><span>ثبّت</span><span>حوّل</span><span>اكشف</span></div>
+      </div>
+    </div>
+    <div class="concept-copy">
+      <h3>A — Protocol: Zero</h3>
+      <p>طاقم يحاول ينقذ محطة تنهار، لكن التعليمات السرية ممكن تكون متعارضة أو مخترقة. قرارات سرية، كشف، تصويت، ونهاية تتغيّر حسب ثقة الفريق.</p>
+      <div class="chips"><span>تعاون</span><span>خداع مرن</span><span>قرارات سينمائية</span></div>
+      <p class="tradeoff">الأقوى كتجربة، لكنه يحتاج تصميم واختبار أدق.</p>
+    </div>
+  </article>
+
+  <article class="concept-card" data-choice="night-shift" onclick="toggleSelect(this)">
+    <div class="stage stage-b">
+      <div class="hud"><span>NIGHT SHIFT</span><span>تصويت 08</span></div>
+      <div class="core core-b"><strong>?</strong></div>
+      <div class="decision">
+        <small>واحد منكم عطّل النظام</small>
+        <b>من الكذاب؟</b>
+        <div class="phone-actions"><span>اتهم</span><span>دافع</span><span>مرّر</span></div>
+      </div>
+    </div>
+    <div class="concept-copy">
+      <h3>B — Night Shift</h3>
+      <p>لعبة خداع وتصويت مركّزة: أدوار سرية، أدلة ناقصة، وقرارات تكشف المتسلل. أسرع في الفهم وأكثر صخباً في المجموعات.</p>
+      <div class="chips"><span>خداع قوي</span><span>تصويت</span><span>جولات سريعة</span></div>
+      <p class="tradeoff">ممتازة مع 4–5، لكن أضعف مع لاعبين اثنين.</p>
+    </div>
+  </article>
+
+  <article class="concept-card" data-choice="last-signal" onclick="toggleSelect(this)">
+    <div class="stage stage-c">
+      <div class="hud"><span>LAST SIGNAL</span><span>موجة 4/6</span></div>
+      <div class="core core-c"><strong>SYNC</strong></div>
+      <div class="decision">
+        <small>كل لاعب شايف جزء مختلف من الحل</small>
+        <b>نسّقوا قبل انتهاء النبضة</b>
+        <div class="phone-actions"><span>نبضة</span><span>درع</span><span>ربط</span></div>
+      </div>
+    </div>
+    <div class="concept-copy">
+      <h3>C — Last Signal</h3>
+      <p>تعاون خالص: كل هاتف عنده قدرة ومعلومة مختلفة، والفريق ينسّق أزراره في توقيت صحيح باش يهزم النظام.</p>
+      <div class="chips"><span>تعاون قوي</span><span>يشتغل 2–5</span><span>تعلم سريع</span></div>
+      <p class="tradeoff">أكثر توازناً، لكن فيه خداع وضحك اجتماعي أقل.</p>
+    </div>
+  </article>
+</div>
+
+<p class="tap-hint">اضغط على البطاقة اللي تبي نمشوا بيها، وبعدها قولّي رأيك في المحادثة.</p>
