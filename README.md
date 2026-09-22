@@ -2,7 +2,7 @@
 
 **A real-time multiplayer party game in the style of Kahoot and Jackbox.** One screen hosts, everyone else plays from their phone — no app install, no account. Five game modes, two of them in 3D, fully bilingual (Arabic RTL / English), and it runs completely offline on a local Wi-Fi network.
 
-**[▶ Play now](https://trivia-party.fly.dev)** · [العربية](./README.ar.md)
+[العربية](./README.ar.md)
 
 <!-- TODO: add gameplay GIF here: ![Gameplay](docs/media/gameplay.gif) -->
 
