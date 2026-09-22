@@ -1,107 +1,134 @@
-# تريفيا بارتي | Trivia Party — v4 "Neon Arena"
+# Trivia Party — "Neon Arena"
 
-لعبة تريفيا جماعية تفاعلية مباشرة ومحسنة للهواتف الذكية وأجهزة الحاسوب، مصممة خصيصاً للحفلات والتجمعات العائلية بأسلوب Kahoot و Jackbox — بخمسة أنماط لعب، وسمات كاملة للحفلة، وشاشة عرض كبيرة، وجولات خاصة مستوحاة من «تحدي الثلاثين».
+**A real-time multiplayer party game in the style of Kahoot and Jackbox.** One screen hosts, everyone else plays from their phone — no app install, no account. Five game modes, two of them in 3D, fully bilingual (Arabic RTL / English), and it runs completely offline on a local Wi-Fi network.
 
-> 📚 التوثيق الكامل (البنية، سجل التطوير، رؤية التوسع والأفكار) في مجلد [docs/](./docs/README.md)
+**[▶ Play now](https://trivia-party.fly.dev)** · [العربية](./README.ar.md)
 
----
-
-## 🚀 المميزات
-
-### أساسيات اللعب
-- **نظام الحفلات والانتظار**: أي لاعب ينشئ غرفة ويشارك رمزها أو رابطها أو الـ QR Code للانضمام فوراً من الهواتف.
-- **تزامن كامل في الوقت الفعلي** عبر Socket.io، مع **مؤقت مركزي على الخادم** لمنع الغش.
-- **حساب النقاط بحسب السرعة** + **مكافآت السلاسل** + عقوبات اختيارية للإجابات الخاطئة.
-- **القدرات الخاصة**: ٥٠/٥٠، تجميد الوقت، مضاعفة النقاط، وسرقة النقاط.
-- **استمرارية الجلسة**: إعادة الاتصال خلال 60 ثانية دون فقدان النقاط.
-- **دعم ثنائي اللغة (عربي/إنجليزي)** مع RTL كامل وخط Cairo **مضمّن داخل المشروع** — اللعبة تعمل بالكامل بدون إنترنت على شبكة محلية.
-
-### 🕹️ أنماط اللعب الخمسة
-- **⭐ كلاسيكي**: أسئلة ونقاط — الأعلى يفوز، مع السؤال الذهبي وجولة الجرس.
-- **👥 فرق**: الأحمر ضد الأزرق — توزيع تلقائي، المضيف ينقل اللاعبين بلمسة، وتعادل الفريقين يُحسم بمبارزة بين نجمَي الفريقين.
-- **💀 البقاء**: كل عدة أسئلة يُقصى صاحب أدنى نقاط حتى يبقى ناجٍ واحد.
-- **🏎️ مضمار السباق**: مضمار ثلاثي الأبعاد وكل لاعب سيارة بألوان شخصيته — أول من يبلغ هدف النقاط يقطع خط النهاية والبقية يكملون للمراكز، مع أسلحة سباق: 🚀 صاروخ (-300 لمنافس)، 🛡️ درع صاد، 🔥 نيترو (+250) تُكسب مع الإجابات الصحيحة.
-- **🖥️ شاشة العرض**: جهاز المضيف يتحول لمسرح (السؤال والعداد والإحصائيات بخط ضخم) وهواتف اللاعبين لأزرار ملونة عملاقة — تجربة استوديو على التلفاز.
-- **💀 المطاردة (v4)**: مطارد واحد يلاحق الجميع في «نفق الهروب» ثلاثي الأبعاد — جدار ضباب أحمر يتقدم مع كل إجابة صحيحة للمطارد، والهاربون يتسلقون نحو بوابة الأمان الخضراء. من يلحق به الجدار يُبتلع، ومن يصل البوابة ينجو — مع «اندفاعة» لمرة واحدة (خطوتان بدل خطوة).
-- **🎨 سمات الحفلة (v4)**: أربع سمات تُغيّر شكل اللعبة كلها بضغطة من المضيف — نيون، ليالي رمضان (هلال ذهبي وزمرد)، الملعب (عشب وخطوط جير وكشافات)، وآركيد (Synthwave وخطوط CRT).
-- **🎯 جولات التخمين**: سؤال رقمي والأقرب يخطف أعلى النقاط (إصابة مباشرة +250) — تُحقن تلقائياً في كل الأنماط.
-- **⚽ فئة كرة القدم (v4)**: **282 سؤالاً** — أبطال كل المونديالات، الكرات الذهبية، دوري الأبطال، أمم أوروبا وأفريقيا وآسيا، الملاعب والألقاب والديربيات، قوانين اللعبة، الأساطير، وكرة عربية وليبية — في ملف مستقل `server/questions/football.json`.
-
-### ✨ الجديد في v2
-- **🎭 شخصيات مرسومة (20 شخصية)**: أفاتارات SVG متحركة — ترمش بعيونها، تفرح عند الإجابة الصحيحة وتحزن عند الخاطئة.
-- **🔊 نظام صوتي كامل بدون ملفات صوتية** (WebAudio): مؤثرات لكل حدث، موسيقى خلفية للانتظار وأثناء الأسئلة، وعدّاد نبض في الثواني الأخيرة — مع أزرار تحكم مستقلة.
-- **🎙️ قارئ الأسئلة**: يقرأ السؤال بصوت مسموع (عربي/إنجليزي) على جهاز المضيف — مثالي لوضع «شاشة العرض».
-- **⭐ السؤال الذهبي**: آخر سؤال بنقاط مضاعفة وبدون أي خصم — قلبات نهائية بالجملة!
-- **🔔 جولة الجرس** (مستوحاة من تحدي الثلاثين): سؤال مفاجئ في منتصف اللعبة — أسرع إجابة صحيحة تخطف كل النقاط والبقية لا شيء.
-- **⚔️ جولة الحسم**: عند التعادل على القمة، مبارزة مباشرة بين المتعادلين — سؤال صعب، والأسرع يحسم اللقب (+50).
-- **😂 تفاعلات إيموجي حية**: أرسل 🔥 و 😱 و 👏 تطير على شاشات الجميع في أي لحظة.
-- **📊 توزيع الإجابات**: بعد كل سؤال شاهد كيف أجاب الجميع (أعمدة ملونة بأسلوب Kahoot).
-- **🏅 جوائز نهاية الحفلة**: أسرع إصبع، القنّاص، ملك السلسلة، المخطّط، ونجم التفاعل.
-- **✅ أسئلة صح/خطأ** ضمن بنك أسئلة موسّع (**375 سؤالاً في 9 فئات**) يشمل **كرة القدم** و**العالم العربي** و**ثقافة عامة**.
-- **🎨 تصميم جديد كلياً**: خلفية Aurora متحركة، أزرار إجابات بأشكال ملونة (مناسبة لعمى الألوان)، منصة تتويج بأضواء واحتفال كامل، ومشاركة النتائج بضغطة زر.
-- **📴 بدون أي CDN**: الخطوط والأيقونات مضمّنة — شغّل الخادم على أي شبكة Wi-Fi بدون إنترنت وستعمل اللعبة بكامل جمالها.
+<!-- TODO: add gameplay GIF here: ![Gameplay](docs/media/gameplay.gif) -->
 
 ---
 
-## 🛠️ متطلبات التشغيل
-- Node.js (الإصدار 18 أو أحدث)
-- npm (مدير حزم Node)
+## Highlights
 
----
+- **Server-authoritative game loop** — the timer, answer checking and scoring all run on the server. The correct answer is never sent to clients before the question ends, so the browser can't be used to cheat.
+- **Clock synchronisation** — clients estimate their offset from the server clock (NTP-style, averaged over several round trips) so countdowns stay in sync across phones with different latency.
+- **Reconnection without losing state** — a player who drops (phone locks, Wi-Fi blips) can rejoin within 60 seconds with their score, streak and power-ups intact, using a session token.
+- **Five game modes on one state machine** — Classic, Teams, Survival (elimination), Race (3D track with rockets / shields / nitro) and Chase (one chaser vs. everyone in a 3D escape tunnel).
+- **Zero external assets** — all sound and music are synthesised live with the WebAudio API, the 20 animated avatars are hand-built SVG, and fonts and icons are bundled. No CDN, no audio files.
+- **No frontend framework** — plain JavaScript and hand-written CSS, with four switchable party themes.
 
-## 💻 طريقة التشغيل محلياً
+## Architecture
 
-1. افتح مجلد المشروع في منفذ الأوامر (Terminal).
-2. قم بتثبيت الحزم المطلوبة (مضمّنة مسبقاً في هذه النسخة):
-   ```bash
-   npm install
-   ```
-3. ابدأ تشغيل الخادم:
-   ```bash
-   npm start
-   ```
-4. سيظهر لك رابط الحفلة الخاص بالشبكة المحلية (LAN URL)، مثال: `http://192.168.1.15:3000`.
-5. افتح الرابط على جهازك لإنشاء الحفلة (المضيف)، ودع أصدقاءك المتصلين بنفس شبكة الـ Wi-Fi يمسحون الـ QR Code من هواتفهم للانضمام واللعب فوراً!
+```mermaid
+flowchart LR
+    subgraph Clients
+        H[Host / TV screen]
+        P1[Phone]
+        P2[Phone]
+    end
+    H <-->|Socket.io| S
+    P1 <-->|Socket.io| S
+    P2 <-->|Socket.io| S
+    subgraph S[Node.js server]
+        GM[GameManager<br/>rooms · join · reconnect · cleanup]
+        GR[GameRoom<br/>round state machine · modes · special rounds]
+        SE[ScoringEngine<br/>pure functions]
+        Q[(Question bank<br/>375 questions · 9 categories)]
+        GM --> GR --> SE
+        GR --> Q
+    end
+```
 
-> 💡 نصيحة: شغّل صوت «قارئ الأسئلة» من زر الصوت أعلى الشاشة على جهاز المضيف الموصول بشاشة كبيرة، واجعل اللاعبين يجيبون من هواتفهم — تجربة استوديو حقيقية.
+**Round state machine** (runs on the server, one per room):
 
----
+```
+LOBBY → STARTING → QUESTION_ACTIVE → REVEAL → LEADERBOARD ─┐
+          ↑                                                │ (depends on mode)
+          └──────────────── rematch ◄─── GAME_END ◄────────┘
+                                   ▲
+                    TIEBREAKER_INTRO → QUESTION_ACTIVE
+```
 
-## ⚙️ إعدادات المضيف
-| الإعداد | الخيارات |
+**Scoring** (`server/ScoringEngine.js`, pure functions):
+
+```
+base   = max(100, round(1000 × timeRemaining / totalTime))
+ranked = base × max(0.85, 1 − rank × 0.03)
+final  = round(ranked × difficultyMultiplier × streakMultiplier)
+```
+
+## Game modes
+
+| Mode | How it works | Ends when |
+|---|---|---|
+| **Classic** | Speed-based points, with a double-points golden question and a surprise "buzzer" round | All rounds are played |
+| **Teams** | Red vs. Blue; a team tie is decided by a duel between each team's best player | All rounds are played |
+| **Survival** | The lowest score is eliminated every N questions | One player is left |
+| **Race** | 3D track, one car per player; correct answers earn rockets, shields and nitro | Everyone crosses the finish line |
+| **Chase** | One chaser vs. everyone; a red wall advances on the chaser's correct answers while runners climb to the safe gate | Every runner is safe or caught |
+
+Shared across modes: **guess rounds** (closest number wins), **tiebreaker duels**, live **emoji reactions**, power-ups (50/50, freeze time, double points, steal points), end-of-game **awards**, and a **stage display mode** that turns the host device into a TV show screen while phones become giant answer buttons.
+
+## Tech stack
+
+| Layer | Technology |
 |---|---|
-| نمط اللعب | كلاسيكي / فرق / البقاء / مضمار السباق / المطاردة |
-| سمة الحفلة | نيون / ليالي رمضان / الملعب / آركيد |
-| خطوات الأمان (المطاردة) | 2 / 3 / 4 |
-| الفئات | 9 فئات (كرة القدم، علوم، تاريخ، جغرافيا، مشاهير وفن، رياضة، تكنولوجيا، العالم العربي، ثقافة عامة) |
-| الصعوبة | تصاعدي / عشوائي / سهل / متوسط / صعب |
-| عدد الجولات (كلاسيكي/فرق) | 5 / 10 / 15 / 20 |
-| الإقصاء كل (البقاء) | 1 / 2 / 3 أسئلة |
-| خط النهاية (السباق) | 3000 / 5000 / 8000 نقطة |
-| المؤقت | 10 / 15 / 20 / 30 ثانية |
-| خصم النقاط | تشغيل / إيقاف |
-| السؤال الذهبي (كلاسيكي/فرق) | تشغيل / إيقاف |
-| جولة الجرس | تشغيل / إيقاف (تحتاج 5 جولات فأكثر) |
-| جولات التخمين | تشغيل / إيقاف |
-| شاشة العرض | تشغيل / إيقاف (هذا الجهاز يصبح شاشة تقديم) |
+| Server | Node.js, Express 5, Socket.io 4 |
+| Frontend | Vanilla JavaScript, hand-written CSS (no framework) |
+| Real-time | WebSockets with client↔server clock-offset estimation |
+| Audio | WebAudio API (procedural sound, no files) + Web Speech API question reader |
+| i18n | Arabic (RTL) and English |
+| Deploy | Docker, Fly.io |
 
----
+## Run locally
 
-## 🧱 هيكل المشروع
+Requires Node.js 18+.
+
+```bash
+npm install
+npm start
 ```
-trivia-party/
-├── server/            # Node.js + Socket.io (منطق اللعبة كاملاً على الخادم)
-│   ├── index.js       # نقطة الدخول + توجيه الأحداث
-│   ├── GameManager.js # إدارة الغرف
-│   ├── GameRoom.js    # آلة حالات الجولة + الجولات الخاصة + الجوائز
-│   ├── Player.js      # نموذج اللاعب
-│   ├── ScoringEngine.js
-│   └── questions/     # بنك الأسئلة مقسّماً (general / football / guess)
-└── public/            # الواجهة (Vanilla JS — بدون أي مكتبات خارجية)
-    ├── js/avatars.js  # 20 شخصية SVG متحركة
-    ├── js/sound.js    # محرك الصوت + قارئ الأسئلة
-    ├── js/icons.js    # الأيقونات المضمّنة
-    ├── js/screens/    # شاشات اللعبة الست
-    ├── css/           # نظام التصميم "Neon Arena"
-    └── fonts/         # خط Cairo مضمّن (عربي + لاتيني)
+
+The server prints a LAN address such as `http://192.168.1.15:3000`. Open it on the host device and create a room; friends on the same Wi-Fi scan the QR code to join.
+
+| Env var | Default | Purpose |
+|---|---|---|
+| `PORT` | `3000` | HTTP port |
+| `PUBLIC_URL` | LAN address | Base URL used in join links and QR codes (set this when deployed) |
+
+## Deploy
+
+The game keeps room state in memory, so it runs as a **single instance**.
+
+```bash
+fly launch --copy-config --no-deploy   # first time only
+fly deploy
 ```
+
+Or with Docker anywhere:
+
+```bash
+docker build -t trivia-party .
+docker run -p 3000:3000 -e PUBLIC_URL=https://your-domain trivia-party
+```
+
+## Project structure
+
+```
+server/
+  index.js          Express + Socket.io entry point, event routing
+  GameManager.js    Room lifecycle: create, join, reconnect, cleanup
+  GameRoom.js       Round state machine, game modes, special rounds, awards
+  Player.js         Player model (score, streak, power-ups, team, race items)
+  ScoringEngine.js  Scoring formulas (pure functions)
+  questions/        Question bank split into packs (general / football / guess)
+public/
+  js/screens/       home, lobby, question, reveal, leaderboard, gameover
+  js/sound.js       Procedural audio engine + question reader
+  js/avatars.js     20 animated SVG characters + race cars
+  css/              Design system, themes, race and chase scenes
+```
+
+## License
+
+MIT

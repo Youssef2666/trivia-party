@@ -1,0 +1,29 @@
+# Fly.io config. Game state lives in memory, so this must run as ONE machine
+# that never sleeps mid-party (auto_stop off, min 1 running).
+app = "trivia-party"
+primary_region = "fra"
+
+[build]
+
+[env]
+  PORT = "3000"
+  PUBLIC_URL = "https://trivia-party.fly.dev"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = "off"
+  auto_start_machines = true
+  min_machines_running = 1
+
+  [[http_service.checks]]
+    grace_period = "10s"
+    interval = "30s"
+    method = "GET"
+    path = "/health"
+    timeout = "5s"
+
+[[vm]]
+  memory = "256mb"
+  cpu_kind = "shared"
+  cpus = 1

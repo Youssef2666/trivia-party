@@ -31,7 +31,9 @@ function getLanIP() {
 }
 
 const LAN_IP = getLanIP();
-const BASE_URL = `http://${LAN_IP}:${PORT}`;
+// PUBLIC_URL is set when deployed (e.g. https://trivia-party.fly.dev) so join
+// links and QR codes point at the public host instead of a private LAN IP.
+const BASE_URL = (process.env.PUBLIC_URL || `http://${LAN_IP}:${PORT}`).replace(/\/+$/, '');
 
 // ── Express app ────────────────────────────────────────────────
 const app = express();

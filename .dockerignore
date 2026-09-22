@@ -1,0 +1,7 @@
+node_modules
+.git
+.superpowers
+.worktrees
+docs
+test-results
+playwright-report
